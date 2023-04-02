@@ -1,0 +1,157 @@
+---
+title: "Discussion"
+subtitle: "Discussing the need for a new CAA Special Interest Group on chronological modelling"
+author: "Eythan Levy, Thomas Huet, Florian Thiery, Allard W. Mees"
+title-slide-attributes:
+    data-background-image: "https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-tree-splitgraph.jpg"
+    data-background-size: "40%"
+    data-background-opacity: "0.2"
+format:
+  revealjs: 
+    css: https://zoometh.github.io/thomashuet/css/quarto.css
+    slide-number: true
+    chalkboard: true
+    scrollable: true
+    preview-links: auto
+    reference-location: document
+    footnotes-hover: true
+    logo: https://raw.githubusercontent.com/archaeochrono/caa23/master/s12/images/logo-caa23.png
+    footer: "<em>S12. Chronological modelling: formal methods and research software</em> <img src='https://raw.githubusercontent.com/archaeochrono/caa23/master/s12/images/logo-caa23.png' style='height: 40px;vertical-align: middle;'> <https://github.com/archaeochrono/caa23>  CAA23, Amsterdam, 2023"
+    margin: 0
+    width: 1200
+---
+
+
+
+# Introduction {background-color="#f3e7b3"}
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(plotly)
+library(dplyr)
+library(DT)
+library(ggtern)
+library(kableExtra)
+library(knitr)
+library(FactoMineR)
+```
+
+::: {.notes}
+For Leibnitz, "time" groups events that follow one another, while "space" groups objects that coexist.
+:::
+
+## Chronological turn
+
+<div class="row">
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-archaeo-romantic.png){height=350px}
+<div class="captiontext">'Monument druidique près de Gisors': Baron Taylor, 1824, <em>Voyages pittoresques et romantiques dans l'ancienne France</em></div>
+</div>
+
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-spatial-gis.jpg){height=350px}
+<div class="captiontext">Stack of information layer in a GIS</em></div>
+</div>
+</div>
+
+::: {.notes}
+In the 90's, development of GIS in archaeology led to a "geographic turn"
+:::
+
+# Proposed framework
+
+## Platforms
+
+GitHub and GitLab
+
+<table>
+<tbody>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 80px; vertical-align:middle"> GitHub</td>
+    <td><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-gitlab.png" style="height: 80px; vertical-align:middle"> GitLab</td>
+  </tr>
+  <tr>
+    <td><small><https://github.com/ANR-Itineris></small></td>
+    <td><small><https://gitlab.huma-num.fr/thuet/itineris></small></td>
+  </tr>
+</tbody>
+</table>
+
+
+## Formats
+
+Extended Date/Time Format (EDTF) Specification
+
+```{=html}
+<iframe width="1000" height="500" src="https://www.loc.gov/standards/datetime/" title="SSLA"></iframe>
+```
+
+# Languages
+
+Python ([dateime](https://docs.python.org/3/library/datetime.html), [edtf](https://pypi.org/project/edtf/), etc.)
+
+```{python}
+from edtf import parse_edtf
+from datetime import timedelta
+
+def interval_intersection(interval1, interval2):
+    start1, end1 = interval1.split("/")
+    start2, end2 = interval2.split("/")
+    dt_start1 = parse_edtf(start1)
+    dt_end1 = parse_edtf(end1)
+    dt_start2 = parse_edtf(start2)
+    dt_end2 = parse_edtf(end2)
+    # Determine the intersection of the intervals
+    intersection_start = max(dt_start1, dt_start2)
+    intersection_end = min(dt_end1, dt_end2)
+    # If the intersection is not empty, return the intersection interval
+    if intersection_end > intersection_start:
+        return f"{intersection_start.isoformat()}/{intersection_end.isoformat()}"
+    else:
+        return None
+      
+hammurabi = "-1792/-1740" # 1752
+neferhotep1 = "-1747/-1736"
+intersection = interval_intersection(hammurabi, neferhotep1)
+print(f"The intersection of {hammurabi} and {neferhotep1} is {intersection}")
+```
+
+
+
+## CAA Special Interest Groups {auto-animate=true}
+
+<span vertical-align: center><img src='https://raw.githubusercontent.com/archaeochrono/caa23/master/s12/images/logo-caa.png' style='height: 50px;vertical-align: middle;'> SIG <span class="midtext"><https://caa-international.org/special-interest-groups/></span>
+
+<div class="midtext">
+<ul>
+<li>Complex Systems Simulation</li>
+<li>Computer Programs for Archaeologists</li>
+<li>Mobile GIS</li>
+<li>3D spatial analysis</li>
+<li>Scientific Scripting Languages in Archaeology</li>
+<li>Semantics and LOUD in Archaeology</li>
+<li>Archaeological Practices and Knowledge Work</li>
+<li>Computationally Modeling Water-based Movement</li>  
+</ul>
+</div>
+
+
+## CAA SIG *SSLA* and *Data Dragons*
+
+::: {.panel-tabset}
+
+### SSLA
+
+<span class="midtext">Special Interest Group on Scientific Scripting Languages in Archaeology</span>
+
+```{=html}
+<iframe width="1000" height="500" src="https://sslarch.github.io/" title="SSLA"></iframe>
+```
+
+### Data Dragons
+
+```{=html}
+<iframe width="1000" height="500" src="https://datadragon.link/" title="Dragons"></iframe>
+```
+
+:::
+
+
+
