@@ -4,7 +4,7 @@ subtitle: "General Introduction"
 # subtitle: "Make (re)usable the ANRJCJC Itineris data"
 author: "Eythan Levy, Thomas Huet, Florian Thiery, Allard W. Mees"
 title-slide-attributes:
-    data-background-image: "https://raw.githubusercontent.com/archaeochrono/caa23/master/s12/images/logo-s12.png"
+    data-background-image: "https://raw.githubusercontent.com/historical-time/caa23/master/s12/images/logo-s12.png"
     data-background-size: "30%"
     data-background-opacity: "0.4"
 format:
@@ -16,8 +16,8 @@ format:
     preview-links: auto
     reference-location: document
     footnotes-hover: true
-    logo: https://raw.githubusercontent.com/archaeochrono/caa23/master/s12/images/logo-caa23.png
-    footer: "<em>S12. Chronological modelling: formal methods and research software</em> <img src='https://raw.githubusercontent.com/archaeochrono/caa23/master/s12/images/logo-caa23.png' style='height: 40px;vertical-align: middle;'> <https://github.com/archaeochrono/caa23>  CAA23, Amsterdam, 2023"
+    logo: https://raw.githubusercontent.com/historical-time/caa23/master/s12/images/logo-caa23.png
+    footer: "<em>S12. Chronological modelling: formal methods and research software</em> <img src='https://raw.githubusercontent.com/historical-time/caa23/master/s12/images/logo-caa23.png' style='height: 40px;vertical-align: middle;'> <https://github.com/historical-time/caa23>  CAA23, Amsterdam, 2023"
     margin: 0
     width: 1200
 ---
@@ -250,14 +250,14 @@ We welcome papers dealing with new theoretical, methodological and research soft
 ## Bayesian modelling
 
 
-<img src='https://raw.githubusercontent.com/archaeochrono/caa23/master/s12/images/bayesian.png' width="800">
+<img src='https://raw.githubusercontent.com/historical-time/caa23/master/s12/images/bayesian.png' width="800">
 
 
 ## Stratigraphic modelling
 
 Harris matrix: Directed Acyclic Graphs, Partial Order
 
-<img src="https://raw.githubusercontent.com/archaeochrono/caa23/master/s12/images/harris.png" width="800">
+<img src="https://raw.githubusercontent.com/historical-time/caa23/master/s12/images/harris.png" width="800">
 
 
 ## Temporal logics
@@ -266,11 +266,11 @@ Harris matrix: Directed Acyclic Graphs, Partial Order
 
 ### Allen's temporal relations
 
-<img src="https://raw.githubusercontent.com/archaeochrono/caa23/master/s12/images/allen.png"> 
+<img src="https://raw.githubusercontent.com/historical-time/caa23/master/s12/images/allen.png"> 
 
 ### Other
 
-<img src="https://raw.githubusercontent.com/archaeochrono/caa23/master/s12/images/temporal-logics-2.png"> 
+<img src="https://raw.githubusercontent.com/historical-time/caa23/master/s12/images/temporal-logics-2.png"> 
 
 :::
 
@@ -280,7 +280,7 @@ Harris matrix: Directed Acyclic Graphs, Partial Order
 
 ### Petrie’s "sequence dating"
 
-<img src="https://raw.githubusercontent.com/archaeochrono/caa23/master/s12/images/seriation-petrie.png" width="800">  
+<img src="https://raw.githubusercontent.com/historical-time/caa23/master/s12/images/seriation-petrie.png" width="800">  
 
 
 
@@ -288,7 +288,7 @@ Harris matrix: Directed Acyclic Graphs, Partial Order
 ### Other
 
 
-<img src="https://raw.githubusercontent.com/archaeochrono/caa23/master/s12/images/seriation-2.png">
+<img src="https://raw.githubusercontent.com/historical-time/caa23/master/s12/images/seriation-2.png">
 
 :::
 
@@ -298,7 +298,7 @@ Harris matrix: Directed Acyclic Graphs, Partial Order
 
 ## Chronological networks
 
-<img src="https://raw.githubusercontent.com/archaeochrono/caa23/master/s12/images/chrono-networks.png" width="800">
+<img src="https://raw.githubusercontent.com/historical-time/caa23/master/s12/images/chrono-networks.png" width="800">
 
 
 ## Linked Open Data Space-Time-Gazetteers
@@ -307,11 +307,11 @@ Harris matrix: Directed Acyclic Graphs, Partial Order
 
 ### PeriodO
 
-<img src="https://raw.githubusercontent.com/archaeochrono/caa23/main/s12/images/PeriodO_Neolithic.png" width="800">
+<img src="https://raw.githubusercontent.com/historical-time/caa23/main/s12/images/PeriodO_Neolithic.png" width="800">
 
 ### ChronOntology
 
-<img src="https://raw.githubusercontent.com/archaeochrono/caa23/main/s12/images/ChronOntology_Neolithic.png" width="800">
+<img src="https://raw.githubusercontent.com/historical-time/caa23/main/s12/images/ChronOntology_Neolithic.png" width="800">
 
 :::
 
@@ -326,7 +326,7 @@ ChronOntology: ChronOntoogy more on the modelling of space and a "relative chron
 
 Research Software for Reproducible Research
 
-<img src="https://raw.githubusercontent.com/archaeochrono/caa23/main/s12/images/LOTD_AlligatorAMT.png" width="800">
+<img src="https://raw.githubusercontent.com/historical-time/caa23/main/s12/images/LOTD_AlligatorAMT.png" width="800">
 
 
 ## Conclusive words
