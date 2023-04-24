@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "index.html#peuquets-triad",
+    "href": "index.html#peuquets-triad",
+    "title": "S12. Chronological modelling: formal methods and research software",
+    "section": "Peuquet’s triad",
+    "text": "Peuquet’s triad\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPeuquet proposes a framework for modelling historical phenomena by describing them in three dimensions: thematic (what), geographical (where), and chronological (when). Whenever one of these dimensions changes, the historical phenomenon (or object) changes. Changes in phenomena can therefore be measured through the change in each of their dimensions. For example, a “revolution” (what) that takes place in the same place (where) but two centuries away (when) can be compared with two “revolutions” occuring at the same time in two different countries."
+  },
+  {
+    "objectID": "index.html#peuquets-triad-extended",
+    "href": "index.html#peuquets-triad-extended",
+    "title": "S12. Chronological modelling: formal methods and research software",
+    "section": "Peuquet’s triad extended",
+    "text": "Peuquet’s triad extended\n\nCorrespondance AnalysisHC individualsHC variables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHierachical Clustering on Individuals\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHierachical Clustering on Variables"
+  },
+  {
+    "objectID": "index.html#binary-topological-relationships",
+    "href": "index.html#binary-topological-relationships",
+    "title": "S12. Chronological modelling: formal methods and research software",
+    "section": "Binary Topological Relationships",
+    "text": "Binary Topological Relationships\n\n\n\n\n\n\nTemporal\n\n\n\n\n\nSpatial\n\n\n\n\nSpatial and temporal pairwise relationships can be model in the same way, with equivalences between ‘overlaps’, etc."
+  },
+  {
+    "objectID": "index.html#bayesian-modelling",
+    "href": "index.html#bayesian-modelling",
+    "title": "S12. Chronological modelling: formal methods and research software",
+    "section": "Bayesian modelling",
+    "text": "Bayesian modelling"
+  },
+  {
+    "objectID": "index.html#stratigraphic-modelling",
+    "href": "index.html#stratigraphic-modelling",
+    "title": "S12. Chronological modelling: formal methods and research software",
+    "section": "Stratigraphic modelling",
+    "text": "Stratigraphic modelling\nHarris matrix: Directed Acyclic Graphs, Partial Order"
+  },
+  {
+    "objectID": "index.html#temporal-logics",
+    "href": "index.html#temporal-logics",
+    "title": "S12. Chronological modelling: formal methods and research software",
+    "section": "Temporal logics",
+    "text": "Temporal logics\n\nAllen’s temporal relationsOther"
+  },
+  {
+    "objectID": "index.html#seriation-techniques",
+    "href": "index.html#seriation-techniques",
+    "title": "S12. Chronological modelling: formal methods and research software",
+    "section": "Seriation techniques",
+    "text": "Seriation techniques\n\nPetrie’s “sequence dating”Other\n\n\n\n\n\n\n\n\n\n\n“The archaeological research community has otherwise only brought too little attention to recent research results in temporal logics.”"
+  },
+  {
+    "objectID": "index.html#chronological-networks",
+    "href": "index.html#chronological-networks",
+    "title": "S12. Chronological modelling: formal methods and research software",
+    "section": "Chronological networks",
+    "text": "Chronological networks"
+  },
+  {
+    "objectID": "index.html#linked-open-data-space-time-gazetteers",
+    "href": "index.html#linked-open-data-space-time-gazetteers",
+    "title": "S12. Chronological modelling: formal methods and research software",
+    "section": "Linked Open Data Space-Time-Gazetteers",
+    "text": "Linked Open Data Space-Time-Gazetteers\n\nPeriodOChronOntology\n\n\n\n\n\n\n\n\n\n\nPeriodO: PeriodO is more focused on “quotes” of time periodes in literature (Rabinowitz / Shaw) ChronOntology: ChronOntoogy more on the modelling of space and a “relative chronology” and semantic alignment (DAI / i3mainz)"
+  },
+  {
+    "objectID": "index.html#linked-open-time-tools",
+    "href": "index.html#linked-open-time-tools",
+    "title": "S12. Chronological modelling: formal methods and research software",
+    "section": "Linked Open Time Tools",
+    "text": "Linked Open Time Tools\nResearch Software for Reproducible Research"
+  },
+  {
+    "objectID": "index.html#conclusive-words",
+    "href": "index.html#conclusive-words",
+    "title": "S12. Chronological modelling: formal methods and research software",
+    "section": "Conclusive words",
+    "text": "Conclusive words\n\nMany\n\nformalisms around\ntools around\n\nNeed\n\nfor more communication among chronology practicioners\nto unify practices, standards and tools"
+  },
+  {
+    "objectID": "index.html#time-and-running-order",
+    "href": "index.html#time-and-running-order",
+    "title": "S12. Chronological modelling: formal methods and research software",
+    "section": "Time and Running Order",
+    "text": "Time and Running Order\n15 minutes per paper + 5 minutes Q&A\n\n\n\n\n \n  \n    Paper \n    authors \n    hour \n  \n \n\n  \n    General introduction to the S12 session \n    Levy, Huet, Thiery, Mees \n    13:00 \n  \n  \n    Aoristic temporal study of heterogeneous amphora data in Roman Germania reveals centuries-long change in regional patterns of production and consumption \n    Brughmans, Franconi, Borisova, Paulsen \n    13:20 \n  \n  \n    Temporal Modelling of the Roman Marble Trade \n    Taelman \n    13:40 \n  \n  \n    Beyond chronological networks: a comparison of formal models for archaeological chronology \n    Levy \n    14:00 \n  \n  \n    Dendrochronological networks: from time series to networks and back to spatio-temporal patterns again \n    Visser \n    14:20 \n  \n  \n    Conventions for Archaeological Stratigraphic and Chronological Data \n    May, Taylor \n    14:40 \n  \n  \n    BREAK \n    NA \n    15:00 \n  \n  \n    Automating chronology construction and archiving (FAIR)ly along the way \n    Moody, May, Dye, Buck \n    15:30 \n  \n  \n    ChronOntology for periodisations in Entangled Africa \n    Schmidle, Sigl, Reinke, Lammers, Lukas \n    15:50 \n  \n  \n    Discussing the need for a new CAA Special Interest Group on chronological modelling \n    Huet, Levy, Thiery, Mees \n    16:10 \n  \n\n\n\n\n\n\n\nBrughmans et al: Aoristic methods to model trade in Germania during Roman times\nTaelman: Temporal uncertainty Management andvizualisation for Roman marbles’ provenance in Mediterranean\nLevy: Comparison of the chronological networks model used in ChronoLog with other chronological formal models\nVisser: Dendrochronological networks and spatio-temporal patterns\nMay, Taylor: Conventions for Archaeological Stratigraphic and Chronological Data\nMoody et al.: Presentation of a prototype software for FAIRly archiving the process of chronology construction\nSchmidle et al.: ChronOntology to create and label cultural periods in Africa\nHuet at al.: Discussing the need and framework for a new CAA SIG on Chronological modelling\n\n\n\n\n\nS12. Chronological modelling: formal methods and research software  https://github.com/archaeochrono/caa23 CAA23, Amsterdam, 2023"
+  }
+]

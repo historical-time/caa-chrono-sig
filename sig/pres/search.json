@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "index.html#varia",
+    "href": "index.html#varia",
+    "title": "Discussion",
+    "section": "Varia",
+    "text": "Varia\n… Chalcolithic occurs before Bell Beaker …"
+  },
+  {
+    "objectID": "index.html#chronological-turn",
+    "href": "index.html#chronological-turn",
+    "title": "Discussion",
+    "section": "Chronological turn",
+    "text": "Chronological turn\n\n\n\n\n‘Monument druidique près de Gisors’ 1824\n\n\n\n\n\nStack of information layer in a GIS\n\n\n\n\nIn the 90’s, development of GIS in archaeology led to a “geographic turn” but no such a thing for the temporal dimension"
+  },
+  {
+    "objectID": "index.html#workflow",
+    "href": "index.html#workflow",
+    "title": "Discussion",
+    "section": "Workflow",
+    "text": "Workflow\n\nAsynchronous\nDistributed\nProject-based\n\n\nAsynchronous, project-based and distributed work"
+  },
+  {
+    "objectID": "index.html#data-papers",
+    "href": "index.html#data-papers",
+    "title": "Discussion",
+    "section": "Data papers",
+    "text": "Data papers\nBuilding a framework to facilitate the publication of papers on temporal data alongside research papers\n\n\n\n\nVery unprecise\n\n\n\n\n\nVery precise\n\n\n\n\nHelp in publishing data papers to go FAIR"
+  },
+  {
+    "objectID": "index.html#platforms",
+    "href": "index.html#platforms",
+    "title": "Discussion",
+    "section": "Platforms",
+    "text": "Platforms\nGit, distributed version control system:\n\n GitHub https://github.com\n GitLab https://gitlab.com\n\n is the 🔝 popular web-platform for source code management and software development (with over 128 million public repositories)"
+  },
+  {
+    "objectID": "index.html#standardisation",
+    "href": "index.html#standardisation",
+    "title": "Discussion",
+    "section": "Standardisation",
+    "text": "Standardisation\n\nISOCIDOC-CRM\n\n\nExtended Date/Time Format (EDTF) Specification  ISO 8601-2019 https://www.loc.gov/standards/datetime/\n\n\n\nUse of CIDOC-CRM, promoting good practices\n\n\n\n\nflowchart LR\n    A(\"-7XX/-509\") --P170 defines time--> B(\"E52 Time-Span\");\n    B --P1 is identified by--> C(Pre-Roman republic);\n\n\n\n\n\n\n\n\n\n\n\n\nEDTF is an extension of the previously seen ISO-8601 Date format. It allows an accurate record of time events and durations whatever their fuzzyness (seasons, before, etc.)"
+  },
+  {
+    "objectID": "index.html#caa-special-interest-groups",
+    "href": "index.html#caa-special-interest-groups",
+    "title": "Discussion",
+    "section": "CAA Special Interest Groups",
+    "text": "CAA Special Interest Groups\n SIG https://caa-international.org/special-interest-groups/\n\n\n\nComplex Systems Simulation\n\n\nComputer Programs for Archaeologists\n\n\nMobile GIS\n\n\n3D spatial analysis\n\n\nScientific Scripting Languages in Archaeology\n\n\nSemantics and LOUD in Archaeology\n\n\nArchaeological Practices and Knowledge Work\n\n\nComputationally Modeling Water-based Movement"
+  },
+  {
+    "objectID": "index.html#caa-sig-ssla-and-data-dragons",
+    "href": "index.html#caa-sig-ssla-and-data-dragons",
+    "title": "Discussion",
+    "section": "CAA SIG SSLA and Data Dragons",
+    "text": "CAA SIG SSLA and Data Dragons\n\nSSLAData DragonsCollaborative network\n\n\nSpecial Interest Group on Scientific Scripting Languages in Archaeology"
+  },
+  {
+    "objectID": "index.html#sibling-projects",
+    "href": "index.html#sibling-projects",
+    "title": "Discussion",
+    "section": "Sibling projects",
+    "text": "Sibling projects\nHistorical Time Representation\n\nhttps://github.com/historical-time"
+  }
+]

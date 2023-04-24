@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: pres
+
+website:
+  title: "S12"
+  favicon: images/logo-caa23.png
+  repo-url: https://github.com/quarto-dev/quarto-web
+  page-footer:
+    right:
+      - icon: github
+        href: https://github.com/quarto-dev/quarto-cli
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+
+format:
+  html:
+    # page-layout: full
+    anchor-sections: true
+    theme: cosmo
+    css: styles.css
+    toc: true

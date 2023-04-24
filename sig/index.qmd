@@ -1,0 +1,215 @@
+---
+title: "Discussion"
+subtitle: "Discussing the need for a new CAA Special Interest Group on chronological modelling"
+author: "Eythan Levy, Thomas Huet, Florian Thiery, Allard W. Mees"
+title-slide-attributes:
+    data-background-image: "https://raw.githubusercontent.com/archaeochrono/caa23/master/s12/images/logo-s12.png"
+    data-background-size: "30%"
+    data-background-opacity: "0.4"
+format:
+  revealjs: 
+    css: https://zoometh.github.io/thomashuet/css/quarto.css
+    slide-number: true
+    chalkboard: true
+    scrollable: true
+    preview-links: auto
+    reference-location: document
+    footnotes-hover: true
+    logo: https://raw.githubusercontent.com/archaeochrono/caa23/master/s12/images/logo-caa23.png
+    footer: "<em>S12. Chronological modelling: formal methods and research software</em> <img src='https://raw.githubusercontent.com/archaeochrono/caa23/master/s12/images/logo-caa23.png' style='height: 40px;vertical-align: middle;'> <https://github.com/archaeochrono/caa23>  CAA23, Amsterdam, 2023"
+    margin: 0
+    width: 1200
+---
+
+## Varia
+
+<span style="color:grey;">... Chalcolithic</span> occurs before <span style="color:grey;">Bell Beaker ...</span>
+
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/when-strati.jpg">
+
+<img src="https://raw.githubusercontent.com/zoometh/neonet/master/doc/img/SPDneonet.png">
+<img src="https://raw.githubusercontent.com/zoometh/neonet/master/doc/img/events_duration.png">
+
+<img src='https://raw.githubusercontent.com/archaeochrono/caa23/master/s12/images/diffusion-neo.png'>
+
+
+
+# Introduction {background-color="#88c28d"}
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(plotly)
+library(dplyr)
+library(DT)
+library(ggtern)
+library(kableExtra)
+library(knitr)
+library(FactoMineR)
+```
+
+::: {.notes}
+For Leibnitz, "time" groups events that follow one another, while "space" groups objects that coexist.
+:::
+
+## Chronological *turn*
+
+<div class="row">
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-archaeo-romantic.png){height=450px}
+<div class="captiontext">'Monument druidique près de Gisors' 1824</div>
+</div>
+
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-spatial-gis.jpg){height=450px}
+<div class="captiontext">Stack of information layer in a GIS</em></div>
+</div>
+</div>
+
+::: {.notes}
+In the 90's, development of GIS in archaeology led to a "geographic turn" but **no such a thing for the temporal dimension**
+:::
+
+# Proposed framework {background-color="#88c28d"}
+
+## Workflow
+
+* Asynchronous
+
+* Distributed
+
+* Project-based
+
+
+::: {.notes}
+Asynchronous, project-based and distributed work
+:::
+
+## Data papers
+
+Building a framework to facilitate the publication of papers on temporal data alongside research papers
+
+
+<div class="row">
+<div class="column"><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/when-geology.png">
+<div class="captiontext">Very unprecise</div>
+</div>
+
+<div class="column"><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/when-tree.jpg">
+<div class="captiontext">Very precise</em></div>
+</div>
+</div>
+
+
+::: {.notes}
+Help in publishing data papers to go FAIR
+:::
+
+
+## Platforms
+
+**Git**, distributed version control system: 
+
+* <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 60px; vertical-align:middle"> GitHub <span class="midtext"><https://github.com></span>
+
+* <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-gitlab.png" style="height: 60px; vertical-align:middle"> GitLab <span class="midtext"><https://gitlab.com></span>  
+\
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style='height: 60px;vertical-align: middle;'> is the 🔝 popular web-platform for source code management and software development (with over 128 million public repositories)
+
+
+## Standardisation
+
+::: {.panel-tabset}
+
+
+### ISO
+
+Extended Date/Time Format (EDTF) Specification <span class="midtext"> ISO 8601-2019 <https://www.loc.gov/standards/datetime/></span>
+
+```{=html}
+<iframe width="1000" height="500" src="https://www.loc.gov/standards/datetime/"></iframe>
+```
+
+### CIDOC-CRM
+
+Use of CIDOC-CRM, promoting good practices
+
+
+```{mermaid}
+flowchart LR
+    A("-7XX/-509") --P170 defines time--> B("E52 Time-Span");
+    B --P1 is identified by--> C(Pre-Roman republic);
+```
+
+
+:::
+
+::: {.notes}
+EDTF is an extension of the previously seen ISO-8601 Date format. It allows an accurate record of time events and durations whatever their fuzzyness (seasons, before, etc.)
+:::
+
+
+# Scripting Languages
+
+* <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-python.png" style='height: 60px;vertical-align: middle;'> is the 1<sup>st</sup> used worldwide and the 2<sup>nd</sup> used by archaeologists. 
+
+* <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-r.png" style='height: 60px;vertical-align: middle;'> is a scripting language for data science, is the 1<sup>st</sup> used by archaeologists but only the 18<sup>th</sup> worldwide
+
+
+# CAA State of the art {background-color="#88c28d"}
+
+
+## CAA Special Interest Groups
+
+<span vertical-align: center><img src='https://raw.githubusercontent.com/archaeochrono/caa23/master/s12/images/logo-caa.png' style='height: 50px;vertical-align: middle;'> SIG <span class="midtext"><https://caa-international.org/special-interest-groups/></span>
+
+<div class="midtext">
+<ul>
+<li>Complex Systems Simulation</li>
+<li>Computer Programs for Archaeologists</li>
+<li>Mobile GIS</li>
+<li>3D spatial analysis</li>
+<li>Scientific Scripting Languages in Archaeology</li>
+<li>Semantics and LOUD in Archaeology</li>
+<li>Archaeological Practices and Knowledge Work</li>
+<li>Computationally Modeling Water-based Movement</li>  
+</ul>
+</div>
+
+
+## CAA SIG *SSLA* and *Data Dragons*
+
+::: {.panel-tabset}
+
+### SSLA
+
+<span class="midtext">Special Interest Group on Scientific Scripting Languages in Archaeology</span>
+
+```{=html}
+<iframe width="1200" height="500" src="https://sslarch.github.io/" title="SSLA"></iframe>
+```
+
+### Data Dragons
+
+```{=html}
+<iframe width="1200" height="500" src="https://datadragon.link/" title="Dragons"></iframe>
+```
+
+
+### Collaborative network
+
+<here diagram>
+
+
+
+:::
+
+## Sibling projects
+
+Historical Time Representation
+
+<center>
+
+<span class="midtext"><https://github.com/historical-time></span>
+
+<img src="https://raw.githubusercontent.com/archaeochrono/caa23/master/s12/images/app-github-org-chronomodel.png" width="1200"> 
+
+</center>
+
+# Open talk {background-color="#88c28d"}
