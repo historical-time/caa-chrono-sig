@@ -7,7 +7,7 @@
 ```mermaid
 flowchart LR
     A("-7XX/-509") --P170 defines time--> B(E52 Time-Span);
-    B --P1 is identified by-->C(Pre-Roman republic);
+    B --P1 is identified by--> C(Pre-Roman republic);
 ```
 
 ## Session 12: Chronological modelling: formal methods and research software
