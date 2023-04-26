@@ -1,6 +1,17 @@
 # CAA23
 > https://2023.caaconference.org/
 
+## Bayesian Modelling with NeoNet
+> Creating Bayesian modelling on-the-fly for the **NeoNet** app and dataset
+
+**NeoNet** ([GitHub](https://github.com/zoometh/neonet), [online app](http://shinyserver.cfs.unipi.it:3838/C14/)) dynamically maps radiocarbon dates of the Mesolithic/Neolithic transition, and records other contextual information (stratigraphic units, cultural periods, etc.). The current objective is to
+
+1. reconstruct the Harris matrix (stratigraphic sequences) of these archaeological sites using DAGs (directed acyclic graphs)
+2. process the radiocarbon dates and stratigraphic relationships to perform Bayesian modelling on the fly.
+
+In a second step, the cultural periods from the https://devr.cepam.cnrs.fr/shinyapps/leap/ application will be merged with this model.
+
+
 ## CIDOC-CRM
 > Use of EDTF and CIDOC-CRM
 
