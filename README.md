@@ -1,21 +1,20 @@
 # NeoNet modelling
+> Creating Bayesian modelling for radiocarbon dates and stratigraphy of the **NeoNet** dataset
 
-## Bayesian Modelling with NeoNet
-> Creating Bayesian modelling on-the-fly for the **NeoNet** app and dataset
+NeoNet ([GitHub](https://github.com/zoometh/neonet), [online app](http://shinyserver.cfs.unipi.it:3838/C14/)) dynamically maps **radiocarbon dates** of the Mesolithic/Neolithic transition, and records other contextual information (stratigraphic units, cultural periods, etc.). The current objective is to
 
-**NeoNet** ([GitHub](https://github.com/zoometh/neonet), [online app](http://shinyserver.cfs.unipi.it:3838/C14/)) dynamically maps radiocarbon dates of the Mesolithic/Neolithic transition, and records other contextual information (stratigraphic units, cultural periods, etc.). The current objective is to
+1. reconstruct the **stratigraphy** (Harris matrix) of these archaeological sites using DAGs (directed acyclic graphs);
+2. process the radiocarbon dates and stratigraphic relationships to perform **Bayesian modelling** on-the-fly;
+3. merged **cultural periods** from the https://devr.cepam.cnrs.fr/shinyapps/leap/ application with this model;
 
-1. reconstruct the Harris matrix (stratigraphic sequences) of these archaeological sites using DAGs (directed acyclic graphs)
-2. process the radiocarbon dates and stratigraphic relationships to perform Bayesian modelling on the fly.
-
-In a second step, the cultural periods from the https://devr.cepam.cnrs.fr/shinyapps/leap/ application will be merged with this model.
-
-### Harris Matrix
+## Stratigraphy
 
 Using [this R function](https://github.com/historical-time/caa23/blob/main/neonet/stratigraphy-neonet.R) for this [dataset sample](https://github.com/historical-time/data-samples/blob/main/neonet/TEST_2.tsv) (site: Obagues de Ratera)
 
 <img src="https://github.com/historical-time/caa23/blob/main/neonet/Obagues%20de%20Ratera.jpg" width="700">
 
+# Archaeometry - Special Issue
+> standards to share dates between different research projects
 ## CIDOC-CRM
 > Use of EDTF and CIDOC-CRM
 
