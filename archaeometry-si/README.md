@@ -32,7 +32,7 @@ gantt
 
 Authors are asked to share samples of their temporal data using standardised formats, using:
 - EDTF to record an event or a duration[^1]
-- CIDOC-CRM to record relations between dates, events, actors and places can be modelled with the CIDOC-CRM
+- CIDOC-CRM to record relations between dates, events, actors and places can be modelled with the CIDOC-CRM[^2]
 
 For example: 
 
