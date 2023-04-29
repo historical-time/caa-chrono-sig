@@ -1,5 +1,4 @@
-# CAA23
-> https://2023.caaconference.org/
+# NeoNet modelling
 
 ## Bayesian Modelling with NeoNet
 > Creating Bayesian modelling on-the-fly for the **NeoNet** app and dataset
@@ -25,11 +24,13 @@ flowchart LR
     A("-7XX/-509") --P170 defines time--> B(E52 Time-Span);
     B --P1 is identified by--> C(Pre-Roman republic);
 ```
+# CAA23
+> https://2023.caaconference.org/
 
-## Session 12: Chronological modelling: formal methods and research software
+### Session 12: Chronological modelling: formal methods and research software
 > Eythan Levy, Thomas Huet, Florian Thiery, Allard W. Mees
 
-### Timeline 
+#### Timeline 
 
 ```mermaid
 gantt
