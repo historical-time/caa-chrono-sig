@@ -30,13 +30,25 @@ gantt
 # Sample dataset
 > Use of standards to share dates between different research projects
 
-Authors are asked to share samples of their temporal data using standardised formats
+Authors are asked to share samples of their temporal data using standardised formats, using:
+- EDTF to record an event or a duration[^1]
+- CIDOC-CRM to record relations between dates, events, actors and places can be modelled with the CIDOC-CRM
 
-## CIDOC-CRM
-> Use of EDTF and CIDOC-CRM
+For example: 
+
+| EDTF  |  event |  author |
+|---|---|---|
+| -7XX/-509  | pre-Roman republic  | zoometh |
+
+This data means: the 'pre-Roman republic' cultural period starts somewhere during the 8th c. BCE (-7XX) and stops in -509. @zoometh is the author of [this temporal data](https://github.com/historical-time/caa23/blob/main/archaeometry-si/samples/dataset.tsv)
+
+Using EDTF and CIDOC-CRM, it should be modelled like:
 
 ```mermaid
 flowchart LR
     A("-7XX/-509") --P170 defines time--> B(E52 Time-Span);
     B --P1 is identified by--> C(Pre-Roman republic);
 ```
+
+[^1]: Extended Time and date format (EDTF, ISO 8601-2:2019) is the isostandard for dates. See: http://www.loc.gov/standards/datetime/
+[^2]: CIDOC-Conceptual Reference Model (CIDOC-CRM, v7.1.2 *under review* ISO) is a model for describing and organising cultural heritage information. It is extended to archaeological data with the [CRMarchaeo](https://www.cidoc-crm.org/crmarchaeo/home-3). See: https://www.cidoc-crm.org/
