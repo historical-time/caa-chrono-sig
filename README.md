@@ -13,16 +13,6 @@ Using [this R function](https://github.com/historical-time/caa23/blob/main/neone
 
 <img src="https://github.com/historical-time/caa23/blob/main/neonet/Obagues%20de%20Ratera.jpg" width="700">
 
-# Archaeometry - Special Issue
-> standards to share dates between different research projects
-## CIDOC-CRM
-> Use of EDTF and CIDOC-CRM
-
-```mermaid
-flowchart LR
-    A("-7XX/-509") --P170 defines time--> B(E52 Time-Span);
-    B --P1 is identified by--> C(Pre-Roman republic);
-```
 # CAA23
 > https://2023.caaconference.org/
 

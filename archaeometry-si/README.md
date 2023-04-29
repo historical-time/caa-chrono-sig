@@ -1,5 +1,5 @@
 # Archaeometry Special Issue
-Publication of an Archaeometry Special Issue on Chronological Modeling
+> Publication of an Archaeometry Special Issue on Chronological Modeling
 
 
 ## Timeline
@@ -25,4 +25,18 @@ gantt
     section Issue
     Issue compilation        : milestone, m2, 2024-04-23, 1d
     Issue published          : milestone, m2, 2024-04-29, 1d
+```
+
+# Sample dataset
+> Use of standards to share dates between different research projects
+
+Authors are asked to share samples of their temporal data using standardised formats
+
+## CIDOC-CRM
+> Use of EDTF and CIDOC-CRM
+
+```mermaid
+flowchart LR
+    A("-7XX/-509") --P170 defines time--> B(E52 Time-Span);
+    B --P1 is identified by--> C(Pre-Roman republic);
 ```
