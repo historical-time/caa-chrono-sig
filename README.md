@@ -11,6 +11,9 @@
 
 In a second step, the cultural periods from the https://devr.cepam.cnrs.fr/shinyapps/leap/ application will be merged with this model.
 
+### Harris Matrix
+
+![](https://github.com/historical-time/caa23/blob/main/neonet/Obagues%20de%20Ratera.jpg)
 
 ## CIDOC-CRM
 > Use of EDTF and CIDOC-CRM
