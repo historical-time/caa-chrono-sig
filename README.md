@@ -15,7 +15,7 @@ In a second step, the cultural periods from the https://devr.cepam.cnrs.fr/shiny
 
 Using [this R function](https://github.com/historical-time/caa23/blob/main/neonet/stratigraphy-neonet.R) for this [dataset sample](https://github.com/historical-time/data-samples/blob/main/neonet/TEST_2.tsv) (site: Obagues de Ratera)
 
-![](https://github.com/historical-time/caa23/blob/main/neonet/Obagues%20de%20Ratera.jpg | width=400)
+<img src="https://github.com/historical-time/caa23/blob/main/neonet/Obagues%20de%20Ratera.jpg" width="400">
 
 ## CIDOC-CRM
 > Use of EDTF and CIDOC-CRM
