@@ -1,0 +1,79 @@
+---
+title: "Invitation letters for the Archaeometry Special Issue"
+output: word_document
+date: '2023-04-29'
+---
+
+```{r, echo = FALSE}
+# cf.: https://docs.google.com/document/d/1FEXgenqAbui3XzMNIKSRGHOCYgsziSyAuOID34EFVek/edit#
+inv.papers.df <- data.frame(
+  email = c("erc62@cam.ac.uk",
+            "christopher.ramsey@arch.ox.ac.uk",
+            "martin.hinz@iaw.unibe.ch, joseph.roe@iaw.unibe.ch",
+            "STEVEN-STEAD",
+            "Keith.May@historicengland.org.uk, james.s.taylor@york.ac.uk",
+            "wolfgang.schmidle@dainst.de",
+            "ryanshaw@unc.edu, arabinow@utexas.edu"
+            ),
+  name = c("Dr Enrico Crema",
+           "Pr Christopher Bronk Ramsey",
+           "Dr Martin Hinz, Dr Joe Roe",
+           "Dr Stephen Stead",
+           "Dr Keith May, Dr James Taylor",
+           "Dr Wolfgang Schmidle",
+           "Pr Ryan Shaw, Pr Adam Rabinowitz"),
+  topic = c("your recent researches on **aoristic approaches**",
+            "your recent researches on **open access to chronological data**, **cross-dating and multi-resolution chronologies alignment**, or **radiocarbon dating**",
+            "your recent work for the **XRONOS project, open access to chronological data, cross-dating and alignment of multi-resolution chronologies**",
+            "your recent work on the **CIDOC-CRM and CRMarchaeo**",
+            "your recent communication at the CAA23 in Amsterdam, and your work on 'The Matrix' particularly its FAIRability",
+            "your recent communication at the CAA23 in Amsterdam, and your work on the **LOD gazetteer of cultural periods ChronOntology**",
+            "your recent communication at the CAA23 in Amsterdam, and your work on the **LOD gazetteer of cultural periods PeriodO**"
+            ),
+  Formal.response = c("2023-06-21"),
+  Soft.deadline = c("2023-10-18")
+)
+
+```
+
+
+```{r, results = 'asis', echo = FALSE}
+for(i in seq(1, nrow(inv.papers.df))){
+  # markdown syntax
+  cat(i, "<br>",
+    stringr::str_interp(
+      "
+to: <${inv.papers.df[i, 'email']}>  
+
+Dear ${inv.papers.df[i, 'name']},  
+  
+We would like to personally invite you to contribute to an (online only) Archaeometry Special Issue on the subject of '*Chronological modelling: formal methods and research software*'. We were very intrigued by ${inv.papers.df[i, 'topic']}. We were wondering if you would consider a paper on this topic in the context of modelling chronology, in this or other contexts? If you are interested in taking up this invitation, please let us know by the ${inv.papers.df[i, 'Formal.response']}.  
+  
+Time and its analysis, the chronology, are at the heart of archaeology: one of the main objectives of the archaeologist is the establishment of a temporal framework for a given layer, site or material culture. But archaeology covers such a wide range of features, dispersed both in time and space, that contextual chronological assessments are constructed using very different tools, languages and techniques. It creates as many different frameworks as there are specialties, with notable differences in approaches depending on whether one is dealing with absolute or relative chronology, Prehistory or recent periods, laboratory techniques or cultural approaches, deterministic or statistical methods, etc. The aim of this Archaeometry Special Issue is (i) to review the state-of-the-art practices of the many different specialities on research software and formal methods for chronological modelling, and (ii) to open avenues for the alignment of archaeo-chronological data, according to FAIR principles, semantic web, and regardless of their precision (event date to century or season, summed probability densities, approximate duration, period with bevelled boundaries, etc.).  
+  
+For this last point, i.e. the alignment and semantisation of chronological data, we wish to work in an innovative way, with the collaborative and versioning platform GitHub so that you, and each of the Special Issue authors, can share samples of their time data in interoperable forms that respect the standards of open science. The digital form of the SI will of course allow the linking of research articles and data samples. You can already see this platform under construction here: https://github.com/historical-time/caa23/tree/main/archaeometry-si  
+  
+We will invite a series of papers to contribute to (but are not necessarily limited to) the following aspects of :  
+
+1. Open source software research software and formal methods for chronological modelling: archaeometric dating, Bayesian, stratigraphic, seriation, temporal logics, etc.  
+
+ 2. Reusability, scalability and alignments of chronologies: FAIR and isostandards, cross-dating, high resolution downscaling and low resolution upscaling of temporal data on a common timeline (time registration) or multi-resolution alignement, uncertainty or fuzziness management, etc. 
+ 
+This SI is not intended to be a compilation of case studies, but to bring together formal perspectives on chronological modelling, to review the most recent methods and avenues of development with a view to building interoperable chronologies over the *long term* and at large geographical scales.
+ 
+Final manuscript submission deadline: ${inv.papers.df[i, 'Soft.deadline']}.
+
+We hope you will consider contributing to this edition.
+ 
+Yours sincerely,  
+
+Thomas & Eythan
+  
+  
+"
+    )
+  )
+}
+
+```
+

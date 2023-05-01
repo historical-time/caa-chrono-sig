@@ -4,14 +4,22 @@
 NeoNet ([GitHub](https://github.com/zoometh/neonet), [online app](http://shinyserver.cfs.unipi.it:3838/C14/)) dynamically maps **radiocarbon dates** of the Mesolithic/Neolithic transition, and records other contextual information (stratigraphic units, cultural periods, etc.). The current objective is to
 
 1. reconstruct the **stratigraphy** (Harris matrix) of these archaeological sites using DAGs (directed acyclic graphs);
+    - merge Harris matrices with the same [Period](https://zoometh.github.io/neonet/#mf.period) between different sites 
+    - etc.
 2. process the radiocarbon dates and stratigraphic relationships to perform **Bayesian modelling** on-the-fly;
 3. merged **cultural periods** from the https://devr.cepam.cnrs.fr/shinyapps/leap/ application with this model;
+    - merge Harris matrices with the same [Culture](https://zoometh.github.io/neonet/#3_data_panel)[^1] between different sites 
 
 ## Stratigraphy
 
-Using [this R function](https://github.com/historical-time/caa23/blob/main/neonet/stratigraphy-neonet.R) for this [dataset sample](https://github.com/historical-time/data-samples/blob/main/neonet/TEST_2.tsv) (site: Obagues de Ratera)
+Using [neo_strat()](https://github.com/historical-time/caa23/blob/main/neonet/neo_strat.R) for this [dataset sample](https://github.com/historical-time/data-samples/blob/main/neonet/TEST_2.tsv) (site: Obagues de Ratera) coming from the NeoNet dataset.
 
-<img src="https://github.com/historical-time/caa23/blob/main/neonet/Obagues%20de%20Ratera.jpg" width="700">
+
+```neo_strat()```
+<img src="https://github.com/historical-time/caa23/blob/main/neonet/Obagues_de_Ratera_name.jpg" width="700">
+
+```neo_strat(outLabel = c("C14Age"))```
+<img src="https://github.com/historical-time/caa23/blob/main/neonet/Obagues_de_Ratera_c14age.jpg" width="700">
 
 # CAA23
 > https://2023.caaconference.org/
@@ -34,3 +42,5 @@ gantt
 
 * General Introduction to S12: https://historical-time.github.io/caa23/s12/pres
 * Discussing the need for a new CAA Special Interest Group on chronological modelling: https://historical-time.github.io/caa23/sig/pres
+
+[^1]: 'Culture' is a specification of the field 'Period' in NeoNet, and it is not mandatory

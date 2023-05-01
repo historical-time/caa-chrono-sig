@@ -10,9 +10,10 @@ gantt
     dateFormat  YYYY-MM-DD
     section Papers
     Formal invite              : milestone, m0, 2023-05-30, 1d
+    Formal response            : milestone, m0, 2023-06-21, 1d
     section Submission deadline
-    soft deadline            : milestone, m1, 2023-10-18, 1d
-    hard deadline            : milestone, m1, 2023-11-08, 1d
+    Soft deadline            : milestone, m1, 2023-10-18, 1d
+    Hard deadline            : milestone, m1, 2023-11-08, 1d
     section Decision 1
     Decision letter          : milestone, m1, 2023-11-12, 1d
     section Revisions
@@ -32,7 +33,7 @@ gantt
 
 Authors are asked to share samples of their temporal data using standardised formats, using:
 - EDTF to record an event or a duration[^1]
-- CIDOC-CRM to record relations between dates, events, actors and places can be modelled with the CIDOC-CRM[^2]
+- CIDOC-CRM to record relations between events or durations, actors and places can be modelled with the CIDOC-CRM[^2]
 
 For example: 
 
