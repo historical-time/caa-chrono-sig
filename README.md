@@ -12,15 +12,19 @@ NeoNet ([GitHub](https://github.com/zoometh/neonet), [online app](http://shinyse
 
 ## Stratigraphy
 
-Using [neo_strat()](https://github.com/historical-time/caa23/blob/main/neonet/neo_strat.R) for this [dataset sample](https://github.com/historical-time/data-samples/blob/main/neonet/TEST_2.tsv) (site: Obagues de Ratera) coming from the NeoNet dataset.
+Using [neo_strat()](https://github.com/historical-time/caa23/blob/main/neonet/neo_strat.R) for this [dataset sample](https://github.com/historical-time/data-samples/blob/main/neonet/TEST_2.tsv) (site: Obagues de Ratera) coming from the NeoNet dataset, showing:
 
+<p>
 
-```neo_strat()```
-<img src="https://github.com/historical-time/caa23/blob/main/neonet/Obagues_de_Ratera_name.jpg" width="700">
+The layer names (by default): ```neo_strat()```<br>
+<img src="https://github.com/historical-time/caa23/blob/main/neonet/Obagues_de_Ratera_name.jpg" width="600">
+</p>
 
-```neo_strat(outLabel = c("C14Age"))```
-<img src="https://github.com/historical-time/caa23/blob/main/neonet/Obagues_de_Ratera_c14age.jpg" width="700">
+<p>
 
+The c14 ages :  ```neo_strat(outLabel = c("C14Age"))```<br>
+<img src="https://github.com/historical-time/caa23/blob/main/neonet/Obagues_de_Ratera_c14age.jpg" width="600">
+</p>
 # CAA23
 > https://2023.caaconference.org/
 
