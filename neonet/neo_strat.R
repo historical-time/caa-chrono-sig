@@ -130,37 +130,13 @@ neo_strat <- function(inData = "https://raw.githubusercontent.com/historical-tim
     )
     relations <- data.frame(from = before,
                             to = after)
-
-
-    # # cross-check, messages or error messages
-    # exist.only.in.layers <- setdiff(unique(layers$name),
-    #                                 unique(c(relations$from, relations$to)))
-    # if(length(exist.only.in.layers) > 0){
-    #   stop(paste0("These PhaseCode are only listed in the layers:",
-    #               paste0(exist.only.in.layers, collapse = ", ")))
-    # }
-    # exist.only.in.relations <- setdiff(unique(c(relations$from, relations$to)),
-    #                                    unique(layers$name))
-    # if(length(exist.only.in.relations) > 0){
-    #   message(paste0("These PhaseCode are only listed in the relationships: '",
-    #                  paste0(exist.only.in.relations, collapse = ", "), "', they will be added to the layers list"))
-    #   only.in.relations <- df[df[, neo.phasecode] == exist.only.in.relations,
-    #                           c(neo.phasecode, neo.labcode, neo.c14age)]
-    #   names(only.in.relations) <- names(layers)
-    #   # dplyr::bind_rows(layers, only.in.relations)
-    #   layers <- rbind(layers, only.in.relations)
-    # }
-
-
     layers <- neo_strat_dupli(layers)
     layers <- neo_strat_xcheck(layers, relations)
     layers <- neo_strat_dupli(layers)
     layers <- neo_strat_xcheck(layers, relations)
-
     g.igraph <- igraph::graph_from_data_frame(relations,
                                               vertices = layers,
                                               directed = TRUE)
-
     outLabel <- ifelse(outLabel == "C14Age",  "c14age",
                        ifelse(outLabel == "PhaseCode", "name",
                               ifelse(outLabel == "LabCode", "labcode" , NA)))
@@ -177,7 +153,6 @@ neo_strat <- function(inData = "https://raw.githubusercontent.com/historical-tim
     print(list.dags[[1]])
   }
   if(export.plot){
-    # if(is.na(outFile)){outFile <- paste0(site, ".jpg")}
     outExport <- paste0(outDir, site, "_", outLabel,".jpg")
     outExport <- gsub(" ", "_", outExport)
     # save
