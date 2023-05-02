@@ -25,14 +25,14 @@ The **c14 ages** :  ```neo_strat(outLabel = c("C14Age"))```<br>
 </p>
 
 <p>
-The **periods** (for another dataset, and Pokrovnik site only) :  
+The **periods** (for another dataset, and Pokrovnik site only) : <br> 
 ```
 neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_PERIOD.tsv',
           smp.sitename = c("Pokrovnik"),
           outLabel = c("Period")
 ```
 <br>
-<img src="https://github.com/historical-time/caa23/blob/main/neonet/Obagues_de_Ratera_c14age.jpg" width="600">
+<img src="https://github.com/historical-time/caa23/blob/main/neonet/Pokrovnik_period.jpg" width="600">
 </p>
 
 # CAA23
