@@ -63,7 +63,7 @@ neo_strat_xcheck <- function(layers = NA,
     message(paste0("These PhaseCode are only listed in the relationships: '",
                    paste0(exist.only.in.relations, collapse = ", "), "', they will be added to the layers list"))
     only.in.relations <- df[df[, neo.phasecode] == exist.only.in.relations,
-                            c(neo.phasecode, neo.labcode, neo.c14age)]
+                            c(neo.phasecode, neo.labcode, neo.c14age, neo.period)]
     names(only.in.relations) <- names(layers)
     # dplyr::bind_rows(layers, only.in.relations)
     layers <- rbind(layers, only.in.relations)
@@ -94,10 +94,12 @@ neo_strat_xcheck <- function(layers = NA,
 #' # Export, with C14Age instead of layer names
 #' neo_strat(outLabel = c("C14Age"), export.plot = T, outDir = paste0(getwd(), "/neonet/"))
 #'
-#' # With Periods instead of layer names, limited to one site (Pokrovnik), on another dataset
+#' # Export, with Periods instead of layer names, limited to one site (Pokrovnik), on another dataset
 #' neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_PERIOD.tsv',
 #'           smp.sitename = c("Pokrovnik"),
-#'           outLabel = c("Period"))
+#'           outLabel = c("Period"),
+#'           export.plot = T,
+#'           outDir = paste0(getwd(), "/neonet/"))
 #' @export
 neo_strat <- function(inData = "https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_2.tsv",
                       neo.sitename = c("SiteName"),
@@ -111,7 +113,6 @@ neo_strat <- function(inData = "https://raw.githubusercontent.com/historical-tim
                       outLabel = neo.phasecode,
                       export.plot = F,
                       outDir = getwd(),
-                      # outFile = NA,
                       verbose = T){
   df <- read.table(inData, sep = "\t", header = T)
   if(verbose){print(paste0("neo.relation column and type: '", neo.relation,"'"))}
@@ -126,6 +127,7 @@ neo_strat <- function(inData = "https://raw.githubusercontent.com/historical-tim
   }
   for(site in selected.sitenames){
     # site <- "Obagues de Ratera"
+    # site <- "Pokrovnik"
     if(verbose){print(paste0("* site: ", site))}
     PhaseCode.strati <- df[!no.existing.relations & df[ , neo.sitename] == site, ]
     before <- after <- labcode <- c14age <- period <- c()
@@ -137,7 +139,7 @@ neo_strat <- function(inData = "https://raw.githubusercontent.com/historical-tim
       c14age <- c(c14age, PhaseCode.strati[phase, neo.c14age])
       period <- c(period, PhaseCode.strati[phase, neo.period])
     }
-    if(verbose){print(paste0("    - nb relation: ", length(before)))}
+    if(verbose){print(paste0("    - nb stratigraphical relationships: ", length(before)))}
     # nodes and edges
     layers <- data.frame(name = before,
                          labcode = labcode,
@@ -196,6 +198,9 @@ neo_strat <- function(inData = "https://raw.githubusercontent.com/historical-tim
 
 # neo_strat(outLabel = c("C14Age"), export.plot = T, outDir = paste0(getwd(), "/neonet/"))
 
+# Export, with Periods instead of layer names, limited to one site (Pokrovnik), on another dataset
 neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_PERIOD.tsv',
           smp.sitename = c("Pokrovnik"),
-          outLabel = c("Period"))
+          outLabel = c("Period"),
+          export.plot = T,
+          outDir = paste0(getwd(), "/neonet/"))
