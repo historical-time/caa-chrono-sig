@@ -14,6 +14,7 @@
 #'
 #' @export
 neo_strat_dupli <- function(layers = NA,
+                            suffix = "*",
                             verbose = T){
   # handle duplicated layers names (those having two or more c14 dates)
   dupl.name <- layers[duplicated(layers$name), c("name")]
@@ -48,6 +49,7 @@ neo_strat_dupli <- function(layers = NA,
 #' @export
 neo_strat_xcheck <- function(layers = NA,
                              relations = NA,
+                             neo.phasecode = NA,
                              verbose = T){
   exist.only.in.layers <- setdiff(unique(layers$name),
                                   unique(c(relations$from, relations$to)))
@@ -79,6 +81,7 @@ neo_strat_xcheck <- function(layers = NA,
 #' @param inData a TSV file adapted to NeoNet: listing the radiocarbon dates (LabCode) by layers (PhaseCode) and sites (SiteName). Only sites having values for stratigraphic relationships (see: `neo.relation` argument) will be read.
 #' @param neo.relation used for logical test to select only PhaseCode having a particular neo.relation with another one. Default: 'After'.
 #' @param suffix the suffix that will be added to layers names having the same names (but different C14 dates) to distinguish them. For example '*': 13A1, 13A1*.
+#' @param smp.sitename limit the calculation to one or more site. Default NA.
 #' @param outLabel the label that will be displayed on the Harris matrix. Default: 'PhaseCode'.
 #'
 #' @return Ggplot charts of sites' Harris matrices
@@ -91,6 +94,10 @@ neo_strat_xcheck <- function(layers = NA,
 #' # Export, with C14Age instead of layer names
 #' neo_strat(outLabel = c("C14Age"), export.plot = T, outDir = paste0(getwd(), "/neonet/"))
 #'
+#' # With Periods instead of layer names, limited to one site (Pokrovnik), on another dataset
+#' neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_PERIOD.tsv',
+#'           smp.sitename = c("Pokrovnik"),
+#'           outLabel = c("Period"))
 #' @export
 neo_strat <- function(inData = "https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_2.tsv",
                       neo.sitename = c("SiteName"),
@@ -98,6 +105,8 @@ neo_strat <- function(inData = "https://raw.githubusercontent.com/historical-tim
                       neo.relation = c("After"),
                       neo.labcode = c("LabCode"),
                       neo.c14age = c("C14Age"),
+                      neo.period = c("Period"),
+                      smp.sitename = NA,
                       suffix = "*",
                       outLabel = neo.phasecode,
                       export.plot = F,
@@ -109,37 +118,56 @@ neo_strat <- function(inData = "https://raw.githubusercontent.com/historical-tim
   no.existing.relations <- is.na(df[ , neo.relation]) | df[ , neo.relation] == ''
   # a list to record all DAGs
   list.dags <- list()
-  # loop through sites
-  for(site in unique(df[ , neo.sitename])){
+  # selected sites or loop through all sites
+  if(!is.na(smp.sitename)){
+    selected.sitenames <- smp.sitename
+  } else {
+    selected.sitenames <- unique(df[ , neo.sitename])
+  }
+  for(site in selected.sitenames){
     # site <- "Obagues de Ratera"
     if(verbose){print(paste0("* site: ", site))}
     PhaseCode.strati <- df[!no.existing.relations & df[ , neo.sitename] == site, ]
-    before <- after <- labcode <- c14age <- c()
+    before <- after <- labcode <- c14age <- period <- c()
     # loop through layers to build the DAG, use NeoNet mandatory fields
     for(phase in seq(1, nrow(PhaseCode.strati))){
       before <-c(before, PhaseCode.strati[phase, neo.phasecode]) # before is the layer itself
       after <- c(after, PhaseCode.strati[phase, neo.relation]) # after is the layer recorded in 'After' column
       labcode <- c(labcode, PhaseCode.strati[phase, neo.labcode])
       c14age <- c(c14age, PhaseCode.strati[phase, neo.c14age])
+      period <- c(period, PhaseCode.strati[phase, neo.period])
     }
     if(verbose){print(paste0("    - nb relation: ", length(before)))}
     # nodes and edges
     layers <- data.frame(name = before,
                          labcode = labcode,
-                         c14age = c14age
+                         c14age = c14age,
+                         period = period
     )
     relations <- data.frame(from = before,
                             to = after)
-    layers <- neo_strat_dupli(layers)
-    layers <- neo_strat_xcheck(layers, relations)
-    layers <- neo_strat_dupli(layers)
-    layers <- neo_strat_xcheck(layers, relations)
+    layers <- neo_strat_dupli(layers = layers,
+                              suffix = suffix,
+                              verbose = verbose)
+    layers <- neo_strat_xcheck(layers = layers,
+                               relations = relations,
+                               neo.phasecode = neo.phasecode,
+                               verbose = verbose)
+    layers <- neo_strat_dupli(layers = layers,
+                              suffix = suffix,
+                              verbose = verbose)
+    layers <- neo_strat_xcheck(layers = layers,
+                               relations = relations,
+                               neo.phasecode = neo.phasecode,
+                               verbose = verbose)
     g.igraph <- igraph::graph_from_data_frame(relations,
                                               vertices = layers,
                                               directed = TRUE)
+    # labels
     outLabel <- ifelse(outLabel == "C14Age",  "c14age",
                        ifelse(outLabel == "PhaseCode", "name",
-                              ifelse(outLabel == "LabCode", "labcode" , NA)))
+                              ifelse(outLabel == "Period", "period",
+                                     ifelse(outLabel == "LabCode", "labcode" , NA))))
   }
   g.dag <- ggraph::ggraph(g.igraph, layout = "sugiyama") +
     ggplot2::ggtitle(label = site,
@@ -165,4 +193,9 @@ neo_strat <- function(inData = "https://raw.githubusercontent.com/historical-tim
 }
 
 # neo_strat(export.plot = T, outDir = paste0(getwd(), "/neonet/"))
+
 # neo_strat(outLabel = c("C14Age"), export.plot = T, outDir = paste0(getwd(), "/neonet/"))
+
+neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_PERIOD.tsv',
+          smp.sitename = c("Pokrovnik"),
+          outLabel = c("Period"))
