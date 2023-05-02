@@ -15,16 +15,26 @@ NeoNet ([GitHub](https://github.com/zoometh/neonet), [online app](http://shinyse
 Using [neo_strat()](https://github.com/historical-time/caa23/blob/main/neonet/neo_strat.R) for this [dataset sample](https://github.com/historical-time/data-samples/blob/main/neonet/TEST_2.tsv) (site: Obagues de Ratera) coming from the NeoNet dataset, showing:
 
 <p>
-
-The layer names (by default): ```neo_strat()```<br>
+The **layer names** (by default): ```neo_strat()```<br>
 <img src="https://github.com/historical-time/caa23/blob/main/neonet/Obagues_de_Ratera_name.jpg" width="600">
 </p>
 
 <p>
-
-The c14 ages :  ```neo_strat(outLabel = c("C14Age"))```<br>
+The **c14 ages** :  ```neo_strat(outLabel = c("C14Age"))```<br>
 <img src="https://github.com/historical-time/caa23/blob/main/neonet/Obagues_de_Ratera_c14age.jpg" width="600">
 </p>
+
+<p>
+The **periods** (for another dataset, and Pokrovnik site only) :  
+```
+neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_PERIOD.tsv',
+          smp.sitename = c("Pokrovnik"),
+          outLabel = c("Period")
+```
+<br>
+<img src="https://github.com/historical-time/caa23/blob/main/neonet/Obagues_de_Ratera_c14age.jpg" width="600">
+</p>
+
 # CAA23
 > https://2023.caaconference.org/
 
