@@ -1,6 +1,7 @@
 # Archaeometry Special Issue
 > Publication of an Archaeometry Special Issue on Chronological Modeling
 
+[Chronological domain list](https://github.com/historical-time/caa23/issues/5)
 
 ## Timeline
 
