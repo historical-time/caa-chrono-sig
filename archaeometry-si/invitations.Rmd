@@ -52,7 +52,7 @@ inv.papers.df <- data.frame(
             "your recent work on **cultural transmission** and **phylogenetic approaches**",
             "your recent communication at the CAA23 in Amsterdam:  *Automating chronology construction and archiving (FAIR)ly along the way*",
             "your work on **Linked Open Temporal Data (LODT)**",
-            "your work on **Correspondance Analysis (seriation)**",
+            "your work on **Correspondance Analysis (seriation)** and **alignment to absolute time-scales**",
             "your recent oral communication 'How feasible is a new system of Minoan relative chronology?' during the 'CHRONOS. Stratigraphic Analysis, Pottery Seriation and Radiocarbon Dating in Mediterranean Chronology' conference on the possibility to create a domain ontology for the Minoean chronology in the frame of the CIDOC-CRM"
             ),
   Formal.response = c("2023-06-21"),
