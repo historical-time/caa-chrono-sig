@@ -19,7 +19,9 @@ inv.papers.df <- data.frame(
             "clemens_schmid@eva.mpg.de",
             "clipo@binghamton.edu, mark@madsenlab.org",
             "bcmoody1@sheffield.ac.uk, c.e.buck@sheffield.ac.uk, Keith.May@historicengland.org.uk, tsd@tsdye.online",
-            "florian.thiery@rgzm.de, allard.mees@rgzm.de"
+            "florian.thiery@rgzm.de, allard.mees@rgzm.de",
+            "b.weninger@uni-koeln.de",
+            "diamantis.panagiotopoulos@zaw.uni-heidelberg.de"
             ),
   name = c("Dr Enrico Crema",
            "Pr Christopher Bronk Ramsey",
@@ -33,7 +35,10 @@ inv.papers.df <- data.frame(
            "Clemens Schmid",
            "Pr Carl P. Lipo, Dr Mark E. Madsen",
            "Bryony Moody, Pr Caitlin E Buck, Dr Keith May, Pr Thomas Dye",
-           "Dr Florian Thiery, Dr Allard Mees"),
+           "Dr Florian Thiery, Dr Allard Mees",
+           "Pr Bernhard Weninger",
+           "Pr Diamantis Panagiotopoulos"
+           ),
   topic = c("your recent researches on **temporal uncertainty**",
             "your recent researches on **open access to chronological data**, **cross-dating and multi-resolution chronologies alignment**, or **radiocarbon dating**",
             "your recent work for the **XRONOS project, open access to chronological data, cross-dating and alignment of multi-resolution chronologies**",
@@ -46,12 +51,14 @@ inv.papers.df <- data.frame(
             "your expertise on visual semiotics for multi-paradigm and multi-scale changes (cultural periods, radiocarbon dating, genetic/cultural drifts, etc.) using graph drawing (split graphs, phylogenetic trees, etc.) or any formal representations (temporal series, Summed Probability Densities, etc.)",
             "your recent work on **cultural transmission** and **phylogenetic approaches**",
             "your recent communication at the CAA23 in Amsterdam:  *Automating chronology construction and archiving (FAIR)ly along the way*",
-            "your work on **Linked Open Temporal Data (LODT)**"
+            "your work on **Linked Open Temporal Data (LODT)**",
+            "your work on **Correspondance Analysis (seriation)**",
+            "your recent oral communication 'How feasible is a new system of Minoan relative chronology?' during the 'CHRONOS. Stratigraphic Analysis, Pottery Seriation and Radiocarbon Dating in Mediterranean Chronology' conference on the possibility to create a domain ontology for the Minoean chronology in the frame of the CIDOC-CRM"
             ),
   Formal.response = c("2023-06-21"),
   Soft.deadline = c("2023-10-18")
 )
-
+# View(inv.papers.df[ ,c(2, 3)])
 ```
 
 * There are `r nrow(inv.papers.df)` invited papers
@@ -73,7 +80,7 @@ Dear ${inv.papers.df[i, 'name']},
   
 We would like to personally invite you to contribute to an (online only) Archaeometry Special Issue on the subject of '*Chronology: formal methods and research software*'. We were very intrigued by ${inv.papers.df[i, 'topic']}. We were wondering if you would consider a paper on this topic in the context of modelling chronology, in this or other contexts? If you are interested in taking up this invitation, please **let us know by the ${inv.papers.df[i, 'Formal.response']}**.  
   
-Archaeology is centered around time and its analysis, but due to the wide range of features dispersed in time and space, contextual chronological assessments are created using various tools, languages, and techniques. This results in numerous frameworks depending on specialties, with different approaches for absolute or relative chronology, Prehistory or recent periods, laboratory techniques or cultural approaches, deterministic or statistical methods, and more. The aim of this Archaeometry Special Issue is to review the current practices of different specialities in research software and formal methods for chronological modelling, and to align archaeo-chronological data according to FAIR principles and semantic web, regardless of their precision. To accomplish this, the issue proposes an innovative collaboration on the GitHub platform, allowing authors to share interoperable forms of their time data that comply with open science standards. The digital form of the issue will enable linking research articles and data samples. The GitHub platform is currently under construction and can be viewed here: https://github.com/historical-time/caa23/tree/main/archaeometry-si.
+Archaeology is centered around time and its analysis, but the wide range of features dispersed in time and space have lead to numerous disciplinaries frameworks with different measurements for absolute or relative chronology, Prehistory or recent periods, laboratory techniques or cultural approaches, deterministic or statistical methods, and more. The aim of this Archaeometry Special Issue is to review the current practices of different specialities in research software and formal methods for chronological modelling, and to align archaeo-chronological data according to FAIR principles and semantic web, regardless of their precision. To accomplish this, the issue proposes an innovative collaboration on the GitHub platform, allowing authors to share interoperable forms of their time data that comply with open science standards. The digital form of the issue will enable linking research articles and data samples. The GitHub platform is currently under construction and can be viewed here: https://github.com/historical-time/caa23/tree/main/archaeometry-si.
   
 We will invite a series of papers to contribute to various aspects of chronological modelling, including open-source software research, formal methods, and archaeometric dating, Bayesian analysis, stratigraphic analysis, seriation, and temporal logics. The papers will also explore the reusability, scalability, and alignment of chronologies, incorporating FAIR and isotopic standards, cross-dating, high-resolution downscaling, and low-resolution upscaling of temporal data on a common timeline or multi-resolution alignment. The management of uncertainty and fuzziness will also be examined. It is important to note that this Special Issue is not intended to be a collection of case studies. Instead, it seeks to gather formal perspectives on chronological modelling, review recent methods and avenues of development, and focus on building interoperable chronologies over the long term and at large geographical scales.
  
