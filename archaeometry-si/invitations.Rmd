@@ -21,14 +21,15 @@ inv.papers.df <- data.frame(
             "bcmoody1@sheffield.ac.uk, c.e.buck@sheffield.ac.uk, Keith.May@historicengland.org.uk, tsd@tsdye.online",
             "florian.thiery@rgzm.de, allard.mees@rgzm.de",
             "b.weninger@uni-koeln.de",
-            "diamantis.panagiotopoulos@zaw.uni-heidelberg.de"
+            "diamantis.panagiotopoulos@zaw.uni-heidelberg.de",
+            "c.e.buck@sheffield.ac.uk"
             ),
   name = c("Dr Enrico Crema",
            "Pr Christopher Bronk Ramsey",
            "Dr Martin Hinz, Dr Joe Roe",
            "Dr Stephen Stead",
            "Dr Keith May, Dr James Taylor",
-           "Dr Wolfgang Schmidle",
+           "Dr Wolfgang Schmidle, ZZZ",
            "Pr Ryan Shaw, Pr Adam Rabinowitz",
            "Dr Pierre Petrequin",
            "Dr Bruno Desachy",
@@ -37,28 +38,31 @@ inv.papers.df <- data.frame(
            "Bryony Moody, Pr Caitlin E Buck, Dr Keith May, Pr Thomas Dye",
            "Dr Florian Thiery, Dr Allard Mees",
            "Pr Bernhard Weninger",
-           "Pr Diamantis Panagiotopoulos"
+           "Pr Diamantis Panagiotopoulos",
+           "Pr Caitlin E. Buck"
            ),
   topic = c("your recent researches on **temporal uncertainty**",
-            "your recent researches on **open access to chronological data**, **cross-dating and multi-resolution chronologies alignment**, or **radiocarbon dating**",
+            "your recent researches on **ZZZ**",
             "your recent work for the **XRONOS project, open access to chronological data, cross-dating and alignment of multi-resolution chronologies**",
             "your recent work on the **CIDOC-CRM and CRMarchaeo**",
             "your recent communication at the CAA23 in Amsterdam, and your work on 'The Matrix' particularly its FAIRability",
             "your recent communication at the CAA23 in Amsterdam, and your work on the **LOD gazetteer of cultural periods ChronOntology**",
-            "your recent communication at the CAA23 in Amsterdam, and your work on the **LOD gazetteer of cultural periods PeriodO**",
+            "your work on the **LOD gazetteer of cultural periods PeriodO**",
             "your interdisciplinary work on archaeology, anthropology and  how material culture variability (e.g. pottery) percieved in a high precision dating context (e.g, Chalain, *chaîne opératoire*) can be compared and integrated to other and looser chronologies",
-            "your expertise in stratigraphy. We would be grateful if you could provide an overview (news, trends and perspectives) of existing projects and software on this subject, whether dedicated (*The Stratifier*, [Matrix project](https://stratigraphic.github.io/matrix/), [Extended Matrix](http://osiris.itabc.cnr.it/extendedmatrix/), etc.) or integrated into broader information platforms ([Syslat](https://syslat.hypotheses.org/), [Intrasis](https://www.intrasis.com/), etc.)",
+            "your expertise in stratigraphy. We would be grateful if you could provide an overview (news, trends and perspectives) of existing projects and software on this subject, whether dedicated (*The Stratifiant*, [Matrix project](https://stratigraphic.github.io/matrix/), [Extended Matrix](http://osiris.itabc.cnr.it/extendedmatrix/), etc.) or integrated into broader information platforms ([Syslat](https://syslat.hypotheses.org/), [Intrasis](https://www.intrasis.com/), etc.)",
             "your expertise on visual semiotics for multi-paradigm and multi-scale changes (cultural periods, radiocarbon dating, genetic/cultural drifts, etc.) using graph drawing (split graphs, phylogenetic trees, etc.) or any formal representations (temporal series, Summed Probability Densities, etc.)",
             "your recent work on **cultural transmission** and **phylogenetic approaches**",
             "your recent communication at the CAA23 in Amsterdam:  *Automating chronology construction and archiving (FAIR)ly along the way*",
-            "your work on **Linked Open Temporal Data (LODT)**",
+            "your work on **Linked Open Temporal Data (LOTD)**",
             "your work on **Correspondance Analysis (seriation)** and **alignment to absolute time-scales**",
-            "your recent oral communication 'How feasible is a new system of Minoan relative chronology?' during the 'CHRONOS. Stratigraphic Analysis, Pottery Seriation and Radiocarbon Dating in Mediterranean Chronology' conference on the possibility to create a domain ontology for the Minoean chronology in the frame of the CIDOC-CRM"
+            "your recent oral communication '*How feasible is a new system of Minoan relative chronology?*' during the 'CHRONOS. Stratigraphic Analysis, Pottery Seriation and Radiocarbon Dating in Mediterranean Chronology' conference on the possibility to create a domain ontology for the Minoean chronology in the frame of the CIDOC-CRM",
+            "your work on Bayesian modelling"
             ),
   Formal.response = c("2023-06-21"),
   Soft.deadline = c("2023-10-18")
 )
-# View(inv.papers.df[ ,c(2, 3)])
+
+View(inv.papers.df[ ,c(2, 3)])
 ```
 
 * There are `r nrow(inv.papers.df)` invited papers
@@ -78,7 +82,7 @@ to: <${inv.papers.df[i, 'email']}>
 
 Dear ${inv.papers.df[i, 'name']},  
   
-We would like to personally invite you to contribute to an (online only) Archaeometry Special Issue on the subject of '*Chronology: formal methods and research software*'. We were very intrigued by ${inv.papers.df[i, 'topic']}. We were wondering if you would consider a paper on this topic in the context of modelling chronology, in this or other contexts? If you are interested in taking up this invitation, please **let us know by the ${inv.papers.df[i, 'Formal.response']}**.  
+We would like to personally invite you to contribute to an (online only) Archaeometry Special Issue on the subject of '*Chronology: formal methods and research software*'. We were very intrigued by ${inv.papers.df[i, 'topic']}. We were wondering if you would consider a paper on this topic? If you are interested in taking up this invitation, please **let us know by the ${inv.papers.df[i, 'Formal.response']}**.  
   
 Archaeology is centered around time and its analysis, but the wide range of features dispersed in time and space have lead to numerous disciplinaries frameworks with different measurements for absolute or relative chronology, Prehistory or recent periods, laboratory techniques or cultural approaches, deterministic or statistical methods, and more. The aim of this Archaeometry Special Issue is to review the current practices of different specialities in research software and formal methods for chronological modelling, and to align archaeo-chronological data according to FAIR principles and semantic web, regardless of their precision. To accomplish this, the issue proposes an innovative collaboration on the GitHub platform, allowing authors to share interoperable forms of their time data that comply with open science standards. The digital form of the issue will enable linking research articles and data samples. The GitHub platform is currently under construction and can be viewed here: https://github.com/historical-time/caa23/tree/main/archaeometry-si.
   
