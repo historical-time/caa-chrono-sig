@@ -1,25 +1,6 @@
 # Archaeometry Special Issue
 > Publication of an Archaeometry Special Issue on Chronological Modeling
 
-[] sériation  
-[] stratigraphie  
-[] âge-profondeur  
-[] bayesienne  
-[] dendrochronologie  
-[] C14  
-[] TL  
-[] aoristique  
-[] chronological networks  
-[] Petri nets  
-[] CO, chronographie  
-[] Allen  
-[] Knight & Ma  
-[] EDTF  
-[] CIDOC-CRM  
-[] LOTD  
-[] Groundhog  
-[] ChronoLog  
-[] ChronoModel  
 
 ## Timeline
 
