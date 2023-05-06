@@ -38,12 +38,12 @@ Authors are asked to share samples of their temporal data using standardised for
 
 For example: 
 
-<p  align="center">
+<p style="align:center">
 
 <img src="https://github.com/historical-time/data-samples/blob/main/cidoc-crm/example-thera.png" width="900"><br>
 <em>A CIDOC-CRM example for the dating of the Thera-Santorini eruption</em>
 
-</p
+</p>
 
 
 Is build upon this list of nodes ([thera-cidoc-data-nodes.tsv](https://github.com/historical-time/data-samples/blob/main/cidoc-crm/thera-cidoc-data-nodes.tsv)) and edges ([thera-cidoc-data-edges.tsv](https://github.com/historical-time/data-samples/blob/main/cidoc-crm/thera-cidoc-data-edges.tsv)). The original dataset is a XLSX file, [data.xlsx](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/lod/data.xlsx) that can be downloaded. 
