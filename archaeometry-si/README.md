@@ -44,7 +44,7 @@ For example:
 <em>A CIDOC-CRM example for the dating of the Thera-Santorini volcano eruption ([HTML widget](https://historical-time.github.io/data-samples/cidoc-crm/thera-cidoc-graph.html) screenshot)</em>
 </p>
 
-This CIDOC representation of Thera eruptionis build upon this list of nodes ([thera-cidoc-data-nodes.tsv](https://github.com/historical-time/data-samples/blob/main/cidoc-crm/thera-cidoc-data-nodes.tsv)) and edges ([thera-cidoc-data-edges.tsv](https://github.com/historical-time/data-samples/blob/main/cidoc-crm/thera-cidoc-data-edges.tsv))[^3]. 
+This CIDOC representation of Thera eruptionis build upon this list of nodes ([thera-cidoc-data-nodes.tsv](https://github.com/historical-time/data-samples/blob/main/cidoc-crm/thera-cidoc-data-nodes.tsv)) and edges ([thera-cidoc-data-edges.tsv](https://github.com/historical-time/caa23/blob/main/www/thera-cidoc-data-edges.tsv))[^3]. 
 
 * It gathers different interpretation of the Thera-Santorini eruption datation by Burnouf, Long Perrier, etc.
 * It records dates in a EDTF format (entities: E2, E5 and E52)
