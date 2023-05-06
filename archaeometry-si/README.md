@@ -38,9 +38,14 @@ Authors are asked to share samples of their temporal data using standardised for
 
 For example: 
 
-| EDTF  |  event |  author |
-|---|---|---|
-| -7XX/-509  | pre-Roman republic  | zoometh |
+<p>
+
+<img src="https://github.com/historical-time/data-samples/blob/main/cidoc-crm/example-thera.png" width="600">
+<em>A CIDOC-CRM example for the dating of the Thera-Santorini eruption</em>
+</p
+
+
+Is build upon this list of nodes ([thera-cidoc-data-nodes.tsv](https://github.com/historical-time/data-samples/blob/main/cidoc-crm/thera-cidoc-data-nodes.tsv)) and edges ([thera-cidoc-data-edges.tsv](https://github.com/historical-time/data-samples/blob/main/cidoc-crm/thera-cidoc-data-edges.tsv)). The original dataset is a XLSX file, [data.xlsx](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/lod/data.xlsx) that can be downloaded. 
 
 This data means: the 'pre-Roman republic' cultural period starts somewhere during the 8th c. BCE (-7XX) and stops in -509. @zoometh is the author of [this temporal data](https://github.com/historical-time/caa23/blob/main/archaeometry-si/samples/dataset.tsv)
 
