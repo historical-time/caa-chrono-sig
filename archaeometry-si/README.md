@@ -41,8 +41,10 @@ For example:
 <p>
 
 <center>
+
 <img src="https://github.com/historical-time/data-samples/blob/main/cidoc-crm/example-thera.png" width="900"><br>
 <em>A CIDOC-CRM example for the dating of the Thera-Santorini eruption</em>
+
 </center>
 
 </p
