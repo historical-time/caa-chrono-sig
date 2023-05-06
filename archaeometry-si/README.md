@@ -29,33 +29,26 @@ gantt
     Issue published          : milestone, m2, 2024-05-29, 1d
 ```
 
-# Sample dataset
+# Dataset samples
 > Use of standards to share dates between different research projects
 
 Authors are asked to share samples of their temporal data using standardised formats, using:
-- EDTF[^1] to record an event or a duration
-- CIDOC-CRM[^2] to record relations between events or durations, actors and places can be modelled with the CIDOC-CRM
+- **EDTF**[^1] isostandard to record an event or a duration
+- **CIDOC-CRM**[^2] to record relations between events or durations, actors and places can be modelled with the CIDOC-CRM
 
 For example: 
 
 <p align="center">
 
 <img src="https://github.com/historical-time/data-samples/blob/main/cidoc-crm/example-thera.png" width="900"><br>
-<em>A CIDOC-CRM example for the dating of the Thera-Santorini eruption</em>
+<em>A CIDOC-CRM example for the dating of the Thera-Santorini volcano eruption ([HTML widget](https://historical-time.github.io/data-samples/cidoc-crm/thera-cidoc-graph.html) screenshot)</em>
 </p>
 
+This CIDOC representation of Thera eruptionis build upon this list of nodes ([thera-cidoc-data-nodes.tsv](https://github.com/historical-time/data-samples/blob/main/cidoc-crm/thera-cidoc-data-nodes.tsv)) and edges ([thera-cidoc-data-edges.tsv](https://github.com/historical-time/data-samples/blob/main/cidoc-crm/thera-cidoc-data-edges.tsv))[^3]. 
 
-Is build upon this list of nodes ([thera-cidoc-data-nodes.tsv](https://github.com/historical-time/data-samples/blob/main/cidoc-crm/thera-cidoc-data-nodes.tsv)) and edges ([thera-cidoc-data-edges.tsv](https://github.com/historical-time/data-samples/blob/main/cidoc-crm/thera-cidoc-data-edges.tsv)). The original dataset is a XLSX file, [data.xlsx](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/lod/data.xlsx) that can be downloaded. 
-
-This data means: the 'pre-Roman republic' cultural period starts somewhere during the 8th c. BCE (-7XX) and stops in -509. @zoometh is the author of [this temporal data](https://github.com/historical-time/caa23/blob/main/archaeometry-si/samples/dataset.tsv)
-
-Using EDTF and CIDOC-CRM, it should be modelled like:
-
-```mermaid
-flowchart LR
-    A("-7XX/-509") --P170 defines time--> B(E52 Time-Span);
-    B --P1 is identified by--> C(Pre-Roman republic);
-```
+* It gathers different interpretation of the Thera-Santorini eruption datation by Burnouf, Long Perrier, etc.
+* It records dates in a EDTF format (entities: E2, E5 and E52)
 
 [^1]: Extended Time and date format (EDTF, ISO 8601-2:2019) is the isostandard for dates. See: http://www.loc.gov/standards/datetime/
 [^2]: CIDOC-Conceptual Reference Model (CIDOC-CRM, v7.1.2 *under review* ISO) is a model for describing and organising cultural heritage information. It is extended to archaeological data with the [CRMarchaeo](https://www.cidoc-crm.org/crmarchaeo/home-3). See: https://www.cidoc-crm.org/
+[^3]: The original dataset is a XLSX file, [data.xlsx](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/lod/data.xlsx) that can be downloaded.
