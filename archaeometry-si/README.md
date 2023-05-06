@@ -33,12 +33,12 @@ gantt
 > Use of standards to share dates between different research projects
 
 Authors are asked to share samples of their temporal data using standardised formats, using:
-- EDTF to record an event or a duration[^1]
-- CIDOC-CRM to record relations between events or durations, actors and places can be modelled with the CIDOC-CRM[^2]
+- EDTF[^1] to record an event or a duration
+- CIDOC-CRM[^2] to record relations between events or durations, actors and places can be modelled with the CIDOC-CRM
 
 For example: 
 
-<p style="align:center">
+<p align="center">
 
 <img src="https://github.com/historical-time/data-samples/blob/main/cidoc-crm/example-thera.png" width="900"><br>
 <em>A CIDOC-CRM example for the dating of the Thera-Santorini eruption</em>
