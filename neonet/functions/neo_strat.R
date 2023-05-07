@@ -89,17 +89,16 @@ neo_strat_xcheck <- function(layers = NA,
 #' @examples
 #'
 #' # Export, with layer names by default
-#' neo_strat(export.plot = T, outDir = paste0(getwd(), "/neonet/"))
+#' neo_strat(export.plot = T)
 #'
 #' # Export, with C14Age instead of layer names
-#' neo_strat(outLabel = c("C14Age"), export.plot = T, outDir = paste0(getwd(), "/neonet/"))
+#' neo_strat(outLabel = c("C14Age"), export.plot = T)
 #'
 #' # Export, with Periods instead of layer names, limited to one site (Pokrovnik), on another dataset
 #' neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_PERIOD.tsv',
 #'           smp.sitename = c("Pokrovnik"),
 #'           outLabel = c("Period"),
-#'           export.plot = T,
-#'           outDir = paste0(getwd(), "/neonet/"))
+#'           export.plot = T)
 #' @export
 neo_strat <- function(inData = "https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_2.tsv",
                       neo.sitename = c("SiteName"),
@@ -112,7 +111,7 @@ neo_strat <- function(inData = "https://raw.githubusercontent.com/historical-tim
                       suffix = "*",
                       outLabel = neo.phasecode,
                       export.plot = F,
-                      outDir = getwd(),
+                      outDir = paste0(getwd(), "/neonet/results/"),
                       verbose = T){
   df <- read.table(inData, sep = "\t", header = T)
   if(verbose){print(paste0("neo.relation column and type: '", neo.relation,"'"))}

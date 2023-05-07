@@ -15,7 +15,8 @@
 #'
 #' @examples
 #'
-#'
+#' # Export as DT interactive dataframe
+#' neo_leapfrog(DT = T)
 #'
 #' @export
 neo_leapfrog <- function(data.neonet = "https://digitallib.unipi.it/fedora/objects/mag:1062/datastreams/MMf3519905c5344b41cf3ae62e0df4d70b/content", # https://raw.githubusercontent.com/historical-time/caa23/main/neonet/data/140_id00140_doc_elencoc14.csv",
@@ -25,8 +26,25 @@ neo_leapfrog <- function(data.neonet = "https://digitallib.unipi.it/fedora/objec
                          DT = F,
                          export.data = T,
                          outFileName = "NN_and_LF",
-                         outDir = paste0(getwd(), "/neonet/"),
+                         outDir = paste0(getwd(), "/neonet/results/"),
                          verbose = T){
+  # NeoNet colors
+  lcul_col <- list(# colors
+    EM = "#0000CF", # BLUE
+    MM = "#1D1DFF", #
+    LM = "#3737FF", #
+    LMEN = "#6A6AFF", #
+    UM = "#8484FF", #
+    EN = "#FF1B1B", # RED
+    EMN = "#FF541B", #
+    MN = "#FF8D1B", #
+    LN = "#FFC04D", #
+    UN = "#E7E700" # NEO UNDEF.
+  )
+  nn.peri <- as.data.frame(t(t(lcul_col)))
+  nn.peri$V1 <- as.character(nn.peri$V1)
+  nn.peri$Period <- rownames(nn.peri)
+
   nn.data <- read.csv(paste0(file = data.neonet),
                       header = T, sep = "\t")
   lf.data <- read.csv(paste0(file = data.leapfrog),
@@ -39,18 +57,26 @@ neo_leapfrog <- function(data.neonet = "https://digitallib.unipi.it/fedora/objec
   df.data <- merge(nn.data, lf.data, by.x = "LabCode", by.y = "Lab_count_id.", all.x = all.x)
   df.data <- df.data[ , c(1:7, 21, 22, 25)]
   # clean cultures
-  lf.cult <- lf.cult[rowSums(lf.cult == "") != ncol(lf.cult),] # empty row
-  lf.cult <- lf.cult[ , c(1:3, 5)]
-  # merge df with cultures
-  df <- merge(df.data, lf.cult, by.x = "Cultural_complex", by.y = "code_aspect", all.x = T)
+  df.cult <- lf.cult[rowSums(lf.cult == "") != ncol(lf.cult),] # empty row
+  df.cult <- df.cult[ , c(1:3, 5)]
+  # merge df with LF cultures
+  df <- merge(df.data, df.cult, by.x = "Cultural_complex", by.y = "code_aspect", all.x = T)
+  # merge df with NN periods
+  df <- merge(df, nn.peri, by = "Period", all.x = T)
+
   # reorder
   df <- df[order(df$SiteName), ]
   rownames(df) <- seq(1, nrow(df))
-  df <- df[ , c("SiteName", "Country", "Period", "PhaseCode", "C14SD", "C14Age", "X14C_age_BP", "Cultural_complex", "Complexe.culturel", "Cultural_aspect", "hexa")]
+  # selected columns + colors
+  col.col <- c("V1", "SiteName", "Country", "Period", "PhaseCode", "C14SD", "C14Age", "X14C_age_BP", "Cultural_complex", "Complexe.culturel", "Cultural_aspect", "hexa")
+  df <- df[ , col.col]
+  names(df)[names(df) == 'V1'] <- 'NN'
+  names(df)[names(df) == 'hexa'] <- 'LF'
+  # df[, argColRng] <- df[, dataColRng] < Argu
   # output
   if(DT){
     library(dplyr)
-    dt <- DT::datatable(df, ],
+    dt <- DT::datatable(df,
                         width = "100%",
                         height = "100%",
                         extensions = 'Buttons',
@@ -62,12 +88,19 @@ neo_leapfrog <- function(data.neonet = "https://digitallib.unipi.it/fedora/objec
                           paging = T
                         )) %>%
       DT::formatStyle(
-        "hexa",
-        backgroundColor = DT::styleEqual(df$hexa,
-                                         df$hexa))
+        "NN",
+        # "Cultural_complex",
+        backgroundColor = DT::styleEqual(df$NN,
+                                         df$NN)) %>%
+      DT::formatStyle(
+        "LF",
+        # "Period",
+        backgroundColor = DT::styleEqual(df$LF,
+                                         df$LF))
     if(export.data){
       dt.out <- paste0(outDir, outFileName, ".html")
       htmlwidgets::saveWidget(dt, dt.out)
+      if(verbose){print(paste("Merged dataframe exported to: ", dt.out))}
     } else{
       print(dt)
     }
@@ -75,3 +108,5 @@ neo_leapfrog <- function(data.neonet = "https://digitallib.unipi.it/fedora/objec
     return(df)
   }
 }
+
+neo_leapfrog(DT = T)
