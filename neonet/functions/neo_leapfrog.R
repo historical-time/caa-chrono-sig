@@ -11,6 +11,8 @@
 #' @export.data export data?
 #' @param outFileName the name of the exported file (only if export.data = T)
 #'
+#' @details columns NN and LF are hexa colors mapping respectively 'Period' (Neonet dataset) and 'Cultural_Complex' (LeapFrog dataset) columns
+#'
 #' @return
 #'
 #' @examples
