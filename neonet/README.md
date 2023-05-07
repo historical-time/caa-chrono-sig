@@ -12,14 +12,14 @@ NeoNet ([GitHub](https://github.com/zoometh/neonet), [online app](http://shinyse
 
 ## Stratigraphy
 
-Using [neo_strat()](https://github.com/historical-time/caa23/blob/main/neonet/neo_strat.R) for this [dataset sample](https://github.com/historical-time/data-samples/blob/main/neonet/TEST_2.tsv) (site: Obagues de Ratera) coming from the NeoNet dataset, showing:
+Using [neo_strat()](https://github.com/historical-time/caa23/blob/main/neonet/functions/neo_strat.R) function for this [dataset sample](https://github.com/historical-time/data-samples/blob/main/neonet/TEST_2.tsv) (site: Obagues de Ratera) coming from the NeoNet dataset, showing:
 
 ### PhaseCode
 
 <p>
 
 The **layer names** (by default): ```neo_strat()```<br>
-<img src="https://github.com/historical-time/caa23/blob/main/neonet/Obagues_de_Ratera_name.jpg" width="600">
+<img src="https://github.com/historical-time/caa23/blob/main/neonet/results/Obagues_de_Ratera_name.jpg" width="600">
 </p>
 
 ### C14Age
@@ -27,7 +27,7 @@ The **layer names** (by default): ```neo_strat()```<br>
 <p>
 
 The **c14 ages** :  ```neo_strat(outLabel = c("C14Age"))```<br>
-<img src="https://github.com/historical-time/caa23/blob/main/neonet/Obagues_de_Ratera_c14age.jpg" width="600">
+<img src="https://github.com/historical-time/caa23/blob/main/neonet/results/Obagues_de_Ratera_c14age.jpg" width="600">
 </p>
 
 <p>
@@ -41,9 +41,9 @@ neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-sampl
           outLabel = c("Period")
 ```
 <br>
-<img src="https://github.com/historical-time/caa23/blob/main/neonet/Pokrovnik_period.jpg" width="600">
+<img src="https://github.com/historical-time/caa23/blob/main/neonet/results/Pokrovnik_period.jpg" width="600">
 </p>
 
 ## Cultural Periods
 
-The merged dataframe from NeoNet and Leapfrog: <https://historical-time.github.io/caa23/neonet/NN_and_LF.html>
+Using [neo_leapfrog()](https://github.com/historical-time/caa23/blob/main/neonet/functions/neo_leapfrog.R) function to merge dataframe from NeoNet and Leapfrog (align `Culture` and C14): <https://historical-time.github.io/caa23/neonet/results/NN_and_LF.html>
