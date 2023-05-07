@@ -47,3 +47,10 @@ neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-sampl
 ## Cultural Periods
 
 Using [neo_leapfrog()](https://github.com/historical-time/caa23/blob/main/neonet/functions/neo_leapfrog.R) function to merge dataframe from NeoNet and Leapfrog on common C14 LabCode values: <https://historical-time.github.io/caa23/neonet/results/NN_and_LF.html>
+
+<p>
+
+Interactive dataframe: ```neo_leapfrog(DT = T)```<br>
+<img src="NN_and_LF.gif" width="600">
+<em>Screen capture of [NN_and_LF.html](https://historical-time.github.io/caa23/neonet/results/NN_and_LF.html)</em>
+</p>
