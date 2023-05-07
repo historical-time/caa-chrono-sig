@@ -44,6 +44,10 @@ neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-sampl
 <img src="https://github.com/historical-time/caa23/blob/main/neonet/Pokrovnik_period.jpg" width="600">
 </p>
 
+## Cultural Periods
+
+The merged dataframe from NeoNet and Leapfrog: <https://historical-time.github.io/caa23/neonet/NN_and_LF.html>
+
 # CAA23
 > https://2023.caaconference.org/
 
