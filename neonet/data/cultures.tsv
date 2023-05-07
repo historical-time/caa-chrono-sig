@@ -1,0 +1,75 @@
+Macrorégion	Complexe culturel	code_aspect	Commentaire	hexa
+AAB_CWM	_	_	"Pour mémoire, hors du champ chrono-culturel concerné"	#ffffff
+				
+AAB_CWM	Mesolithic	MES	Mésolithique indifférencié	#a06321
+AAB	Early Mesolithic	EME	Mésolithique ancien (arc chronologique du PPN)	#a06322
+CWM	Early Mesolithic	EME	"Mésolithique ancien (Sauveterrien, Sauveterriano, Muescas y denticulados, Epipaléolithique indifférencié…)"	#a06323
+CWM	Blade & Trapeze	BTC	Générique	#efae0a
+CWM	Blade & Trapeze	CST	Castelnovien indifférencié	#efae1a
+CWM	Blade & Trapeze	ECST	Castelnovien ancien (à trapèzes)	#efae3a
+CWM	Blade & Trapeze	LCST	Castelnovien récent (à triangles)	#efae4a
+				
+				
+AAB	Late Pre-pottery Neolithic	LPPN	Générique	#e70000
+				
+AAB_CWM	Mesolithic-Neolithic Transition / Mixing	TR_MX	Générique	#acacac
+CWM	Neolithic	NEO	Néolithique indifférencié	#acacad
+CWM	Impresso-Cardial	ICC	Impresso-cardial générique	#acacae
+CWM	Western  « Aceramic » Neolithic	WAN	"Générique (Alpes du sud, Moyenne vallée du Rhône)"	#acacaf
+CWM	NA	NA	NA	#acacab
+				
+AAB	Aegean « Aceramic » Neolithic	AAN	Générique (sites pionniers)	#ea02c4
+AAB_CWM	Early Aegean/Anatolian Pottery Neolithic	EAPN	"Concerne les aspects : Monochrome, Proto-Sesklo, Pre-Sesklo/Magulitsa, Proto-Star?evo, Devollite, … "	#bd05ea
+				
+AAB_CWM	"Star?evo, Cri?, Körös "	SCK	Généralement Star?evo pour cette étude	#7c05a7
+AAB	Sesklo	SSK	"Sesklo et groupes apparentés du ""Middle Neolithic"" Grec"	#590379
+				
+CWM	Impresso-Cardial	IMP	"Impressa, générique"	#592fd6
+CWM	Impresso-Cardial	IMP_ARC	"Impressa, aspect Arcaica"	#592fd7
+CWM	Impresso-Cardial	IMP_HMN	"Impressa, aspect Humina"	#592fd8
+CWM	Impresso-Cardial	IMP_GDN	"Impressa, aspect Guadone"	#2f3be6
+CWM	Impresso-Cardial	IMP_LGN	"Impressa, aspect Lagnano"	#2f8ee6
+CWM	Impresso-Cardial	IMP_QRC	"Impressa, aspect Quercia"	#2f8ee7
+CWM	Impresso-Cardial	IMP_GRF	"Impressa, aspect Graffitte"	#2f8ee8
+CWM	Impresso-Cardial	IMP_MAD	Impressa  Medio_Adriatica	#34b5f1
+				
+CWM	Impresso-Cardial	IMP_PRH	"Impressa, aspect Pont-de-Roque-Haute"	#048faa
+CWM	Impresso-Cardial	IMP_ACPS	"Impressa, aspect Arene Candide / Peiro Signado"	#048fab
+CWM	Impresso-Cardial	IMP_PND	"Impressa, aspect Pendimoun"	#05b89d
+				
+CWM	Impresso-Cardial	STK	"Stentinello-Kronio, générique"	#606de7
+CWM	Impresso-Cardial	STN	Stentinello	#606de8
+CWM	Impresso-Cardial	KRN	Kronio	#7dfff7
+				
+CWM	Impresso-Cardial	CRD_BFP	"Cardial, aspect Basi / Filiestru / Pienza"	#129446
+CWM	Impresso-Cardial	CRD	"Cardial, générique"	#1dc303
+CWM	Impresso-Cardial	CRD_SAP	"Cardial, aspect  Strette / A Petra"	#1dc304
+CWM	Impresso-Cardial	CRD_ZFI	Cardial Zoné Franco-ibérique	#1dc305
+CWM	Impresso-Cardial	EPI	Epicardial (générique)	#99c734
+CWM	Impresso-Cardial	EPI_TVC	"Epicardial, aspect Taï / Vignoles /Camprafaud"	#99c735
+CWM	Impresso-Cardial	EPI_GZ3	"Epicardial, aspect Gazel-3"	#99c736
+				
+CWM	"Danilo, Kakanj, Vlaška"	DKV	Générique	#f5e317
+CWM	"Danilo, Kakanj, Vlaška"	DKV_KKN	Kakanj	#f5e318
+CWM	"Danilo, Kakanj, Vlaška"	DKV_DNL	Danilo	#f5e319
+CWM	"Danilo, Kakanj, Vlaška"	DKV_VLS	Vlaška	#f5e320
+CWM	"Danilo, Kakanj, Vlaška"	DKV_CKR	?akran	#f5e321
+				
+CWM	Ceramica lineare italica	LIN	Générique	#efe812
+CWM	Ceramica lineare italica	LIN_SSV	Aspect Sasso-Sarteano / Venere	#efe813
+CWM	Ceramica lineare italica	LIN_FRN	Aspect Fiorano	#efe814
+CWM	Ceramica lineare italica	LIN_VHO	Aspect Vhò	#efe815
+CWM	Ceramica lineare italica	LIN_FRL	Aspect Friul	#efe816
+CWM	Ceramica lineare italica	LIN_PNC	Aspect Pianaccia	#f5ee13
+CWM	Ceramica lineare italica	LIN_ISO	Aspect Isolino	#f5ee14
+CWM	Ceramica lineare italica	LIN_GBN	Aspect Gaban	#f5ee15
+				
+CWM	Figulina Bichrome	BFW	Générique	#d0627d
+CWM	Figulina Bichrome	BFW_CSB	"Bande rosse, aspects Catignano / Scaloria bassa"	#d0627e
+CWM	Figulina Bichrome	BFW_PDC	"Bande rosse, aspect Passo-di-Corvo"	#d0627f
+CWM	Figulina Trichrome	TFW	"Générique (incluant les aspects Scaloria Alta, Capri …)"	#ff789c
+CWM	Figulina Trichrome	TFW_RPL	"Trichromique, aspect Ripoli"	#ff789d
+CWM	Figulina Trichrome	TFW_SDA	"Trichromique, aspect Serra d'Alto"	#ff789e
+				
+CWM	Square Mouthed Pottery	SMP	"Culture des Vasi a Bocca Quadrata (VBQ0 / étape initiale ; VBQ1 / étape ancienne, geometrico-lineare)"	#d0ce91
+CWM	NA	PCRD	"Générique incluant les aspects Fontbregoua, Gazel 4, Jouquien …) "	#d0ce92
