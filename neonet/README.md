@@ -51,6 +51,6 @@ Using [neo_leapfrog()](https://github.com/historical-time/caa23/blob/main/neonet
 <p>
 
 Interactive dataframe: ```neo_leapfrog(DT = T)```<br>
-<img src="https://github.com/historical-time/caa23/blob/main/neonet/results/NN_and_LF.gif" width="600">
+<img src="https://github.com/historical-time/caa23/blob/main/neonet/results/NN_and_LF.gif" width="600"><br>
 <em>Screen capture of [NN_and_LF.html](https://historical-time.github.io/caa23/neonet/results/NN_and_LF.html)</em>
 </p>
