@@ -22,7 +22,8 @@ inv.papers.df <- data.frame(
             "florian.thiery@rgzm.de, allard.mees@rgzm.de",
             "b.weninger@uni-koeln.de",
             "diamantis.panagiotopoulos@zaw.uni-heidelberg.de",
-            "c.e.buck@sheffield.ac.uk"
+            "c.e.buck@sheffield.ac.uk",
+            "philippe.lanos@univ-rennes1.fr"
             ),
   name = c("Dr Enrico Crema",
            "Pr Christopher Bronk Ramsey",
@@ -39,7 +40,8 @@ inv.papers.df <- data.frame(
            "Dr Florian Thiery, Dr Allard Mees",
            "Pr Bernhard Weninger",
            "Pr Diamantis Panagiotopoulos",
-           "Pr Caitlin E. Buck"
+           "Pr Caitlin E. Buck",
+           "Pr Philippe Lanos"
            ),
   topic = c("your recent researches on **temporal uncertainty**",
             "your recent researches on **ZZZ**",
@@ -56,7 +58,8 @@ inv.papers.df <- data.frame(
             "your work on **Linked Open Temporal Data (LOTD)**",
             "your work on **Correspondance Analysis (seriation)** and **alignment to absolute time-scales**",
             "your recent oral communication '*How feasible is a new system of Minoan relative chronology?*' during the 'CHRONOS. Stratigraphic Analysis, Pottery Seriation and Radiocarbon Dating in Mediterranean Chronology' conference on the possibility to create a domain ontology for the Minoean chronology in the frame of the CIDOC-CRM",
-            "your work on Bayesian modelling"
+            "your work on Bayesian modelling of radiocarbon dates",
+            "your work on Bayesian modelling of radiocarbon dates and the ChronoModel tool"
             ),
   Formal.response = c("2023-06-21"),
   Soft.deadline = c("2023-10-18")
