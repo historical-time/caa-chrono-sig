@@ -77,7 +77,7 @@ inv.papers.df <- data.frame(
             "your work on dendrochronology",
             "your work on Bayesian modeling of spatio-temporal data",
             "your work on deterministic chronological hypothesis testing and automated chronology building. We would be interested in a review of existing software for such aims, such as GroundHog, ChronoLog, etc...",
-            "your recent processual work on chronological network analysis, compared with post-processual approaches (cf. J. Fabian's book "Time and the Other") in indigeneous contexts" 
+            "your recent processual work on chronological network analysis, compared with post-processual approaches (cf. J. Fabian's book 'Time and the Other') in indigeneous contexts" 
             ),
   Formal.response = c("June 21, 2023"),
   Soft.deadline = c("October 18, 2023")
