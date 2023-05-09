@@ -8,7 +8,7 @@
 #' @param cultures.leapfrog the URL of the Leapfrog culture list (Default: local)
 #' @param all.x preserve all records of NN (TRUE) or not (Default: FALSE)
 #' @param DT if TRUE export as interactive datatable (HTML)
-#' @export.data export data?
+#' @export.data export data if TRUE
 #' @param outFileName the name of the exported file (only if export.data = T)
 #'
 #' @details columns NN and LF are hexa colors mapping respectively 'Period' (Neonet dataset) and 'Cultural_Complex' (LeapFrog dataset) columns
