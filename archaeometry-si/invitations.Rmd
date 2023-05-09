@@ -12,7 +12,7 @@ inv.papers.df <- data.frame(
             "martin.hinz@iaw.unibe.ch, joseph.roe@iaw.unibe.ch",
             "STEVEN-STEAD",
             "Keith.May@historicengland.org.uk, james.s.taylor@york.ac.uk",
-            "wolfgang.schmidle@dainst.de",
+            "wolfgang.schmidle@dainst.de, faedere@uni-koeln.de",
             "ryanshaw@unc.edu, arabinow@utexas.edu",
             "PIERRE-PETREQUIN",
             "Bruno.Desachy@univ-paris1.fr",
@@ -22,14 +22,19 @@ inv.papers.df <- data.frame(
             "florian.thiery@rgzm.de, allard.mees@rgzm.de",
             "b.weninger@uni-koeln.de",
             "diamantis.panagiotopoulos@zaw.uni-heidelberg.de",
-            "c.e.buck@sheffield.ac.uk"
+            "c.e.buck@sheffield.ac.uk",
+            "philippe.lanos@univ-rennes1.fr",
+            "peter.demjan@gmail.com",
+            "a.r.millard@durham.ac.uk",
+            "r.m.visser@saxion.nl",
+            "S.K.Sahu@soton.ac.uk"
             ),
   name = c("Dr Enrico Crema",
            "Pr Christopher Bronk Ramsey",
            "Dr Martin Hinz, Dr Joe Roe",
            "Dr Stephen Stead",
            "Dr Keith May, Dr James Taylor",
-           "Dr Wolfgang Schmidle, ZZZ",
+           "Dr Wolfgang Schmidle, Eymard Fäder",
            "Pr Ryan Shaw, Pr Adam Rabinowitz",
            "Dr Pierre Petrequin",
            "Dr Bruno Desachy",
@@ -39,10 +44,15 @@ inv.papers.df <- data.frame(
            "Dr Florian Thiery, Dr Allard Mees",
            "Pr Bernhard Weninger",
            "Pr Diamantis Panagiotopoulos",
-           "Pr Caitlin E. Buck"
+           "Pr Caitlin E. Buck",
+           "Pr Philippe Lanos",
+           "Peter Demjan",
+           "Pr Andrew Millard",
+           "Dr Ronald Visser",
+           "Pr Sujit Sahu"
            ),
   topic = c("your recent researches on **temporal uncertainty**",
-            "your recent researches on **ZZZ**",
+            "your recent researches on **Bayesian modelling of radiocarbon dates**",
             "your recent work for the **XRONOS project, open access to chronological data, cross-dating and alignment of multi-resolution chronologies**",
             "your recent work on the **CIDOC-CRM and CRMarchaeo**",
             "your recent communication at the CAA23 in Amsterdam, and your work on 'The Matrix' particularly its FAIRability",
@@ -56,10 +66,15 @@ inv.papers.df <- data.frame(
             "your work on **Linked Open Temporal Data (LOTD)**",
             "your work on **Correspondance Analysis (seriation)** and **alignment to absolute time-scales**",
             "your recent oral communication '*How feasible is a new system of Minoan relative chronology?*' during the 'CHRONOS. Stratigraphic Analysis, Pottery Seriation and Radiocarbon Dating in Mediterranean Chronology' conference on the possibility to create a domain ontology for the Minoean chronology in the frame of the CIDOC-CRM",
-            "your work on Bayesian modelling"
+            "your work on Bayesian modelling of radiocarbon dates",
+            "your work on Bayesian modelling of radiocarbon dates and the ChronoModel tool",
+            "your work on radiocarbon dating and the evidence density estimation method",
+            "your work on new approaches to Bayesian chronology building",
+            "your work on dendrochronology",
+            "your work on Bayesian modeling of spatio-temporal data"
             ),
-  Formal.response = c("2023-06-21"),
-  Soft.deadline = c("2023-10-18")
+  Formal.response = c("June 21, 2023"),
+  Soft.deadline = c("October 18, 2023")
 )
 
 View(inv.papers.df[ ,c(2, 3)])
@@ -82,9 +97,9 @@ to: <${inv.papers.df[i, 'email']}>
 
 Dear ${inv.papers.df[i, 'name']},  
   
-We would like to personally invite you to contribute to an (online only) Archaeometry Special Issue (SI) on the subject of '*Chronology: formal methods and research software*'. We were very intrigued by ${inv.papers.df[i, 'topic']}. We were wondering if you would consider a paper on this topic? If you are interested in taking up this invitation, please **let us know by the ${inv.papers.df[i, 'Formal.response']}**. If you are unable to undertake this project personally but know someone who might, we would appreciate if you could provide us with their name and contact information. Please note that by agreeing to submit a paper for this issue, you are also agreeing to review at least one paper from the same SI.
+We would like to personally invite you to contribute to an (online only) peer-reviewed Special Issue (SI) of the Archaeometry journal, on the subject of '*Chronology: formal methods and research software*'. We were very intrigued by ${inv.papers.df[i, 'topic']}. We were wondering if you would consider a paper on this topic? If you are interested in taking up this invitation, please **let us know by ${inv.papers.df[i, 'Formal.response']}**. If you are unable to undertake this project personally but know someone who might, we would appreciate if you could provide us with their name and contact information. Please note that by agreeing to submit a paper for this issue, you are also agreeing to review at least one paper from the same SI [I WOULD TOTALLY REMOVE THAT LAST SENTENCE [EL]].
 
-Archaeology's backbone is the analyse of time, the chronology. But its study material embraces different disciplines and is widely dispersed in time and space. It has lead to numerous context-based frameworks with different measurements depending on whether the study focused on absolute or relative chronology, Prehistory or recent periods, laboratory techniques or cultural approaches, deterministic or statistical methods, and more. The aim of this SI is to review current practices of formal methods, and research software for time data and chronological modelling, regardless of their precision. We will invite a series of papers to contribute to various aspects of chronological modelling, including (but not limited to) formal methods, archaeometric dating, Bayesian analysis, stratigraphy, seriation, temporal logics and open-source research software. The papers will also explore multi-paradigm alignment (cross-dating), high-resolution downscaling, and low-resolution upscaling of temporal data on a common timeline or multi-resolution alignment (scalability), and management of uncertainty and fuzziness, incorporating FAIR policies and isostandards for time data reusability. It is important to note that this Special Issue is not intended to be a collection of case studies. Instead, it seeks to gather formal perspectives on chronological modelling, review recent methods and avenues of development, and focus on building interoperable chronologies over the long term and at large geographical scales.
+Chronology, the analyse of time, is the backbone of Archaeology. Its study material embraces different disciplines however, and is widely dispersed in time and space. This has led to numerous context-based frameworks, focused on absolute vs relative chronology, Prehistory vs recent periods, laboratory techniques vs cultural approaches, deterministic vs statistical methods, and more. The aim of this special issue is to review current practices on formal methods, modelling and research software for chronological data in archaeology. We will invite a series of papers to contribute to various aspects of these matters, including (but not limited to) formal methods, archaeometric dating, Bayesian analysis, stratigraphy, seriation, temporal logics and open-source research software. The papers will also explore multi-paradigm alignment (cross-dating), high-resolution downscaling, low-resolution upscaling of temporal data on a common timeline, multi-resolution alignment (scalability), management of uncertainty and fuzziness, and the incorporation of FAIR policies and isostandards for the reusability of timed data. It is important to note that this special issue is not intended to be a collection of case studies. Instead, it seeks to gather formal perspectives on chronological modelling, review recent methods and avenues of development, and focus on building interoperable chronologies over the long term and at large geographical scales. Please do not hesitate to make contact with us to discuss the potential topic of your contribution in more details.
 
 This SIe digital form also allows the linking of research articles and data samples. That is why we propose an innovative collaboration on the GitHub platform, allowing authors to share interoperable time data compliant with open science standards. The GitHub platform is currently under construction and can be viewed here: https://github.com/historical-time/caa23/tree/main/archaeometry-si.
 
