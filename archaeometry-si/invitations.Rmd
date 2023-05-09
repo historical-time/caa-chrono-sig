@@ -104,6 +104,7 @@ Chronology, the analyse of time, is the backbone of Archaeology. Its study mater
 This SIe digital form also allows the linking of research articles and data samples. That is why we propose an innovative collaboration on the GitHub platform, allowing authors to share interoperable time data compliant with open science standards. The GitHub platform is currently under construction and can be viewed here: https://github.com/historical-time/caa23/tree/main/archaeometry-si.
 
 Main information should be: text co
+https://onlinelibrary.wiley.com/toc/14754754/2022/64/S1
 
 The final **manuscript submission deadline is ${inv.papers.df[i, 'Soft.deadline']}**.
 
