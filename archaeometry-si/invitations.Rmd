@@ -59,7 +59,7 @@ inv.papers.df <- data.frame(
             "your recent communication at the CAA23 in Amsterdam, and your work on the **LOD gazetteer of cultural periods ChronOntology**",
             "your work on the **LOD gazetteer of cultural periods PeriodO**",
             "your interdisciplinary work on archaeology, anthropology and  how material culture variability (e.g. pottery) percieved in a high precision dating context (e.g, Chalain, *chaîne opératoire*) can be compared and integrated to other and looser chronologies",
-            "your expertise in stratigraphy. We would be grateful if you could provide an overview (news, trends and perspectives) of existing projects and software on this subject, whether dedicated (*The Stratifiant*, [Matrix project](https://stratigraphic.github.io/matrix/), [Extended Matrix](http://osiris.itabc.cnr.it/extendedmatrix/), etc.) or integrated into broader information platforms ([Syslat](https://syslat.hypotheses.org/), [Intrasis](https://www.intrasis.com/), etc.)",
+            "your expertise in stratigraphy. We would be grateful if you could provide an overview (news, trends and perspectives) of existing projects and software on this subject, whether dedicated (*Le Stratifiant*, [Matrix project](https://stratigraphic.github.io/matrix/), [Extended Matrix](http://osiris.itabc.cnr.it/extendedmatrix/), etc.) or integrated into broader information platforms ([Syslat](https://syslat.hypotheses.org/), [Intrasis](https://www.intrasis.com/), etc.)",
             "your expertise on visual semiotics for multi-paradigm and multi-scale changes (cultural periods, radiocarbon dating, genetic/cultural drifts, etc.) using graph drawing (split graphs, phylogenetic trees, etc.) or any formal representations (temporal series, Summed Probability Densities, etc.)",
             "your recent work on **cultural transmission** and **phylogenetic approaches**",
             "your recent communication at the CAA23 in Amsterdam:  *Automating chronology construction and archiving (FAIR)ly along the way*",
@@ -77,7 +77,7 @@ inv.papers.df <- data.frame(
   Soft.deadline = c("October 18, 2023")
 )
 
-View(inv.papers.df[ ,c(2, 3)])
+View(inv.papers.df[ , c(2, 3)])
 ```
 
 * There are `r nrow(inv.papers.df)` invited papers
