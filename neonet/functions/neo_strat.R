@@ -62,6 +62,7 @@ neo_strat_xcheck <- function(layers = NA,
   if(length(exist.only.in.relations) > 0){
     message(paste0("These PhaseCode are only listed in the relationships: '",
                    paste0(exist.only.in.relations, collapse = ", "), "', they will be added to the layers list"))
+    # print(colnames(df))
     only.in.relations <- df[df[, neo.phasecode] == exist.only.in.relations,
                             c(neo.phasecode, neo.labcode, neo.c14age, neo.period)]
     names(only.in.relations) <- names(layers)
@@ -88,19 +89,24 @@ neo_strat_xcheck <- function(layers = NA,
 #'
 #' @examples
 #'
+#' # Layer names for a single site (Pokrovnik)
+#' neo_strat(smp.sitename = "Pokrovnik")
+#'
+#' # Periods for a single site (Pokrovnik)
+#' neo_strat(smp.sitename = "Pokrovnik", outLabel = c("Period"))
+#'
 #' # Export, with layer names by default
 #' neo_strat(export.plot = T)
 #'
 #' # Export, with C14Age instead of layer names
 #' neo_strat(outLabel = c("C14Age"), export.plot = T)
 #'
-#' # Export, with Periods instead of layer names, limited to one site (Pokrovnik), on another dataset
-#' neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_PERIOD.tsv',
-#'           smp.sitename = c("Pokrovnik"),
+#' # Export, with Periods instead of layer names, limited to one site (Pokrovnik)
+#' neo_strat(smp.sitename = c("Pokrovnik"),
 #'           outLabel = c("Period"),
 #'           export.plot = T)
 #' @export
-neo_strat <- function(inData = "https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_2.tsv",
+neo_strat <- function(inData = "https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_PERIOD.tsv",
                       neo.sitename = c("SiteName"),
                       neo.phasecode = c("PhaseCode"),
                       neo.relation = c("After"),
@@ -198,8 +204,12 @@ neo_strat <- function(inData = "https://raw.githubusercontent.com/historical-tim
 # neo_strat(outLabel = c("C14Age"), export.plot = T, outDir = paste0(getwd(), "/neonet/"))
 
 # Export, with Periods instead of layer names, limited to one site (Pokrovnik), on another dataset
-neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_PERIOD.tsv',
-          smp.sitename = c("Pokrovnik"),
-          outLabel = c("Period"),
-          export.plot = T,
-          outDir = paste0(getwd(), "/neonet/"))
+# neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_PERIOD.tsv',
+#           smp.sitename = c("Pokrovnik"),
+#           outLabel = c("Period"),
+#           export.plot = T,
+#           outDir = paste0(getwd(), "/neonet/"))
+
+# neo_strat(smp.sitename = "Pokrovnik", )
+
+
