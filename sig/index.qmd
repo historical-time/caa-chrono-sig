@@ -5,7 +5,7 @@ author: "Eythan Levy, Thomas Huet, Florian Thiery, Allard W. Mees"
 title-slide-attributes:
     data-background-image: "https://raw.githubusercontent.com/archaeochrono/caa23/master/s12/images/logo-s12.png"
     data-background-size: "30%"
-    data-background-opacity: "0.5"
+    data-background-opacity: "0.3"
 format:
   revealjs: 
     css: https://zoometh.github.io/thomashuet/css/quarto.css
@@ -54,15 +54,14 @@ For Leibnitz, "time" groups events that follow one another, while "space" groups
 
 Computer Applications and Quantitative Methods in Archaeology (CAA)
 
-* first CAA meeting in Birmingham, UK, 1973
-* annual conferences with > 300 participants every year
+* <span class="midtext">annual conferences with > 300 participants every year</span>
 
 ```{=html}
 <embed src="https://caa-international.org/" width="1400px" height="400px" />
 ```
 
 
-## CAA Special Interest Groups (CAA-SIG)
+## CAA Special Interest Groups (CAA-SIG) {auto-animate=true}
 
 <span vertical-align: center><img src='https://raw.githubusercontent.com/archaeochrono/caa23/master/s12/images/logo-caa.png' style='height: 50px;vertical-align: middle;'> SIG <span class="midtext"><https://caa-international.org/special-interest-groups/></span>
 
@@ -74,6 +73,23 @@ Computer Applications and Quantitative Methods in Archaeology (CAA)
 <li>3D spatial analysis</li>
 <li>Scientific Scripting Languages in Archaeology</li>
 <li>Semantics and LOUD in Archaeology</li>
+<li>Archaeological Practices and Knowledge Work</li>
+<li>Computationally Modeling Water-based Movement</li>  
+</ul>
+</div>
+
+## CAA Special Interest Groups (CAA-SIG) {auto-animate=true}
+
+<span vertical-align: center><img src='https://raw.githubusercontent.com/archaeochrono/caa23/master/s12/images/logo-caa.png' style='height: 50px;vertical-align: middle;'> SIG <span class="midtext"><https://caa-international.org/special-interest-groups/></span>
+
+<div class="midtext">
+<ul>
+<li>Complex Systems Simulation</li>
+<li>Computer Programs for Archaeologists</li>
+<li>Mobile GIS</li>
+<li>3D spatial analysis</li>
+<li><b>Scientific Scripting Languages in Archaeology</b></li>
+<li><b>Semantics and LOUD in Archaeology</b></li>
 <li>Archaeological Practices and Knowledge Work</li>
 <li>Computationally Modeling Water-based Movement</li>  
 </ul>
@@ -99,18 +115,15 @@ Computer Applications and Quantitative Methods in Archaeology (CAA)
 ```
 
 
-### Collaborative network {data-visibility=hidden}
-
-<here diagram>
-
-
-
 :::
+
+# Statement of need {background-color="#88c28d"}
+
 
 ## Chronological *turn*
 
 <div class="row">
-<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-archaeo-romantic.png){height=450px}
+<div class="column"><center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-archaeo-romantic.png){height=450px}</center>
 <div class="captiontext">'Monument druidique près de Gisors' 1824</div>
 </div>
 
@@ -133,50 +146,20 @@ In the 90's, development of GIS in archaeology led to a "geographic turn" but **
 
 **Git**, distributed versioning: 
 
-* <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 60px; vertical-align:middle"> GitHub <span class="midtext"><https://github.com/historical-time></span>
+* <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 60px; vertical-align:middle"> GitHub <span class="midtext"><https://github.com></span> ➡️ <img src="https://avatars.githubusercontent.com/u/118306692?s=400&u=a0602f22cd6da77d2b6f5f85a21adeffac42c664&v=4" style="height: 60px; vertical-align:middle"> <a href="https://github.com/historical-time">historical-time</a>
 
 * <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-gitlab.png" style="height: 60px; vertical-align:middle"> GitLab <span class="midtext"><https://gitlab.com></span>  
 
 
 ### Project-based
 
-NeoNet
+<em>proposed project</em>: <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/prj_neonet_.png" style="height: 60px; vertical-align:middle">
 
 ```{=html}
-<iframe width="1200" height="200" src="https://zoometh.github.io/neonet/" title=""></iframe>
+<iframe width="1400" height="500" src="https://zoometh.github.io/neonet/" title=""></iframe>
 ```
 
-and
-
-```{=html}
-<iframe width="1200" height="200" src="https://https://github.com/historical-time/caa23/tree/main/neonet" title=""></iframe>
-```
-
-
 :::
-
-
-
-## Data papers
-
-Building a framework to facilitate the publication of papers on temporal data alongside research papers
-
-
-<div class="row">
-<div class="column"><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/when-geology.png">
-<div class="captiontext">Very unprecise</div>
-</div>
-
-<div class="column"><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/when-tree.jpg">
-<div class="captiontext">Very precise</em></div>
-</div>
-</div>
-
-
-::: {.notes}
-Help in publishing data papers to go FAIR
-:::
-
 
 ## Semantisation
 
@@ -185,50 +168,69 @@ Help in publishing data papers to go FAIR
 
 ### EDTF
 
-Extended Date/Time Format ([EDTF](https://www.loc.gov/standards/datetime/))[^6]
+Use of Extended Date/Time Format ([EDTF](https://www.loc.gov/standards/datetime/))[^6] as time primitives
 
 ```{=html}
-<iframe width="1000" height="500" src="https://www.loc.gov/standards/datetime/"></iframe>
+<iframe width="1200" height="500" src="https://www.loc.gov/standards/datetime/"></iframe>
 ```
 
 ### CIDOC-CRM
 
-Use of CIDOC-CRM to map the chronological assumptions
+Use of the CIDOC Conceptual Reference Model ([CIDOC-CRM](https://www.cidoc-crm.org/)) to map the chronological assumptions
 
 ```{=html}
-<iframe width="1000" height="500" src="https://historical-time.github.io/caa23/www/thera-cidoc-graph.html"></iframe>
+<iframe width="1400" height="500" src="https://historical-time.github.io/caa23/www/thera-cidoc-graph.html"></iframe>
 ```
 
-Use of SPARQL to retrieve the information
 
+### SPARQL
+
+Use of Sparse Query Language ([SPARQL](https://www.w3.org/TR/rdf-sparql-query/))[^4] to retrieve the information
+
+```{.sql code-line-numbers="5-9"}
+  prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+  prefix skos:    <http://www.w3.org/2004/02/skos/core#>
+  prefix dcterms: <http://purl.org/dc/terms/>
+
+  select ?id ?name
+  where {
+  ?concept skos:prefLabel ?name ;
+           dcterms:identifier ?id .
+  FILTER (lang(?name) = 'en-us')
+```
 
 :::
 
+[^4]: ISO/IEC 9075-15 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-sparql.png' style='height: 35px;vertical-align: middle;'>
 [^6]: ISO 8601-2
 
 ::: {.notes}
 EDTF is an extension of the previously seen ISO-8601 Date format. It allows an accurate record of time events and durations whatever their fuzzyness (seasons, before, etc.)
 :::
 
+# Outputs {background-color="#88c28d"}
 
-# Scripting Languages
+## Data papers
 
-* <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-python.png" style='height: 60px;vertical-align: middle;'> is the 1<sup>st</sup> used worldwide and the 2<sup>nd</sup> used by archaeologists. 
+Facilitate the publication of human-machine readable papers of temporal data
 
-* <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-r.png" style='height: 60px;vertical-align: middle;'> is a scripting language for data science, is the 1<sup>st</sup> used by archaeologists but only the 18<sup>th</sup> worldwide
+<div class="row">
+
+<div class="column"><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/when-geology.png" style="height: 350px">
+<div class="captiontext">Very unprecise</div>
+</div>
+
+<div class="column"><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/when-tree.jpg" style="height: 350px">
+<div class="captiontext">Very precise</div>
+</div>
+
+</div>
 
 
+::: {.notes}
+Help in publishing data papers to go FAIR
+:::
 
-## Sibling projects
 
-Historical Time Representation
-
-<center>
-
-<span class="midtext"><https://github.com/historical-time></span>
-
-<img src="https://raw.githubusercontent.com/archaeochrono/caa23/master/s12/images/app-github-org-chronomodel.png" width="1200"> 
-
-</center>
 
 # Open talk {background-color="#88c28d"}

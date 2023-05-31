@@ -1,65 +1,58 @@
 [
   {
-    "objectID": "index.html#varia",
-    "href": "index.html#varia",
+    "objectID": "index.html#caa",
+    "href": "index.html#caa",
     "title": "Discussion",
-    "section": "Varia",
-    "text": "Varia\n… Chalcolithic occurs before Bell Beaker …"
+    "section": "CAA",
+    "text": "CAA\nComputer Applications and Quantitative Methods in Archaeology (CAA)\n\nannual conferences with > 300 participants every year"
   },
   {
-    "objectID": "index.html#chronological-turn",
-    "href": "index.html#chronological-turn",
+    "objectID": "index.html#caa-special-interest-groups-caa-sig",
+    "href": "index.html#caa-special-interest-groups-caa-sig",
     "title": "Discussion",
-    "section": "Chronological turn",
-    "text": "Chronological turn\n\n\n\n\n‘Monument druidique près de Gisors’ 1824\n\n\n\n\n\nStack of information layer in a GIS\n\n\n\n\nIn the 90’s, development of GIS in archaeology led to a “geographic turn” but no such a thing for the temporal dimension"
+    "section": "CAA Special Interest Groups (CAA-SIG)",
+    "text": "CAA Special Interest Groups (CAA-SIG)\n SIG https://caa-international.org/special-interest-groups/\n\n\n\nComplex Systems Simulation\n\n\nComputer Programs for Archaeologists\n\n\nMobile GIS\n\n\n3D spatial analysis\n\n\nScientific Scripting Languages in Archaeology\n\n\nSemantics and LOUD in Archaeology\n\n\nArchaeological Practices and Knowledge Work\n\n\nComputationally Modeling Water-based Movement"
   },
   {
-    "objectID": "index.html#workflow",
-    "href": "index.html#workflow",
+    "objectID": "index.html#caa-special-interest-groups-caa-sig-1",
+    "href": "index.html#caa-special-interest-groups-caa-sig-1",
     "title": "Discussion",
-    "section": "Workflow",
-    "text": "Workflow\n\nAsynchronous\nDistributed\nProject-based\n\n\nAsynchronous, project-based and distributed work"
-  },
-  {
-    "objectID": "index.html#data-papers",
-    "href": "index.html#data-papers",
-    "title": "Discussion",
-    "section": "Data papers",
-    "text": "Data papers\nBuilding a framework to facilitate the publication of papers on temporal data alongside research papers\n\n\n\n\nVery unprecise\n\n\n\n\n\nVery precise\n\n\n\n\nHelp in publishing data papers to go FAIR"
-  },
-  {
-    "objectID": "index.html#platforms",
-    "href": "index.html#platforms",
-    "title": "Discussion",
-    "section": "Platforms",
-    "text": "Platforms\nGit, distributed version control system:\n\n GitHub https://github.com\n GitLab https://gitlab.com\n\n is the 🔝 popular web-platform for source code management and software development (with over 128 million public repositories)"
-  },
-  {
-    "objectID": "index.html#standardisation",
-    "href": "index.html#standardisation",
-    "title": "Discussion",
-    "section": "Standardisation",
-    "text": "Standardisation\n\nISOCIDOC-CRM\n\n\nExtended Date/Time Format (EDTF) Specification  ISO 8601-2019 https://www.loc.gov/standards/datetime/\n\n\n\nUse of CIDOC-CRM, promoting good practices\n\n\n\n\nflowchart LR\n    A(\"-7XX/-509\") --P170 defines time--> B(\"E52 Time-Span\");\n    B --P1 is identified by--> C(Pre-Roman republic);\n\n\n\n\n\n\n\n\n\n\n\n\nEDTF is an extension of the previously seen ISO-8601 Date format. It allows an accurate record of time events and durations whatever their fuzzyness (seasons, before, etc.)"
-  },
-  {
-    "objectID": "index.html#caa-special-interest-groups",
-    "href": "index.html#caa-special-interest-groups",
-    "title": "Discussion",
-    "section": "CAA Special Interest Groups",
-    "text": "CAA Special Interest Groups\n SIG https://caa-international.org/special-interest-groups/\n\n\n\nComplex Systems Simulation\n\n\nComputer Programs for Archaeologists\n\n\nMobile GIS\n\n\n3D spatial analysis\n\n\nScientific Scripting Languages in Archaeology\n\n\nSemantics and LOUD in Archaeology\n\n\nArchaeological Practices and Knowledge Work\n\n\nComputationally Modeling Water-based Movement"
+    "section": "CAA Special Interest Groups (CAA-SIG)",
+    "text": "CAA Special Interest Groups (CAA-SIG)\n SIG https://caa-international.org/special-interest-groups/\n\n\n\nComplex Systems Simulation\n\n\nComputer Programs for Archaeologists\n\n\nMobile GIS\n\n\n3D spatial analysis\n\n\nScientific Scripting Languages in Archaeology\n\n\nSemantics and LOUD in Archaeology\n\n\nArchaeological Practices and Knowledge Work\n\n\nComputationally Modeling Water-based Movement"
   },
   {
     "objectID": "index.html#caa-sig-ssla-and-data-dragons",
     "href": "index.html#caa-sig-ssla-and-data-dragons",
     "title": "Discussion",
     "section": "CAA SIG SSLA and Data Dragons",
-    "text": "CAA SIG SSLA and Data Dragons\n\nSSLAData DragonsCollaborative network\n\n\nSpecial Interest Group on Scientific Scripting Languages in Archaeology"
+    "text": "CAA SIG SSLA and Data Dragons\n\nSSLAData Dragons\n\n\nSpecial Interest Group on Scientific Scripting Languages in Archaeology"
   },
   {
-    "objectID": "index.html#sibling-projects",
-    "href": "index.html#sibling-projects",
+    "objectID": "index.html#chronological-turn",
+    "href": "index.html#chronological-turn",
     "title": "Discussion",
-    "section": "Sibling projects",
-    "text": "Sibling projects\nHistorical Time Representation\n\nhttps://github.com/historical-time"
+    "section": "Chronological turn",
+    "text": "Chronological turn\n\n\n\n\n\n\n‘Monument druidique près de Gisors’ 1824\n\n\n\n\n\n\n\nStack of information layer in a GIS\n\n\n\n\nIn the 90’s, development of GIS in archaeology led to a “geographic turn” but no such a thing for the temporal dimension"
+  },
+  {
+    "objectID": "index.html#caa-sig-workflow",
+    "href": "index.html#caa-sig-workflow",
+    "title": "Discussion",
+    "section": "CAA-SIG workflow",
+    "text": "CAA-SIG workflow\n\nAsynchronous, DistributedProject-based\n\n\nGit, distributed versioning:\n\n GitHub https://github.com ➡️  historical-time\n GitLab https://gitlab.com\n\n\n\nproposed project:"
+  },
+  {
+    "objectID": "index.html#semantisation",
+    "href": "index.html#semantisation",
+    "title": "Discussion",
+    "section": "Semantisation",
+    "text": "Semantisation\n\nEDTFCIDOC-CRMSPARQL\n\n\nUse of Extended Date/Time Format (EDTF)1 as time primitives\n\n\n\nUse of the CIDOC Conceptual Reference Model (CIDOC-CRM) to map the chronological assumptions\n\n\n\nUse of Sparse Query Language (SPARQL)2 to retrieve the information\n  prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n  prefix skos:    <http://www.w3.org/2004/02/skos/core#>\n  prefix dcterms: <http://purl.org/dc/terms/>\n\n  select ?id ?name\n  where {\n  ?concept skos:prefLabel ?name ;\n           dcterms:identifier ?id .\n  FILTER (lang(?name) = 'en-us')\n\n\n\n\nEDTF is an extension of the previously seen ISO-8601 Date format. It allows an accurate record of time events and durations whatever their fuzzyness (seasons, before, etc.)"
+  },
+  {
+    "objectID": "index.html#data-papers",
+    "href": "index.html#data-papers",
+    "title": "Discussion",
+    "section": "Data papers",
+    "text": "Data papers\nFacilitate the publication of human-machine readable papers of temporal data\n\n\n\n\nVery unprecise\n\n\n\n\n\nVery precise\n\n\n\n\nHelp in publishing data papers to go FAIR"
   }
 ]
