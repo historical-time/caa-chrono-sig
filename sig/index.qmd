@@ -1,7 +1,7 @@
 ---
 title: "Discussion"
 subtitle: "Discussing the need for a new CAA Special Interest Group on chronological modelling"
-author: "Eythan Levy, Thomas Huet, Florian Thiery, Allard W. Mees"
+author: "Thomas Huet, Eythan Levy, Florian Thiery, Allard W. Mees"
 title-slide-attributes:
     data-background-image: "https://raw.githubusercontent.com/archaeochrono/caa23/master/s12/images/logo-s12.png"
     data-background-size: "30%"
@@ -153,10 +153,9 @@ In the 90's, development of GIS in archaeology led to a "geographic turn" but **
 
 ### Project-based
 
-<em>proposed project</em>: <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/prj_neonet_.png" style="height: 60px; vertical-align:middle">
 
 ```{=html}
-<iframe width="1400" height="500" src="https://zoometh.github.io/neonet/" title=""></iframe>
+<iframe width="1400" height="700" src="https://zoometh.github.io/neonet/" title=""></iframe>
 ```
 
 :::
