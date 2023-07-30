@@ -13,7 +13,7 @@ To reconstruct site stratigraphies we will use Harris matrices.
 
 ```mermaid
 flowchart TD
-    A[NeoNet dataset] --is read by--> B{{"NeoNet stratigraphy"}}:::neonetshiny;
+    A[NeoNet dataset] --is read by--> B{{<a href='https://trainingidn.shinyapps.io/neonet-strati'>neonet-strati</a>}}:::neonetshiny;
     B --edit<br>site stratigraphy--> B;
     B --export<br>site stratigraphy<br>file--> C["Roc du Dourgne_2023-07-30.csv"];
     C --is read by--> D{{"neonet_strat()"}}:::neonetfunct;
@@ -22,11 +22,11 @@ flowchart TD
     classDef neonetshiny fill:#71e37c;
 ```
 
-"NeoNet stratigraphy" is an  Shiny interactive app, while neonet_strat() is a R function.
+"neonet-strati" is an  Shiny interactive app, while `neonet_strat()` is a R function.
 
-### NeoNet stratigraphy
+### neonet-strati
 
-NeoNet stratigraphy is an [online R Shiny interactive app](https://trainingidn.shinyapps.io/neonet-strati/). It is composed of an editable dataframe,"Site Startigraphy" (first tab panel), and the complete dataset "All sites"  (second tab panel)[^1]. 
+neonet-strati is an [online R Shiny interactive app](https://trainingidn.shinyapps.io/neonet-strati/). It is composed of an editable dataframe,"Site Startigraphy" (first tab panel), and the complete dataset "All sites"  (second tab panel)[^1]. 
 
 The first tab panel, "Site Startigraphy", samples a site from the NeoNet dataset and allow to edit its stratigraphical relationships.
 
