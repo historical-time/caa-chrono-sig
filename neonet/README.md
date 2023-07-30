@@ -33,9 +33,9 @@ The first tab panel, "Site Startigraphy", samples a site from the NeoNet dataset
 
 <p align="center">
   <img alt="img-name" src="https://raw.githubusercontent.com/zoometh/neonet/main/doc/img/app-strati-site.png"
-" width="900">
+" width="700">
   <br>
-    <em>Panel "Site Startigraphy" editable dataframe. By default the app opens on "Pokrovnik"</em>
+    <em>Panel "Site Stratigraphy" editable dataframe. By default the app opens on "Pokrovnik"</em>
 </p>
 
 The second tab panel, "All sites", the whole dataset. A specific site can be selected in the selection search bar (top-right). Then the Site Name can be copied from the SiteName column (highlighted in blue)
@@ -47,13 +47,13 @@ The second tab panel, "All sites", the whole dataset. A specific site can be sel
     <em>Panel "All sites". Selection of the "Roc du Dourgne" site</em>
 </p>
 
-And copied into the bar "select a site name", in the tab panel "Site Startigraphy"
+And copied into the bar "select a site name", in the tab panel "Site Stratigraphy"
 
 <p align="center">
   <img alt="img-name" src="https://raw.githubusercontent.com/zoometh/neonet/main/doc/img/app-strati-site-dourgne.png"
 " width="800">
   <br>
-    <em>Panel "Site Startigraphy" editable dataframe. "Roc du Dourgne" site, ordered on the "Period" column</em>
+    <em>Panel "Site Stratigraphy" editable dataframe. "Roc du Dourgne" site, ordered on the "Period" column</em>
 </p>
 
 The startigraphical relationships, using "LabCode", can be added into the "After" column, and thereafter exported in CSV
