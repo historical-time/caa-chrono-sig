@@ -1,4 +1,4 @@
-# NeoNet modelling
+# NeoNet stratigraphy
 > Creating Bayesian modelling for radiocarbon dates and stratigraphy of the **NeoNet** dataset
 
 NeoNet [online app](http://shinyserver.cfs.unipi.it:3838/C14/) (see also [GitHub](https://github.com/zoometh/neonet)) dynamically maps radiocarbon dates of the Mesolithic/Neolithic transition, and records other contextual information (stratigraphic units, cultural periods, etc.). We bringing new developments for analysis of radiocarbon dates:
@@ -65,7 +65,7 @@ The startigraphical relationships, using "LabCode", can be added into the "After
     <em>"Roc du Dourgne" stratgraphical relationships (column "After") using LabCode identifiers, ordered on the "LabCode" column</em>
 </p>
 
-For example, here the relationships are:
+For example, "Roc du Dourgne" relationships are:
 
 |LabCode |After   |Period |PhaseCode | C14Age| C14SD|
 |:-------|:-------|:------|:---------|------:|-----:|
