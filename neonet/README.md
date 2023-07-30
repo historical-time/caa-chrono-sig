@@ -24,12 +24,13 @@ To reconstruct site stratigraphies we will use Harris matrices.
 
 ```mermaid
 flowchart TD
-    A[NeoNet dataset] --is read by--> B{{"NeoNet stratigraphy"}}:::neonetfunc;
-    B --site stratigraphy--> B;
-    B --export site stratigraphy--> C[site_name_date];
-    C <--is read by--> D{{"neonet_strat()"}}:::neonetfunc;
+    A[NeoNet dataset] --is read by--> B{{"NeoNet stratigraphy"}}:::neonetshiny;
+    B --edit<br>site stratigraphy--> B;
+    B --export<br>site stratigraphy--> C[site_name_date];
+    C --is read by--> D{{"neonet_strat()"}}:::neonetfunc;
     D --export --> E[maps<br>charts<br>listings<br>...];
-    classDef neonetfunc fill:#e3c071;
+    classDef neonetshiny fill:#e3c071;
+    classDef neonetfunct fill:#71e37c;
 ```
 
 "NeoNet stratigraphy" is an  Shiny interactive app, while neonet_strat() is a R function.
@@ -40,7 +41,7 @@ The R Shiny interactive app, NeoNet stratigraphy,  is composed of an editable da
 
 <p align="center">
   <img alt="img-name" src="https://raw.githubusercontent.com/zoometh/neonet/main/doc/img/app-strati-site.png"
-" width="800">
+" width="900">
   <br>
     <em>By default the app opens on "Pokrovnik"</em>
 </p>
@@ -49,7 +50,7 @@ The second tab panel, "All sites", the whole dataset. A specific site can be sel
 
 <p align="center">
   <img alt="img-name" src="https://raw.githubusercontent.com/zoometh/neonet/main/doc/img/app-strati-allsite-dourgne.png"
-" width="800">
+" width="900">
   <br>
     <em>Selection of the "Roc du Dourgne" site</em>
 </p>
@@ -58,7 +59,7 @@ And copied into the first tab panel "Site Startigraphy"
 
 <p align="center">
   <img alt="img-name" src="https://raw.githubusercontent.com/zoometh/neonet/main/doc/img/app-strati-site-dourgne.png"
-" width="800">
+" width="900">
   <br>
     <em>"Roc du Dourgne" site in the editable dataframe, ordered on the "Period" column</em>
 </p>
@@ -67,7 +68,7 @@ The startigraphical relationships, using "LabCode", can be added into the "After
 
 <p align="center">
   <img alt="img-name" src="https://raw.githubusercontent.com/zoometh/neonet/main/doc/img/app-strati-site-dourgne-after.png"
-" width="800">
+" width="900">
   <br>
     <em>"Roc du Dourgne" stratgraphical relationships using LabCode identifiers, ordered on the "LabCode" column</em>
 </p>
