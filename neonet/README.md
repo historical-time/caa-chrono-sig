@@ -26,7 +26,7 @@ To reconstruct site stratigraphies we will use Harris matrices.
 flowchart TD
     A[NeoNet dataset] --is read by--> B{{"NeoNet stratigraphy"}}:::neonetshiny;
     B --edit<br>site stratigraphy--> B;
-    B --export<br>site stratigraphy--> C[site_name_date];
+    B --export<br>site stratigraphy--> C["Roc du Dourgne_2023-07-30.csv"];
     C --is read by--> D{{"neonet_strat()"}}:::neonetfunc;
     D --export --> E[maps<br>charts<br>listings<br>...];
     classDef neonetshiny fill:#e3c071;
