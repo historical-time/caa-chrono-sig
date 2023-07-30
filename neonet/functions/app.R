@@ -1,7 +1,9 @@
 library(dplyr)
 
 
-df <- read.table("http://mappaproject.arch.unipi.it/mod/files/140_140_id00140_doc_elencoc14.tsv", sep = "\t", header = T, quote = "")
+# df <- read.table("http://mappaproject.arch.unipi.it/mod/files/140_140_id00140_doc_elencoc14.tsv", sep = "\t", header = T, quote = "")
+df <- readr::read_tsv("140_140_id00140_doc_elencoc14.tsv", quote = "")
+
 mysite <- "Pokrovnik"
 df.sample <- df[df$SiteName == mysite, ]
 col.names <- c("SiteName", "Period", "PhaseCode", "LabCode", "C14Age", "C14SD", "Material", "MaterialSpecies")

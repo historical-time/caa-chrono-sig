@@ -1,20 +1,9 @@
 # NeoNet modelling
 > Creating Bayesian modelling for radiocarbon dates and stratigraphy of the **NeoNet** dataset
 
-NeoNet [online app](http://shinyserver.cfs.unipi.it:3838/C14/) (see also [GitHub](https://github.com/zoometh/neonet)) dynamically maps **radiocarbon dates** of the Mesolithic/Neolithic transition, and records other contextual information (stratigraphic units, cultural periods, etc.). 
+NeoNet [online app](http://shinyserver.cfs.unipi.it:3838/C14/) (see also [GitHub](https://github.com/zoometh/neonet)) dynamically maps radiocarbon dates of the Mesolithic/Neolithic transition, and records other contextual information (stratigraphic units, cultural periods, etc.). We bringing new developments for analysis of radiocarbon dates:
 
-<p align="center">
-  <img alt="img-name" src="https://raw.githubusercontent.com/zoometh/neonet/main/doc/img/app-neonet-calib-byPhaseCode-err.png
-" width="600">
-  <br>
-    <em>caption</em>
-</p>
-
-## Developments
-
-NeoNet IT development is to
-
-1. reconstruct the [stratigraphy](https://github.com/historical-time/caa23/tree/main/neonet#stratigraphy) of these archaeological sites using DAGs (directed acyclic graphs);
+1. build the [stratigraphy](https://github.com/historical-time/caa23/tree/main/neonet#stratigraphy) of these archaeological sites;
 
 2. merged [cultural periods](https://github.com/historical-time/caa23/tree/main/neonet#cultural-periods) from the https://devr.cepam.cnrs.fr/shinyapps/leap/ application with this model;
 
@@ -37,7 +26,7 @@ flowchart TD
 
 ### NeoNet stratigraphy
 
-NeoNet stratigraphy is an R Shiny interactive app. It is composed of an editable dataframe,"Site Startigraphy" (first tab panel), and the complete dataset "All sites"  (second tab panel)[^1]. 
+NeoNet stratigraphy is an [online R Shiny interactive app](https://trainingidn.shinyapps.io/neonet-strati/). It is composed of an editable dataframe,"Site Startigraphy" (first tab panel), and the complete dataset "All sites"  (second tab panel)[^1]. 
 
 The first tab panel, "Site Startigraphy", samples a site from the NeoNet dataset and allow to edit its stratigraphical relationships.
 

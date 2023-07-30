@@ -102,24 +102,18 @@ neo_strat_xcheck <- function(df = NA,
 #'
 #' @examples
 #'
-#' # Layer names for a single site (Pokrovnik)
-#' neo_strat(smp.sitename = "Pokrovnik")
+#'neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/Roc du #'Dourgne_2023-07-30.csv',
+#'          outLabel = c("PhaseCode"))
 #'
-#' # Periods for a single site (Pokrovnik)
-#' neo_strat(smp.sitename = "Pokrovnik", outLabel = c("Period"))
+#'neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/Roc du #'Dourgne_2023-07-30.csv',
+#'          outLabel = c("Period"))
 #'
-#' # Export, with layer names by default
-#' neo_strat(export.plot = T)
 #'
-#' # Export, with C14Age instead of layer names
-#' neo_strat(outLabel = c("C14Age"), export.plot = T)
+#'neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/Roc du #'Dourgne_2023-07-30.csv',
+#'          outLabel = c("C14Age"))
 #'
-#' # Export, with Periods instead of layer names, limited to one site (Pokrovnik)
-#' neo_strat(smp.sitename = c("Pokrovnik"),
-#'           outLabel = c("Period"),
-#'           export.plot = T)
 #' @export
-neo_strat <- function(inData = "https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_PERIOD.tsv",
+neo_strat <- function(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/Roc du Dourgne_2023-07-30.csv',
                       neo.sitename = c("SiteName"),
                       neo.phasecode = c("PhaseCode"),
                       neo.relation = c("After"),
@@ -277,28 +271,10 @@ neo_strat <- function(inData = "https://raw.githubusercontent.com/historical-tim
   }
 }
 
-neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/Roc du Dourgne_2023-07-30.csv',
-          outLabel = c("PhaseCode"))
-
-neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/Roc du Dourgne_2023-07-30.csv',
-          outLabel = c("Period"))
 
 
-neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/Roc du Dourgne_2023-07-30.csv',
-          outLabel = c("C14Age"))
+# dd <- read.csv("https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/Roc%20du%20Dourgne_2023-07-30.csv")
 
+# print(knitr::render_markdown(dd))
 #
-#
-# neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_PERIOD.tsv',
-#           smp.sitename = c("Obagues de Ratera"),
-#           outLabel = c("C14Age"))
-#
-# neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_PERIOD.tsv',
-#           smp.sitename = c("Obagues de Ratera"),
-#           outLabel = c("C14Age"))
-#
-# df.oba <- read.table('https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_3.tsv', sep = "\t", header = T)
-#
-# df <- read.table("http://mappaproject.arch.unipi.it/mod/files/140_140_id00140_doc_elencoc14.tsv", sep = "\t", header = T, quote = "")
-#
-# colnames(df)
+# knitr::kable(dd[, c("LabCode", "After", "Period", "PhaseCode", "C14Age", "C14SD")], format = "markdown")

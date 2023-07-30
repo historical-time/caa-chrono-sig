@@ -1,0 +1,14 @@
+name: neonet-strati
+title: neonet-strati
+username:
+account: trainingidn
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 9528455
+bundleId: 7511509
+url: https://trainingidn.shinyapps.io/neonet-strati/
+when: 1690718694.32825
+lastSyncTime: 1690718694.32825
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: _test.R|editabledata_test.R|neo_leapfrog.R|neo_strat.R|neo_strat_1.R|neo_strat_2.R|neo_strat_3.R|neo_strat_edit.R|test.csv|(archives)

@@ -1,7 +1,8 @@
 library(dplyr)
 
 
-df <- read.table("http://mappaproject.arch.unipi.it/mod/files/140_140_id00140_doc_elencoc14.tsv", sep = "\t", header = T, quote = "")
+# df <- read.table("http://mappaproject.arch.unipi.it/mod/files/140_140_id00140_doc_elencoc14.tsv", sep = "\t", header = T, quote = "")
+df <- read.table("140_140_id00140_doc_elencoc14.tsv", sep = "\t", header = T, quote = "")
 
 
 mysite <- "Pokrovnik"
