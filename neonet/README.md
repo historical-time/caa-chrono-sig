@@ -26,11 +26,11 @@ To reconstruct site stratigraphies we will use Harris matrices.
 flowchart TD
     A[NeoNet dataset] --is read by--> B{{"NeoNet stratigraphy"}}:::neonetshiny;
     B --edit<br>site stratigraphy--> B;
-    B --export<br>site stratigraphy--> C["Roc du Dourgne_2023-07-30.csv"];
+    B --export<br>site stratigraphy<br>file--> C["Roc du Dourgne_2023-07-30.csv"];
     C --is read by--> D{{"neonet_strat()"}}:::neonetfunct;
     D --export --> E[maps<br>charts<br>listings<br>...];
-    classDef neonetshiny fill:#e3c071;
-    classDef neonetfunct fill:#71e37c;
+    classDef neonetfunct fill:#e3c071;
+    classDef neonetshiny fill:#71e37c;
 ```
 
 "NeoNet stratigraphy" is an  Shiny interactive app, while neonet_strat() is a R function.
