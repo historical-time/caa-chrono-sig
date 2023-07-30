@@ -98,7 +98,7 @@ neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-sampl
 Gives:
 
 <p align="center">
-  <img alt="img-name" src="https://raw.githubusercontent.com/zoometh/neonet/main/doc/img/app-strati-diag-dourgne-c14period.png"
+  <img alt="img-name" src="https://raw.githubusercontent.com/zoometh/neonet/main/doc/img/app-strati-diag-dourgne-period.png"
 " width="600">
   <br>
     <em>"Roc du Dourgne" stratgraphical relationships using LabCode identifiers, ordered on the "LabCode" column</em>
