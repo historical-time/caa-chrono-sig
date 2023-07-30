@@ -35,46 +35,60 @@ flowchart TD
 
 "NeoNet stratigraphy" is an  Shiny interactive app, while neonet_strat() is a R function.
 
-### Shiny interactive form
+### NeoNet stratigraphy
 
-The R Shiny interactive app, NeoNet stratigraphy,  is composed of an editable dataframe (first tab panel) and a dataset (second tab panel). The first tab panel, "Site Startigraphy", samples a site from the NeoNet dataset[^1]
+NeoNet stratigraphy is an R Shiny interactive app. It is composed of an editable dataframe,"Site Startigraphy" (first tab panel), and the complete dataset "All sites"  (second tab panel)[^1]. 
+
+The first tab panel, "Site Startigraphy", samples a site from the NeoNet dataset and allow to edit its stratigraphical relationships.
 
 <p align="center">
   <img alt="img-name" src="https://raw.githubusercontent.com/zoometh/neonet/main/doc/img/app-strati-site.png"
 " width="900">
   <br>
-    <em>By default the app opens on "Pokrovnik"</em>
+    <em>Panel "Site Startigraphy" editable dataframe. By default the app opens on "Pokrovnik"</em>
 </p>
 
 The second tab panel, "All sites", the whole dataset. A specific site can be selected in the selection search bar (top-right). Then the Site Name can be copied from the SiteName column (highlighted in blue)
 
 <p align="center">
   <img alt="img-name" src="https://raw.githubusercontent.com/zoometh/neonet/main/doc/img/app-strati-allsite-dourgne.png"
-" width="900">
+" width="1100">
   <br>
-    <em>Selection of the "Roc du Dourgne" site</em>
+    <em>Panel "All sites". Selection of the "Roc du Dourgne" site</em>
 </p>
 
-And copied into the first tab panel "Site Startigraphy"
+And copied into the bar "select a site name", in the tab panel "Site Startigraphy"
 
 <p align="center">
   <img alt="img-name" src="https://raw.githubusercontent.com/zoometh/neonet/main/doc/img/app-strati-site-dourgne.png"
-" width="900">
+" width="800">
   <br>
-    <em>"Roc du Dourgne" site in the editable dataframe, ordered on the "Period" column</em>
+    <em>Panel "Site Startigraphy" editable dataframe. "Roc du Dourgne" site, ordered on the "Period" column</em>
 </p>
 
 The startigraphical relationships, using "LabCode", can be added into the "After" column, and thereafter exported in CSV
 
 <p align="center">
   <img alt="img-name" src="https://raw.githubusercontent.com/zoometh/neonet/main/doc/img/app-strati-site-dourgne-after.png"
-" width="900">
+" width="1100">
   <br>
-    <em>"Roc du Dourgne" stratgraphical relationships using LabCode identifiers, ordered on the "LabCode" column</em>
+    <em>"Roc du Dourgne" stratgraphical relationships (column "After") using LabCode identifiers, ordered on the "LabCode" column</em>
 </p>
 
-Pressing the CSV button (top-left) will export the "Roc du Dourgne" data in a CSV file.
+For example, here the relationships are:
 
+|LabCode |After   |Period |PhaseCode | C14Age| C14SD|
+|:-------|:-------|:------|:---------|------:|-----:|
+|MC-1101 |MC-1102 |EN     |C5        |   5050|   100|
+|MC-1102 |MC-1103 |EN     |C5        |   6170|   100|
+|MC-1103 |MC-1105 |EN     |C6        |   5100|    80|
+|MC-1104 |MC-1105 |EN     |C6        |   6470|   100|
+|MC-1105 |MC-1107 |EN     |C6        |   5550|    80|
+|MC-1107 |        |LM     |C7        |   6850|   100|
+|MC-781  |        |EN     |C6        |   5000|   170|
+|MC-782  |        |LM     |Layer 7   |   5770|   170|
+
+Pressing the CSV button (top-left) will export the "Roc du Dourgne" data in a CSV file. The latter will be named after the site name and current date, for example: "Roc du Dourgne_2023-07-30.csv"
 
 ### Model the stratigraphic relationships
 
@@ -88,7 +102,7 @@ Gives:
 
 <p align="center">
   <img alt="img-name" src="https://raw.githubusercontent.com/zoometh/neonet/main/doc/img/app-strati-diag-dourgne-c14age.png"
-" width="600">
+" width="500">
   <br>
     <em>"Roc du Dourgne" stratgraphical relationships using LabCode identifiers, ordered on the "LabCode" column</em>
 </p>
@@ -103,7 +117,7 @@ Gives:
 
 <p align="center">
   <img alt="img-name" src="https://raw.githubusercontent.com/zoometh/neonet/main/doc/img/app-strati-diag-dourgne-phasecode.png"
-" width="600">
+" width="500">
   <br>
     <em>"Roc du Dourgne" stratgraphical relationships using LabCode identifiers, ordered on the "LabCode" column</em>
 </p>
@@ -118,7 +132,7 @@ Gives:
 
 <p align="center">
   <img alt="img-name" src="https://raw.githubusercontent.com/zoometh/neonet/main/doc/img/app-strati-diag-dourgne-period.png"
-" width="600">
+" width="500">
   <br>
     <em>"Roc du Dourgne" stratgraphical relationships using LabCode identifiers, ordered on the "LabCode" column</em>
 </p>
@@ -142,4 +156,3 @@ Interactive dataframe: ```neo_leapfrog(DT = T)```<br>
 
 
 [^1]: <http://mappaproject.arch.unipi.it/mod/files/140_140_id00140_doc_elencoc14.tsv>
-[^2]: The latter will be named after the site name and current date, for example: "Roc du Dourgne_2023-07-30.csv"
