@@ -22,13 +22,17 @@ neo_strat_dupli <- function(layers = NA,
   # handle duplicated layers names (those having two or more c14 dates)
   dupl.name <- layers[duplicated(layers$name), c("name")]
   # change layers names adding suffixes
-  for(i in dupl.name){
-    # i <- "13A1"
-    df.dup <- layers[layers$name == i, ]
-    # loop to change names
-    for (j in seq(2,  nrow(df.dup))){
-      layers[row.names(df.dup[j, ]), c("name")] <- paste0(i, paste0(rep(suffix, j-1), collapse = ''))
+  if(length(dupl.name)>0){
+    for(i in dupl.name){
+      # i <- "13A1"
+      df.dup <- layers[layers$name == i, ]
+      # loop to change names
+      for (j in seq(2,  nrow(df.dup))){
+        layers[row.names(df.dup[j, ]), c("name")] <- paste0(i, paste0(rep(suffix, j-1), collapse = ''))
+      }
     }
+  } else {
+    message(paste0("No duplicated layer identifier names"))
   }
   return(layers)
 }
@@ -72,7 +76,8 @@ neo_strat_xcheck <- function(df = NA,
     # print(colnames(df))
     # print(df[, neo.phasecode])
     only.in.relations <- df[df[[neo.labcode]] == exist.only.in.relations,
-                            c(neo.phasecode, neo.labcode, neo.c14age, neo.period)]
+                            c(neo.labcode, neo.phasecode, neo.labcode, neo.c14age, neo.period)]
+    # only.in.relations$name <- only.in.relations[[neo.labcode]]
     names(only.in.relations) <- names(layers)
     # dplyr::bind_rows(layers, only.in.relations)
     layers <- rbind(layers, only.in.relations)
@@ -167,6 +172,7 @@ neo_strat <- function(inData = "https://raw.githubusercontent.com/historical-tim
     ## nodes and edges
     # nodes
     layers <- data.frame(name = before,
+                         phasecode = phasecode,
                          labcode = labcode,
                          c14age = c14age,
                          period = period
@@ -231,6 +237,10 @@ neo_strat <- function(inData = "https://raw.githubusercontent.com/historical-tim
     #   df.colors.per <- read.table(period.color, header = T)
     # }
   }
+
+  ggraph::set_graph_style(plot_margin = ggplot2::margin(1,1,1,1))
+  g.igraph <- tidygraph::as_tbl_graph(g.igraph)
+
   g.dag <- ggraph::ggraph(g.igraph, layout = "sugiyama") +
     ggplot2::ggtitle(label = site,
                      subtitle = outLabel) +
@@ -267,22 +277,28 @@ neo_strat <- function(inData = "https://raw.githubusercontent.com/historical-tim
   }
 }
 
+neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/Roc du Dourgne_2023-07-30.csv',
+          outLabel = c("PhaseCode"))
+
+neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/Roc du Dourgne_2023-07-30.csv',
+          outLabel = c("Period"))
+
 
 neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/Roc du Dourgne_2023-07-30.csv',
           outLabel = c("C14Age"))
 
-
-
-neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_PERIOD.tsv',
-          smp.sitename = c("Obagues de Ratera"),
-          outLabel = c("C14Age"))
-
-neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_PERIOD.tsv',
-          smp.sitename = c("Obagues de Ratera"),
-          outLabel = c("C14Age"))
-
-df.oba <- read.table('https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_3.tsv', sep = "\t", header = T)
-
-df <- read.table("http://mappaproject.arch.unipi.it/mod/files/140_140_id00140_doc_elencoc14.tsv", sep = "\t", header = T, quote = "")
-
-colnames(df)
+#
+#
+# neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_PERIOD.tsv',
+#           smp.sitename = c("Obagues de Ratera"),
+#           outLabel = c("C14Age"))
+#
+# neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_PERIOD.tsv',
+#           smp.sitename = c("Obagues de Ratera"),
+#           outLabel = c("C14Age"))
+#
+# df.oba <- read.table('https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_3.tsv', sep = "\t", header = T)
+#
+# df <- read.table("http://mappaproject.arch.unipi.it/mod/files/140_140_id00140_doc_elencoc14.tsv", sep = "\t", header = T, quote = "")
+#
+# colnames(df)

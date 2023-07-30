@@ -59,8 +59,50 @@ The startigraphical relationships, using "LabCode", can be added into the "After
     <em>"Roc du Dourgne" stratgraphical relationships using LabCode identifiers, ordered on the "LabCode" column</em>
 </p>
 
-Pressing the CSV button (top-left) will export the "Roc du Dourgne" data in a CSV file
+Pressing the CSV button (top-left) will export the "Roc du Dourgne" data in a CSV file that can be read by the `neo_strat()` function
 
+```R
+neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/Roc du Dourgne_2023-07-30.csv',
+          outLabel = c("C14Age"))
+```
+Gives:
+
+<p align="center">
+  <img alt="img-name" src="https://raw.githubusercontent.com/zoometh/neonet/main/doc/app-strati-diag-dourgne-c14age.png"
+" width="600">
+  <br>
+    <em>"Roc du Dourgne" stratgraphical relationships using LabCode identifiers, ordered on the "LabCode" column</em>
+</p>
+
+And
+
+```R
+neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/Roc du Dourgne_2023-07-30.csv',
+          outLabel = c("PhaseCode"))
+```
+Gives:
+
+<p align="center">
+  <img alt="img-name" src="https://raw.githubusercontent.com/zoometh/neonet/main/doc/app-strati-diag-dourgne-phasecode.png"
+" width="600">
+  <br>
+    <em>"Roc du Dourgne" stratgraphical relationships using LabCode identifiers, ordered on the "LabCode" column</em>
+</p>
+
+Changing the `outLabel` to `Period` allows to color on periods using the default hexadecimal color  attributed to each period (see the chapter "Period" in the [NeoNet web tutorial](https://zoometh.github.io/neonet/#3_data_panel))
+
+```R
+neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/Roc du Dourgne_2023-07-30.csv',
+          outLabel = c("Period"))
+```
+Gives:
+
+<p align="center">
+  <img alt="img-name" src="https://raw.githubusercontent.com/zoometh/neonet/main/doc/app-strati-diag-dourgne-c14period.png"
+" width="600">
+  <br>
+    <em>"Roc du Dourgne" stratgraphical relationships using LabCode identifiers, ordered on the "LabCode" column</em>
+</p>
 
     - merge Harris matrices with the same [Period](https://zoometh.github.io/neonet/#mf.period) between different sites, culures, periods, etc.
     - process the radiocarbon dates and stratigraphic relationships to perform **Bayesian modelling** on-the-fly;
