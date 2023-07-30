@@ -1,3 +1,6 @@
+# TODO strati on C14 not Layers
+
+
 #' add suffixes to duplicated layer names
 #'
 #' @name neo_strat_dupli
@@ -47,9 +50,13 @@ neo_strat_dupli <- function(layers = NA,
 #'
 #'
 #' @export
-neo_strat_xcheck <- function(layers = NA,
+neo_strat_xcheck <- function(df = NA,
+                             layers = NA,
                              relations = NA,
                              neo.phasecode = NA,
+                             neo.labcode = NA,
+                             neo.c14age = NA,
+                             neo.period = NA,
                              verbose = T){
   exist.only.in.layers <- setdiff(unique(layers$name),
                                   unique(c(relations$from, relations$to)))
@@ -63,7 +70,8 @@ neo_strat_xcheck <- function(layers = NA,
     message(paste0("These PhaseCode are only listed in the relationships: '",
                    paste0(exist.only.in.relations, collapse = ", "), "', they will be added to the layers list"))
     # print(colnames(df))
-    only.in.relations <- df[df[, neo.phasecode] == exist.only.in.relations,
+    # print(df[, neo.phasecode])
+    only.in.relations <- df[df[[neo.labcode]] == exist.only.in.relations,
                             c(neo.phasecode, neo.labcode, neo.c14age, neo.period)]
     names(only.in.relations) <- names(layers)
     # dplyr::bind_rows(layers, only.in.relations)
@@ -116,12 +124,15 @@ neo_strat <- function(inData = "https://raw.githubusercontent.com/historical-tim
                       period.color =  "https://raw.githubusercontent.com/zoometh/neonet/main/doc/img/periods.tsv",
                       smp.sitename = NA,
                       suffix = "*",
-                      outLabel = neo.phasecode,
+                      outLabel = neo.labcode,
                       export.plot = F,
                       outDir = paste0(getwd(), "/neonet/results/"),
                       verbose = T){
+  # suffix = "*" ; verbose = T ; inData = "https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_PERIOD.tsv" ; neo.sitename = c("SiteName") ; neo.phasecode = c("PhaseCode") ; neo.relation = c("After") ; neo.labcode = c("LabCode") ; neo.c14age = c("C14Age") ; neo.period = c("Period") ; period.color =  "https://raw.githubusercontent.com/zoometh/neonet/main/doc/img/periods.tsv" ; outLabel = "Period" ; smp.sitename = c("Pokrovnik") ; site <- "Pokrovnik"
+  # site <- "Obagues de Ratera"
+  if(verbose){print(paste0("Read datatset: '", basename(inData),"'"))}
   df <- read.table(inData, sep = "\t", header = T)
-  if(verbose){print(paste0("neo.relation column and type: '", neo.relation,"'"))}
+  if(verbose){print(paste0("'neo.relation' column and type: '", neo.relation,"'"))}
   no.existing.relations <- is.na(df[ , neo.relation]) | df[ , neo.relation] == ''
   # a list to record all DAGs
   list.dags <- list()
@@ -135,57 +146,105 @@ neo_strat <- function(inData = "https://raw.githubusercontent.com/historical-tim
     # site <- "Obagues de Ratera"
     # site <- "Pokrovnik"
     if(verbose){print(paste0("* site: ", site))}
-    PhaseCode.strati <- df[!no.existing.relations & df[ , neo.sitename] == site, ]
+    LabCode.strati <- df[!no.existing.relations & df[ , neo.sitename] == site, ]
     before <- after <- labcode <- c14age <- period <- c()
     # loop through layers to build the DAG, use NeoNet mandatory fields
-    for(phase in seq(1, nrow(PhaseCode.strati))){
-      before <- c(before, PhaseCode.strati[phase, neo.phasecode]) # before is the layer itself
-      after <- c(after, PhaseCode.strati[phase, neo.relation]) # after is the layer recorded in 'After' column
-      labcode <- c(labcode, PhaseCode.strati[phase, neo.labcode])
-      c14age <- c(c14age, PhaseCode.strati[phase, neo.c14age])
-      period <- c(period, PhaseCode.strati[phase, neo.period])
+    for(phase in seq(1, nrow(LabCode.strati))){
+      before <- c(before, LabCode.strati[phase, neo.labcode]) # before is the layer itself
+      after <- c(after, LabCode.strati[phase, neo.relation]) # after is the layer recorded in 'After' column
+      phasecode <- c(phasecode, LabCode.strati[phase, neo.phasecode])
+      labcode <- c(labcode, LabCode.strati[phase, neo.labcode])
+      c14age <- c(c14age, LabCode.strati[phase, neo.c14age])
+      period <- c(period, LabCode.strati[phase, neo.period])
     }
     if(verbose){print(paste0("    - nb stratigraphical relationships: ", length(before)))}
-    # nodes and edges
+    ## nodes and edges
+    # nodes
     layers <- data.frame(name = before,
                          labcode = labcode,
                          c14age = c14age,
                          period = period
     )
+    if(verbose){print(paste0("    - directed graph computed"))}
+
+    ## edges
     relations <- data.frame(from = before,
                             to = after)
+
+    # TODO (maybe): loop on these 2 functions
     layers <- neo_strat_dupli(layers = layers,
                               suffix = suffix,
                               verbose = verbose)
-    layers <- neo_strat_xcheck(layers = layers,
+    layers <- neo_strat_xcheck(df = df,
+                               layers = layers,
                                relations = relations,
+                               neo.labcode = neo.labcode,
                                neo.phasecode = neo.phasecode,
+                               neo.c14age = neo.c14age,
+                               neo.period = neo.period,
                                verbose = verbose)
     layers <- neo_strat_dupli(layers = layers,
                               suffix = suffix,
                               verbose = verbose)
-    layers <- neo_strat_xcheck(layers = layers,
+    layers <- neo_strat_xcheck(df = df,
+                               layers = layers,
                                relations = relations,
+                               neo.labcode = neo.labcode,
                                neo.phasecode = neo.phasecode,
+                               neo.c14age = neo.c14age,
+                               neo.period = neo.period,
                                verbose = verbose)
-    g.igraph <- igraph::graph_from_data_frame(relations,
-                                              vertices = layers,
-                                              directed = TRUE)
-    # labels
+    # nodes labels
     outLabel <- ifelse(outLabel == "C14Age",  "c14age",
                        ifelse(outLabel == "PhaseCode", "name",
                               ifelse(outLabel == "Period", "period",
                                      ifelse(outLabel == "LabCode", "labcode" , NA))))
+    # colors
+    if(outLabel == "period"){
+      df.colors.per <- read.table(period.color, header = T)
+      layers <- merge(layers, df.colors.per, by = "period", all.x = T)
+      layers <- layers[ , c("name", "period", "labcode", "c14age", "color")]
+      if(verbose){print(paste0("       - added colors for: ", outLabel))}
+    } else {
+      # black by default
+      layers$color <- "black"
+      layers <- layers[ , c("name", "period", "labcode", "c14age", "color")]
+      if(verbose){print(paste0("       - added default colors 'black'"))}
+    }
 
-    # df.colors.per <- read.table("https://raw.githubusercontent.com/zoometh/neonet/main/doc/img/periods.tsv", header = T)
-
+    # igraph
+    g.igraph <- igraph::graph_from_data_frame(relations,
+                                              vertices = layers,
+                                              directed = TRUE)
+    # if(verbose){print(paste0("    - directed graph computed"))}
+    # # labels
+    # outLabel <- ifelse(outLabel == "C14Age",  "c14age",
+    #                    ifelse(outLabel == "PhaseCode", "name",
+    #                           ifelse(outLabel == "Period", "period",
+    #                                  ifelse(outLabel == "LabCode", "labcode" , NA))))
+    # if(outLabel == "period"){
+    #   df.colors.per <- read.table(period.color, header = T)
+    # }
   }
   g.dag <- ggraph::ggraph(g.igraph, layout = "sugiyama") +
     ggplot2::ggtitle(label = site,
                      subtitle = outLabel) +
     ggraph::geom_edge_elbow() +
-    ggraph::geom_node_label(ggplot2::aes(label = .data[[outLabel]])) +
+    # ggraph::geom_node_label(ggplot2::aes(label = .data[[outLabel]],
+    #                                      color = .data[["color"]])) +
+    ggraph::geom_node_label(ggplot2::aes(label = .data[[outLabel]],
+                                         color = igraph::V(g.igraph)$color)) +
+    # ggplot2::scale_colour_identity(guide = "legend",
+    #                                name = outLabel,
+    #                                label = .data[[outLabel]]) +
+    # ggplot2::scale_colour_identity(guide = "legend",
+    #                                name = outLabel,
+    #                                label = unique(igraph::V(g.igraph)$period)) +
+    ggplot2::scale_colour_identity() +
     ggraph::theme_graph()
+
+  if(verbose){print(paste0("    - sugiyama graph layout computed"))}
+
   list.dags[[length(list.dags) + 1]] <- g.dag
   if(!export.plot){
     # plot the first DAG of the list
@@ -203,21 +262,22 @@ neo_strat <- function(inData = "https://raw.githubusercontent.com/historical-tim
   }
 }
 
+
+neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/Roc du Dourgne_2023-07-30.csv',
+          outLabel = c("C14Age"))
+
+
+
 neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_PERIOD.tsv',
-          smp.sitename = c("Pokrovnik"),
-          outLabel = c("Period"))
+          smp.sitename = c("Obagues de Ratera"),
+          outLabel = c("C14Age"))
 
-# neo_strat(export.plot = T, outDir = paste0(getwd(), "/neonet/"))
+neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_PERIOD.tsv',
+          smp.sitename = c("Obagues de Ratera"),
+          outLabel = c("C14Age"))
 
-# neo_strat(outLabel = c("C14Age"), export.plot = T, outDir = paste0(getwd(), "/neonet/"))
+df.oba <- read.table('https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_3.tsv', sep = "\t", header = T)
 
-# Export, with Periods instead of layer names, limited to one site (Pokrovnik), on another dataset
-# neo_strat(inData = 'https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_PERIOD.tsv',
-#           smp.sitename = c("Pokrovnik"),
-#           outLabel = c("Period"),
-#           export.plot = T,
-#           outDir = paste0(getwd(), "/neonet/"))
+df <- read.table("http://mappaproject.arch.unipi.it/mod/files/140_140_id00140_doc_elencoc14.tsv", sep = "\t", header = T, quote = "")
 
-# neo_strat(smp.sitename = "Pokrovnik", )
-
-
+colnames(df)

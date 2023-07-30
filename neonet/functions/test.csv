@@ -1,25 +1,15 @@
-"","Admit","Gender","Dept","Freq","Date"
-"1","Admitted","Male","A","999",2023-05-18 17:05:49
-"2","Rejected","Male","A","313",2023-05-18 17:05:50
-"3","Admitted","Female","A","89",2023-05-18 17:05:51
-"4","Rejected","Female","A","19",2023-05-18 17:05:52
-"5","Admitted","Male","B","353",2023-05-18 17:05:53
-"6","Rejected","Male","B","207",2023-05-18 17:05:54
-"7","Admitted","Female","B","17",2023-05-18 17:05:55
-"8","Rejected","Female","B","8",2023-05-18 17:05:56
-"9","Admitted","Male","C","120",2023-05-18 17:05:57
-"10","Rejected","Male","C","205",2023-05-18 17:05:58
-"11","Admitted","Female","C","202",2023-05-18 17:05:59
-"12","Rejected","Female","C","391",2023-05-18 17:06:00
-"13","Admitted","Male","D","138",2023-05-18 17:06:01
-"14","Rejected","Male","D","279",2023-05-18 17:06:02
-"15","Admitted","Female","D","131",2023-05-18 17:06:03
-"16","Rejected","Female","D","244",2023-05-18 17:06:04
-"17","Admitted","Male","E","53",2023-05-18 17:06:05
-"18","Rejected","Male","E","138",2023-05-18 17:06:06
-"19","Admitted","Female","E","94",2023-05-18 17:06:07
-"20","Rejected","Female","E","299",2023-05-18 17:06:08
-"21","Admitted","Male","F","22",2023-05-18 17:06:09
-"22","Rejected","Male","F","351",2023-05-18 17:06:10
-"23","Admitted","Female","F","24",2023-05-18 17:06:11
-"24","Rejected","Female","F","317",2023-05-18 17:06:12
+"","SiteName","Period","PhaseCode","LabCode","C14Age","C14SD","Material","MaterialSpecies","After"
+"1034","Pokrovnik","EN","Layer II","Hd-12842",6290,65,"plant seed","n/d",NA
+"1970","Pokrovnik","MN","C/7","OxA-17124",6197,39,"plant seed","Triticum dicoccum",NA
+"1971","Pokrovnik","EN","C/23","OxA-17125",6568,36,"plant seed","Triticum dicoccum",NA
+"1973","Pokrovnik","EN","D/11","OxA-17193",6625,36,"plant seed","Triticum dicoccum",NA
+"1974","Pokrovnik","EN","D/21","OxA-17194",6999,37,"plant seed","Triticum dicoccum",NA
+"1975","Pokrovnik","EN","A/8","OxA-17195",6626,39,"plant seed","Triticum monococcum",NA
+"1981","Pokrovnik","MN","D/3","OxA-17223",6170,35,"plant seed","Triticum dicoccum",NA
+"1983","Pokrovnik","EN","A/33","OxA-17328",6810,40,"plant seed","Triticum dicoccum",NA
+"2160","Pokrovnik","MN","D/9","PSU-4960/UCIAMS-106477",6280,20,"animal bone","Ovis aries",NA
+"2161","Pokrovnik","EN","D/11","PSU-4961/UCIAMS-106478",6840,25,"animal bone","Ovis aries",NA
+"2165","Pokrovnik","EN","D/22","PSU-5293/UCIAMS-116205",7090,25,"animal bone","Bos taurus",NA
+"2166","Pokrovnik","MN","D/10 B","PSU-5294/UCIAMS-116206",6190,25,"animal bone","Bos taurus",NA
+"2167","Pokrovnik","EN","D/23","PSU-5556/UCIAMS-119837",6975,30,"animal bone","Ovis aries",NA
+"2506","Pokrovnik","EN","Layer II","Z-895",6300,150,"plant seed","n/d",NA
