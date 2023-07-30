@@ -16,11 +16,13 @@ flowchart TD
     A[NeoNet dataset] --is read by--> B{{<a href='https://trainingidn.shinyapps.io/neonet-strati'>neonet-strati</a>}}:::neonetshiny;
     B --edit<br>site stratigraphy--> B;
     B --export<br>site stratigraphy<br>file--> C["Roc du Dourgne_2023-07-30.csv"];
-    C --is read by--> D{{"neonet_strat()"}}:::neonetfunct;
+    C --is read by--> D{{<a href='https://github.com/historical-time/caa23/blob/main/neonet/functions/neo_strat.R
+'>neonet_strat()</a>}}:::neonetfunct;
     D --export --> E[maps<br>charts<br>listings<br>...];
     classDef neonetfunct fill:#e3c071;
     classDef neonetshiny fill:#71e37c;
 ```
+
 
 "neonet-strati" is an  Shiny interactive app, while `neonet_strat()` is a R function.
 
