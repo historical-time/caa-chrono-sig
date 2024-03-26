@@ -3,6 +3,7 @@
 #' @name neo_leapfrog
 #'
 #' @description read, format and merge Leapfrog dataset and cultures with NeoNet. v. entites: "https://api.nakala.fr/data/10.34847/nkl.3d8bv011/e201bf47cdabfa9dfba7590845d32d3062cd82a1"
+#'
 #' @param data.neonet the URL of the NeoNet dataset (Default: Fedora / Uni Pisa)
 #' @param data.leapfrog the URL of the Leapfrog dataset (Default: local)
 #' @param cultures.leapfrog the URL of the Leapfrog culture list (Default: local)

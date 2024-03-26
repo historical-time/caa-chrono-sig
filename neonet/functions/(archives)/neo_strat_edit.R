@@ -16,6 +16,7 @@
 #'
 #' neo_strat_edit(do = "edit", site.to.edit = "Pokrovnik")
 #'
+#'
 #' @export
 neo_strat_edit <- function(inData = "https://raw.githubusercontent.com/historical-time/data-samples/main/neonet/TEST_PERIOD.tsv",
                            neo.sitename = c("SiteName"),
@@ -165,5 +166,3 @@ neo_strat_edit <- function(inData = "https://raw.githubusercontent.com/historica
     }
   }
 }
-
-neo_strat_edit(do = "edit", site.to.edit = "Pokrovnik")
