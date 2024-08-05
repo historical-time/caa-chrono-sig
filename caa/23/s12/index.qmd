@@ -1,0 +1,366 @@
+---
+title: "S12. Chronological modelling: formal methods and research software"
+subtitle: "General Introduction"
+# subtitle: "Make (re)usable the ANRJCJC Itineris data"
+author: "Eythan Levy, Thomas Huet, Florian Thiery, Allard W. Mees"
+title-slide-attributes:
+    data-background-image: "https://raw.githubusercontent.com/historical-time/caa23/master/s12/images/logo-s12.png"
+    data-background-size: "30%"
+    data-background-opacity: "0.4"
+format:
+  revealjs: 
+    css: https://zoometh.github.io/thomashuet/css/quarto.css
+    slide-number: true
+    chalkboard: true
+    scrollable: true
+    preview-links: auto
+    reference-location: document
+    footnotes-hover: true
+    logo: https://raw.githubusercontent.com/historical-time/caa23/master/s12/images/logo-caa23.png
+    footer: "<em>S12. Chronological modelling: formal methods and research software</em> <img src='https://raw.githubusercontent.com/historical-time/caa23/master/s12/images/logo-caa23.png' style='height: 40px;vertical-align: middle;'> <https://github.com/historical-time/caa23>  CAA23, Amsterdam, 2023"
+    margin: 0
+    width: 1200
+---
+
+# Introduction {background-color="#fba726"}
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(plotly)
+library(dplyr)
+library(DT)
+library(ggtern)
+library(kableExtra)
+library(knitr)
+library(FactoMineR)
+```
+
+## Peuquet's triad
+
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+```{r}
+
+df <- data.frame(feat = c("A", "B", "C"),
+                 where = c(20, 60, 60),
+                 when = c(10, 30, 20),
+                 what = c(70, 10, 20),
+                 row.names = c("A", "B", "C"))
+
+dt <- datatable(df, 
+          rownames = FALSE,
+          width = '20%',
+          options = list(searching = FALSE,
+                         lengthChange = FALSE,
+                         paging = FALSE,
+                         scrollX = F,
+                         initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}"),
+                         info = FALSE,
+                         filter = "none")) %>% 
+  formatStyle("feat",
+              backgroundColor = styleEqual(c("A", "B", "C"), 
+                                           c('#FF000070', '#00800070', '#0000FF70'))
+  ) %>%
+  formatStyle(columns = c(1, 2, 3, 4),
+              fontSize = '20px')
+dt
+```
+
+:::
+
+
+::: {.column width="60%"}
+
+```{r}
+#| fig-width: 8
+
+df <- data.frame(feat = c("A", "B", "C"),
+                 where = c(20, 60, 60),
+                 when = c(10, 30, 20),
+                 what = c(70, 10, 20),
+                 row.names = c("A", "B", "C"))
+
+sites <- rownames(df)
+
+ggtern(data = df, aes(x = where, y = when, z = what, col = sites)) + 
+  theme_bw() +
+  geom_point(alpha = 0.5, size = 17) +
+  geom_point(size = 1, color = "black") +
+  theme_showarrows() +
+  theme(legend.position="none")
+```
+
+:::
+
+::::
+
+::: {.notes}
+Peuquet proposes a framework for modelling historical phenomena by describing them in three dimensions: thematic (what), geographical (where), and chronological (when). Whenever one of these dimensions changes, the historical phenomenon (or object) changes. Changes in phenomena can therefore be measured through the change in each of their dimensions. For example, a "revolution" (what) that takes place in the same place (where) but two centuries away (when) can be compared with two "revolutions" occuring at the same time in two different countries.
+:::
+
+## Peuquet's triad <em>extended</em>
+
+::: {.panel-tabset}
+
+### Correspondance Analysis
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+```{r}
+
+df <- data.frame(feat = c("A", "B", "C"),
+                 where = c(20, 60, 60),
+                 when = c(10, 30, 20),
+                 what = c(70, 10, 20),
+                 who = c(30, 40, 50),
+                 how = c(50, 60, 80),
+                 row.names = c("A", "B", "C"))
+
+dt <- datatable(df, 
+          rownames = FALSE,
+          width = '30%',
+          options = list(searching = FALSE,
+                         lengthChange = FALSE,
+                         paging = FALSE,
+                         scrollX = F,
+                         initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'font-size' : '16px'});}"),
+                         info = FALSE,
+                         filter = "none")) %>% 
+  formatStyle("feat",
+              backgroundColor = styleEqual(c("A", "B", "C"), 
+                                           c('#FF000070', '#00800070', '#0000FF70'))
+  ) %>%
+  formatStyle(columns = c(1:6),
+              fontSize = '16px')
+dt
+```
+
+:::
+
+
+::: {.column width="60%"}
+
+```{r}
+#| fig-width: 8
+
+res.ca <- CA(df[ , c(2:6)])
+```
+
+:::
+
+::::
+
+### HC <sup>individuals</sup>
+
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+```{r}
+dt
+```
+
+:::
+
+
+::: {.column width="60%"}
+
+Hierachical Clustering on Individuals
+
+```{r}
+dend.h <- df[ , c(2:6)] %>%
+  scale %>% 
+  dist %>% 
+  hclust
+plot(as.dendrogram(dend.h))
+```
+
+:::
+
+::::
+
+### HC <sup>variables</sup>
+
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+```{r}
+dt
+```
+
+:::
+
+
+::: {.column width="60%"}
+
+Hierachical Clustering on Variables
+
+```{r}
+dend.h <- t(df[ , c(2:6)]) %>%
+  scale %>% 
+  dist %>% 
+  hclust
+plot(as.dendrogram(dend.h))
+```
+
+:::
+
+::::
+
+:::
+
+
+## Binary Topological Relationships
+
+\
+
+<div class="row">
+
+<div class="column">
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-temopral-allen.jpg'height="300">
+<div class="captiontext">Temporal</div>
+</div>
+
+
+<div class="column">
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-spatial-rtb.jpg' height="300">
+<div class="captiontext">Spatial</div>
+</div>
+
+</div>
+
+::: {.notes}
+Spatial and temporal pairwise relationships can be model in the same way, with equivalences between 'overlaps', etc.
+:::
+
+
+# Chronological Modeling {background-color="#fba726"}
+
+::: {.notes}
+We welcome papers dealing with new theoretical, methodological and research software developments in any of the above fields, in order to promote shared practices and the discovery of new ideas and paradigms.
+:::
+
+## Bayesian modelling
+
+
+<img src='https://raw.githubusercontent.com/historical-time/caa23/master/s12/images/bayesian.png' width="800">
+
+
+## Stratigraphic modelling
+
+Harris matrix: Directed Acyclic Graphs, Partial Order
+
+<img src="https://raw.githubusercontent.com/historical-time/caa23/master/s12/images/harris.png" width="800">
+
+
+## Temporal logics
+
+::: {.panel-tabset}
+
+### Allen's temporal relations
+
+<img src="https://raw.githubusercontent.com/historical-time/caa23/master/s12/images/allen.png"> 
+
+### Other
+
+<img src="https://raw.githubusercontent.com/historical-time/caa23/master/s12/images/temporal-logics-2.png"> 
+
+:::
+
+## Seriation techniques
+
+::: {.panel-tabset}
+
+### Petrie’s "sequence dating"
+
+<img src="https://raw.githubusercontent.com/historical-time/caa23/master/s12/images/seriation-petrie.png" width="800">  
+
+
+
+
+### Other
+
+
+<img src="https://raw.githubusercontent.com/historical-time/caa23/master/s12/images/seriation-2.png">
+
+:::
+
+::: {.notes}
+"The archaeological research community has otherwise only brought too little attention to recent research results in temporal logics." 
+:::
+
+## Chronological networks
+
+<img src="https://raw.githubusercontent.com/historical-time/caa23/master/s12/images/chrono-networks.png" width="800">
+
+
+## Linked Open Data Space-Time-Gazetteers
+
+::: {.panel-tabset}
+
+### PeriodO
+
+<img src="https://raw.githubusercontent.com/historical-time/caa23/main/s12/images/PeriodO_Neolithic.png" width="800">
+
+### ChronOntology
+
+<img src="https://raw.githubusercontent.com/historical-time/caa23/main/s12/images/ChronOntology_Neolithic.png" width="800">
+
+:::
+
+
+::: {.notes}
+PeriodO: PeriodO is more focused on "quotes" of time periodes in literature (Rabinowitz / Shaw)
+ChronOntology: ChronOntoogy more on the modelling of space and a "relative chronology" and semantic alignment (DAI / i3mainz)
+:::
+
+
+## Linked Open Time Tools
+
+Research Software for Reproducible Research
+
+<img src="https://raw.githubusercontent.com/historical-time/caa23/main/s12/images/LOTD_AlligatorAMT.png" width="800">
+
+
+## Conclusive words
+
+* Many
+  - formalisms around
+  - tools around
+    
+* Need 
+  - for more communication among chronology practicioners
+  - to unify practices, standards and tools
+
+# Session organisation {background-color="#fba726"}
+
+## Time and Running Order
+
+15 minutes *per* paper + 5 minutes Q&A
+
+```{r}
+run.order <- openxlsx::read.xlsx("papers_ruling_order.xlsx", na.strings = "", detectDates = F)
+knitr::kable(run.order, "html") %>%
+  kableExtra::kable_styling(full_width = FALSE,
+                            position = "center",
+                            font_size = 20) %>%
+  row_spec(7, bold = T, hline_after = T)
+```
+
+::: {.notes}
+* Brughmans et al: Aoristic methods to model trade in Germania during Roman times
+* Taelman: Temporal uncertainty Management and vizualisation for  Roman marbles' provenance in Mediterranean 
+* Levy: Comparison of the chronological networks model used in ChronoLog with other chronological formal models 
+* Visser: Dendrochronological networks and spatio-temporal patterns
+* May, Taylor: Conventions for Archaeological Stratigraphic and Chronological Data
+* Moody et al.: Presentation of a prototype software for FAIRly archiving the process of chronology construction
+* Schmidle et al.: ChronOntology to create and label cultural periods in Africa
+* Huet at al.: Discussing the need and framework for a new CAA SIG on Chronological modelling
+:::

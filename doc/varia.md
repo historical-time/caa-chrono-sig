@@ -1,0 +1,1 @@
+**Other approaches.** A host of other formal approaches to chronological modelling and computation have been explored in the recent years, such as fuzzy logics (Niccolucci and Hermon 2015), aoristic analysis (Crema 2012), and evidence density estimation (Demján and Dreslerová 2016). 
