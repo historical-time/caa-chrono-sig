@@ -26,8 +26,8 @@ Notices
 | ChronoLog         |     |     |     |     | 1  |
 | ChronoModel       |     |     |     |     | 1  |
 
-rel: relative dating methods
-abs: absolute dating methods
-rtb: binary topological relationships, temporal logics
-iso: isostandards
-sof: software
+rel: relative dating methods  
+abs: absolute dating methods  
+rtb: binary topological relationships, temporal logics  
+iso: isostandards  
+sof: software  
