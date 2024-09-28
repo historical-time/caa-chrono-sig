@@ -4,19 +4,19 @@
 
 ```mermaid
 graph TD;
-    EventA[E5 Event: Lecture]
-    EventB[E5 Event: Conference Session]
-    TimeSpanA[E52 Time-Span: Lecture Time-Span]
-    TimeSpanB[E52 Time-Span: Conference Session Time-Span]
+    CeramicB[E55 Type: Type of Ceramic B]
+    IronAge[E4 Period: Iron Age]
+    CeramicBTimeSpan[E52 Time-Span: Ceramic B Production Start]
+    IronAgeTimeSpan[E52 Time-Span: Iron Age Duration]
 
-    EventA -->|P4 has time-span| TimeSpanA
-    EventB -->|P4 has time-span| TimeSpanB
-    TimeSpanA -->|P117 occurs during| TimeSpanB
+    CeramicB -->|P4 has time-span| CeramicBTimeSpan
+    IronAge -->|P4 has time-span| IronAgeTimeSpan
+    CeramicBTimeSpan -->|P117 occurs during| IronAgeTimeSpan
 
-    classDef eventName fill:#f9f,stroke:#333,stroke-width:2px;
-    classDef timeSpanName fill:#ccf,stroke:#333,stroke-width:2px;
-    class EventA,EventB eventName;
-    class TimeSpanA,TimeSpanB timeSpanName;
+    classDef typeClass fill:#cfc,stroke:#333,stroke-width:2px;
+    classDef timeSpanClass fill:#fcf,stroke:#333,stroke-width:2px;
+    class CeramicB,IronAge typeClass;
+    class CeramicBTimeSpan,IronAgeTimeSpan timeSpanClass;
 ```
 
 ## Ends during
@@ -24,18 +24,19 @@ graph TD;
 
 ```mermaid
 graph TD;
-    EventA[E5 Event: Workshop]
-    EventB[E5 Event: Festival]
-    TimeSpanA[E52 Time-Span: Workshop Time-Span]
-    TimeSpanB[E52 Time-Span: Festival Time-Span]
+    CeramicA[E5 Event: Type of Ceramic A Usage]
+    IronAge[E4 Period: Iron Age]
+    TimeSpanCeramicA[E52 Time-Span: Usage Time-Span of Ceramic A]
+    TimeSpanIronAge[E52 Time-Span: Iron Age Period]
 
-    EventA -->|P4 has time-span| TimeSpanA
-    EventB -->|P4 has time-span| TimeSpanB
-    TimeSpanA -->|P117 occurs during| TimeSpanB
-    TimeSpanA -->|P82b end of the span is qualified by| TimeSpanB
+    CeramicA -->|P4 has time-span| TimeSpanCeramicA
+    IronAge -->|P4 has time-span| TimeSpanIronAge
+    TimeSpanCeramicA -->|P117 occurs during| TimeSpanIronAge
+    TimeSpanCeramicA -->|P82b end of the span is qualified by| TimeSpanIronAge
 
     classDef eventName fill:#f9f,stroke:#333,stroke-width:2px;
+    classDef periodName fill:#cff,stroke:#333,stroke-width:2px;
     classDef timeSpanName fill:#ccf,stroke:#333,stroke-width:2px;
-    class EventA,EventB eventName;
-    class TimeSpanA,TimeSpanB timeSpanName;
+    class CeramicA, IronAge eventName;
+    class TimeSpanCeramicA,TimeSpanIronAge timeSpanName;
 ```
