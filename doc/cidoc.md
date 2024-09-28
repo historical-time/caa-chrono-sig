@@ -37,6 +37,6 @@ graph TD;
     classDef eventName fill:#f9f,stroke:#333,stroke-width:2px;
     classDef periodName fill:#cff,stroke:#333,stroke-width:2px;
     classDef timeSpanName fill:#ccf,stroke:#333,stroke-width:2px;
-    class CeramicA, IronAge eventName;
+    class CeramicA,IronAge eventName;
     class TimeSpanCeramicA,TimeSpanIronAge timeSpanName;
 ```
