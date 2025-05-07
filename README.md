@@ -2,7 +2,7 @@
 > CAA Chrono Special Interest Group (SIG), caa-chrono-sig
 
 <p align="center">
-  <img src="./sig/images/caa-chrono-sig-logo.jpeg" width="300">
+  <img src="./sig/images/caa-chrono-sig-logo.jpeg" width="200">
   <br>
     <em>Archaeology has no future</em>
 </p>
