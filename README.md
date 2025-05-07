@@ -2,7 +2,7 @@
 > CAA Chrono Special Interest Group (SIG), caa-chrono-sig
 
 <p align="center">
-  <img src="../../images/caa-chrono-sig-logo.jpeg" width="500">
+  <img src="./sig/images/caa-chrono-sig-logo.jpeg" width="500">
   <br>
     <em>I'm late</em>
 </p>
