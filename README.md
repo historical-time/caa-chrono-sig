@@ -16,7 +16,7 @@ The ambition of the SIG Chrono is to model temporal processes that underlie arch
 
 ### Suscribe
 
-To register to the mailing list, send a message to `sympa@framagroupes.org` with this **Subject** (leave body empty or put a short message):
+To register to the `caa-chrono-sig` mailing list, send a message to `sympa@framagroupes.org` with this **Subject** (leave body empty or put a short message):
 
 - SUBSCRIBE caa-chrono-sig *Firstname* *Lastname*
 
@@ -24,7 +24,7 @@ Replace *Firstname* and *Lastname* with your real name or identifier.
 
 ### Unsuscribe
 
-Same process as above, with this **Subject**
+To unsuscribe from the `caa-chrono-sig` mailing list, same process as above, with this **Subject**
 
 - UNSUBSCRIBE caa-chrono-sig
 
