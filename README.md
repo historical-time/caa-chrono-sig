@@ -20,7 +20,7 @@ To register to the `caa-chrono-sig` mailing list, send a message to `sympa@frama
 
 - SUBSCRIBE caa-chrono-sig *Firstname* *Lastname*
 
-Replace *Firstname* and *Lastname* with your real name or identifier.
+Replace *Firstname* and *Lastname* with your real name or identifier, ex: 'SUBSCRIBE caa-chrono-sig Doe John'
 
 ### Unsuscribe
 
