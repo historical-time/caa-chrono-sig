@@ -33,7 +33,7 @@ To unsuscribe from the `caa-chrono-sig` mailing list, same process as above, wit
 ### CAA23
 > https://2023.caaconference.org/, 2023-04-03/2023-04-06, Amsterdam
 
-### S12: Chronological modelling: formal methods and research software
+#### S12: Chronological modelling: formal methods and research software
 > Eythan Levy, Thomas Huet, Florian Thiery, Allard W. Mees
 
 * General Introduction to S12: https://historical-time.github.io/caa-chrono-sig/caa/23/s12/pres
@@ -43,7 +43,10 @@ To unsuscribe from the `caa-chrono-sig` mailing list, same process as above, wit
 > https://2025.caaconference.org/, 2025-05-05/2023-05-09, Athens
 
 
-### S1: Chronological modelling II: formal methods and research software
+#### S1: Chronological modelling II: formal methods and research software
 > Eythan Levy, Thomas Huet
 
+### CAA26
+
+Round-table project, see this [Jupyter NB](https://colab.research.google.com/drive/1Q5P3uYHTAe287470VnwkSvXMtFMqQLM3#scrollTo=SSQdoAj0VipO)
 
