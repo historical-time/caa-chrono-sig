@@ -1,5 +1,5 @@
 # SIG Chrono
-> CAA Chrono Special Interest Group (SIG), caa-chrono-sig
+> CAA Special Interest Group on chronological modelling (SIG Chrono), caa-chrono-sig
 
 <p align="center">
 	<em>Archaeology has no future</em><br>
@@ -11,7 +11,8 @@ The ambition of the SIG Chrono is to model temporal processes that underlie arch
 ## Useful links
 
 * CAA SIG: https://caa-international.org/special-interest-groups/
-
+* Huet, T., & Levy, E. (eds) (2025). [Special issue on Chronological modelling](https://onlinelibrary.wiley.com/toc/14754754/2025/67/S1). Archaeometry, 67(S1). 
+  
 ## Mailing list
 
 ### Suscribe
