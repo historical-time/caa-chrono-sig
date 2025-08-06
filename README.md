@@ -49,5 +49,5 @@ To unsuscribe from the `caa-chrono-sig` mailing list, same process as above, wit
 
 ### CAA26
 
-Round-table project, see this [Jupyter NB](https://colab.research.google.com/drive/1Q5P3uYHTAe287470VnwkSvXMtFMqQLM3#scrollTo=SSQdoAj0VipO)
+Round-table project.
 
