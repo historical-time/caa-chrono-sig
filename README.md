@@ -1,5 +1,5 @@
 # SIG Chrono
-> CAA Chrono Special Interest Group (SIG), caa-chrono-sig
+> CAA Special Interest Group on chronological modelling (SIG Chrono), caa-chrono-sig
 
 <p align="center">
 	<em>Archaeology has no future</em><br>
@@ -11,7 +11,8 @@ The ambition of the SIG Chrono is to model temporal processes that underlie arch
 ## Useful links
 
 * CAA SIG: https://caa-international.org/special-interest-groups/
-
+* Huet, T., & Levy, E. (eds) (2025). [Special issue on Chronological modelling](https://onlinelibrary.wiley.com/toc/14754754/2025/67/S1). Archaeometry, 67(S1). 
+  
 ## Mailing list
 
 ### Suscribe
@@ -92,5 +93,3 @@ Deterministic dates, whether seemingly exact (e.g., 79 AD), approximate with unc
 A host of mathematical methods and algorithms exist for both deterministic and probabilistic temporal assessments in archaeology. Software packages (libraries), as well as interactive software applications, are being used to solve a wide variety of chronological problems, such as seriation, Bayesian calibration of radiocarbon dates, or chronological network modelling. Mastering the whole array of available chronological methods, algorithms and tools can be challenging. Is a unified, standardised approach feasible and desirable? And if so, what concrete steps can be taken to achieve it?
 
 **Conclusion: Towards a Temporal Information System?** [5-10 minutes]
-
-
