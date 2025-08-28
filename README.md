@@ -49,7 +49,7 @@ To unsuscribe from the `caa-chrono-sig` mailing list, same process as above, wit
 
 ## CAA26
 
-### Sx: Chronological Modelling III: a Round Table on Time on Computational Archaeology
+### Sx: Chronological Modelling III: a Round Table on Time in Computational Archaeology
 > Thomas Huet, Eythan Levy
 
 This round table aims at discussing the current challenges and future perspectives on the modelling of time in archaeology. Duration: 2h30.
