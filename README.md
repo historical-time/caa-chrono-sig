@@ -58,7 +58,7 @@ Some 30 years ago, the introduction of GIS into the archaeological toolbox spark
 
 **Position paper**
 
-Huet, T., & Levy, E. (eds) (2025). Special issue on Chronological modelling. Archaeometry, 67(S1). https://onlinelibrary.wiley.com/toc/14754754/2025/67/S1 (Accessed August 6, 2025)
+Huet, T., & Levy, E. (2025). Foreword – Archaeometry special issue on chronological modeling. Archaeometry, 67(S1), 1–6. https://doi.org/10.1111/arcm.13095 
 
 #### Session organisation
 
