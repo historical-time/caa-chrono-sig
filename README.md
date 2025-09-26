@@ -75,11 +75,11 @@ To unsuscribe from the `caa-chrono-sig` mailing list, same process as above, wit
 
 This round table aims at discussing the current challenges and future perspectives on the modelling of time in archaeology. Duration: 2h30.
 
-Some 30 years ago, the introduction of GIS into the archaeological toolbox sparked a ‘spatial turn’ in the discipline, greatly improving the interoperability of spatial data. However, no such integrated tool exists for managing temporal data. Chronological methods are highly diverse (e.g., seriation, stratigraphy, cross-dating, absolute dating), each typically handled by different software applications and libraries. The lack of interoperability between software outputs, formats and standards hinders the ability to understand cultural developments across different societies. In our view, the time has come to make chronological data more interoperable through the use of standardised formats (e.g., EDTF), relative temporal relationships (e.g., before/after), and specialised software (e.g., OxCal). Such an approach could pave the way for a Temporal Information System (TIS), enabling the calculation of a temporal metric for the rate of human cultural evolution (Huet & Levy, 2025)
+Some 30 years ago, the introduction of GIS into the archaeological toolbox sparked a ‘spatial turn’ in the discipline, greatly improving the interoperability of spatial data. However, no such integrated tool exists for managing temporal data. Chronological methods are highly diverse (e.g., seriation, stratigraphy, cross-dating, absolute dating), each typically handled by different software applications and libraries. The lack of interoperability between software outputs, formats and standards hinders the ability to understand cultural developments across different societies. In our view, the time has come to make chronological data more interoperable through the use of standardised formats (e.g., EDTF), relative temporal relationships (e.g., before/after), and specialised software (e.g., OxCal). Such an approach could pave the way for a Temporal Information System (TIS), enabling the calculation of a temporal metric for the rate of human cultural evolution (see our position paper: Huet & Levy, 2025). We invite all interested colleagues to participate in the open-forum discussion at the round table.
 
-**Reference**
+**Position paper**
 
-Huet, T., & Levy, E. (eds) (2025). Special issue on Chronological modelling. Archaeometry, 67(S1). https://onlinelibrary.wiley.com/toc/14754754/2025/67/S1 (Accessed August 6, 2025)
+Huet, T., & Levy, E. (2025). Foreword – Archaeometry special issue on chronological modelling. *Archaeometry*, 67(S1), 1–6. https://doi.org/10.1111/arcm.13095 
 
 #### Session organisation
 
