@@ -49,7 +49,28 @@ To unsuscribe from the `caa-chrono-sig` mailing list, same process as above, wit
 
 ## CAA26
 
-### Sx: Chronological Modelling III: a Round Table on Time in Computational Archaeology
+### SIG 1st meeting
+> total duration: 1h15-1h30, on ZOOM ([link](https://cnrs.zoom.us/j/92673181427?pwd=dXeIslab5TbigHQa2ooAGJaOsagBBY.1) - [.ics]())
+
+* "A Computational Approach toward Minoan Chronology: Thoughts on the modelling aspects", Invited talk [30–40 min], by Martina Trognitz <martina.trognitz@yahoo.de>, Diamantis Panagiotopoulos <diamantis.panagiotopoulos@zaw.uni-heidelberg.de> and Iro Mathioudaki <iro.mathioudaki@gmail.com>
+
+	- Q&A [5–10 min] (all participants)
+
+* *Archaeometry* [Special issue on Chronological modelling](https://onlinelibrary.wiley.com/toc/14754754/2025/67/S1) review [5 min] (Thomas Huet <thomas.huet@cnrs.fr> and Eythan Levy <eythan.levy@gmail.com>)
+
+* SIG Chrono business [15 min] (all participants)
+
+	- SIG presentation
+
+	- vote for the board (chair and secretary positions)
+
+	- next steps / next meeting
+
+* Presentation of the CAA2026 round table session S35 ["Chronological Modelling III: A Round Table on Time in Computational Archaeology"](https://2026.caaconference.org/round-tables/) [5 min] (TH and EL)
+
+* Any other business [15 min] (all participants)
+
+### S35: Chronological Modelling III: a Round Table on Time in Computational Archaeology
 > Thomas Huet, Eythan Levy
 
 This round table aims at discussing the current challenges and future perspectives on the modelling of time in archaeology. Duration: 2h30.
