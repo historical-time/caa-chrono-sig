@@ -29,27 +29,9 @@ To unsuscribe from the `caa-chrono-sig` mailing list, same process as above, wit
 
 - UNSUBSCRIBE caa-chrono-sig
 
-# The SIG Chrono @t the CAA
+# Meetings
 
-## CAA23
-> https://2023.caaconference.org/, 2023-04-03/2023-04-06, Amsterdam
-
-### S12: Chronological modelling: formal methods and research software
-> Eythan Levy, Thomas Huet, Florian Thiery, Allard W. Mees
-
-* General Introduction to S12: https://historical-time.github.io/caa-chrono-sig/caa/23/s12/pres
-* Discussing the need for a new CAA Special Interest Group on chronological modelling: https://historical-time.github.io/caa-chrono-sig/sig/pres
-
-## CAA25
-> https://2025.caaconference.org/, 2025-05-05/2023-05-09, Athens
-
-
-### S1: Chronological modelling II: formal methods and research software
-> Eythan Levy, Thomas Huet
-
-## CAA26
-
-### SIG Chrono - 1st meeting
+## SIG Chrono - 1st meeting
 > 27 October 2025 at 10am CET time (Paris), total duration: 1h15-1h30, on ZOOM ([link](https://cnrs.zoom.us/j/92673181427?pwd=dXeIslab5TbigHQa2ooAGJaOsagBBY.1) - [⬇️.ics](https://raw.githubusercontent.com/historical-time/caa-chrono-sig/main/sig/meetings/2501027-sig_1st_meeting.ics
 ))
 
@@ -70,6 +52,26 @@ To unsuscribe from the `caa-chrono-sig` mailing list, same process as above, wit
 * **Presentation of the CAA2026 round table session S35:  "Chronological Modelling III: A Round Table on Time in Computational Archaeology** ([link](https://2026.caaconference.org/round-tables/)) [5 min], _Thomas Huet and Eytahn Levy_
 
 * **Any other business** [15 min], _all participants_
+
+# The SIG Chrono @t the CAA
+
+## CAA23
+> https://2023.caaconference.org/, 2023-04-03/2023-04-06, Amsterdam
+
+### S12: Chronological modelling: formal methods and research software
+> Eythan Levy, Thomas Huet, Florian Thiery, Allard W. Mees
+
+* General Introduction to S12: https://historical-time.github.io/caa-chrono-sig/caa/23/s12/pres
+* Discussing the need for a new CAA Special Interest Group on chronological modelling: https://historical-time.github.io/caa-chrono-sig/sig/pres
+
+## CAA25
+> https://2025.caaconference.org/, 2025-05-05/2023-05-09, Athens
+
+
+### S1: Chronological modelling II: formal methods and research software
+> Eythan Levy, Thomas Huet
+
+## CAA26
 
 ### S35: Chronological Modelling III: a Round Table on Time in Computational Archaeology
 > Thomas Huet, Eythan Levy
