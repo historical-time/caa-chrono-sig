@@ -49,7 +49,7 @@ To unsuscribe from the `caa-chrono-sig` mailing list, same process as above, wit
 
 ## CAA26
 
-### SIG 1st meeting
+### SIG Chrono - 1st meeting
 > 27 October 2025 at 10am CET time (Paris), total duration: 1h15-1h30, on ZOOM ([link](https://cnrs.zoom.us/j/92673181427?pwd=dXeIslab5TbigHQa2ooAGJaOsagBBY.1) - [⬇️.ics](https://raw.githubusercontent.com/historical-time/caa-chrono-sig/main/sig/meetings/2501027-sig_1st_meeting.ics
 ))
 
