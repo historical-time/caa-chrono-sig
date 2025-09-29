@@ -49,8 +49,8 @@ To unsuscribe from the `caa-chrono-sig` mailing list, same process as above, wit
 
 	- next steps / next meeting
 
-* Presentation of the **CAA2026 round table session S35:  "Chronological Modelling III: A Round Table on Time in Computational Archaeology** ([link](https://2026.caaconference.org/round-tables/)) [5 min], _Thomas Huet and Eythan Levy_
-
+* Presentation of the **CAA2026 round table session S35:  "Chronological Modelling III: A Round Table on Time in Computational Archaeology** ([link](https://2026.caaconference.org/round-tables/)) [5 min], _Thomas Huet and Eythan Levy_ with the collaboration of _Joan Anton Barcelo, Keith May, James Taylor, Florian Thierry and Joe Roe_
+  
 * **Any other business** [15 min], _all participants_
 
 # The SIG Chrono @t the CAA
