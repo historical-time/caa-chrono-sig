@@ -35,11 +35,11 @@ To unsuscribe from the `caa-chrono-sig` mailing list, same process as above, wit
 > **27 October 2025 at 10am CET time (Paris)**, total duration: 1h15-1h30, on ZOOM ([link](https://cnrs.zoom.us/j/92673181427?pwd=dXeIslab5TbigHQa2ooAGJaOsagBBY.1) - [⬇️.ics](https://raw.githubusercontent.com/historical-time/caa-chrono-sig/main/sig/meetings/2501027-sig_1st_meeting.ics
 ))
 
-* Invited talk: **"A Computational Approach toward Minoan Chronology: Thoughts on the modelling aspects"** [30–40 min], _Martina Trognitz ([email](martina.trognitz@yahoo.de>)), Diamantis Panagiotopoulos ([email](diamantis.panagiotopoulos@zaw.uni-heidelberg.de)), and Iro Mathioudaki ([email](iro.mathioudaki@gmail.com))_
+* Invited talk: **"A Computational Approach toward Minoan Chronology: Thoughts on the modelling aspects"** [30–40 min], _Martina Trognitz ([email](mailto:martina.trognitz@yahoo.de)), Diamantis Panagiotopoulos ([email](mailto:diamantis.panagiotopoulos@zaw.uni-heidelberg.de)), and Iro Mathioudaki ([email](mailto:iro.mathioudaki@gmail.com))_
 
 	- Q&A [5–10 min], _all participants_
 
-* Review of the *Archaeometry* **"Special issue on Chronological modelling"** ([link](https://onlinelibrary.wiley.com/toc/14754754/2025/67/S1)) [5 min] _Thomas Huet ([email](thomas.huet@cnrs.fr)) and Eythan Levy ([email](eythan.levy@gmail.com>))_
+* Review of the *Archaeometry* **"Special issue on Chronological modelling"** ([link](https://onlinelibrary.wiley.com/toc/14754754/2025/67/S1)) [5 min] _Thomas Huet ([email](mailto:thomas.huet@cnrs.fr)) and Eythan Levy ([email](mailto:eythan.levy@gmail.com>))_
 
 * **SIG Chrono business** [15 min], _all participants_
 
