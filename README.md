@@ -32,24 +32,24 @@ To unsuscribe from the `caa-chrono-sig` mailing list, same process as above, wit
 # Meetings
 
 ## SIG Chrono - 1st meeting
-> 27 October 2025 at 10am CET time (Paris), total duration: 1h15-1h30, on ZOOM ([link](https://cnrs.zoom.us/j/92673181427?pwd=dXeIslab5TbigHQa2ooAGJaOsagBBY.1) - [⬇️.ics](https://raw.githubusercontent.com/historical-time/caa-chrono-sig/main/sig/meetings/2501027-sig_1st_meeting.ics
+> **27 October 2025 at 10am CET time (Paris)**, total duration: 1h15-1h30, on ZOOM ([link](https://cnrs.zoom.us/j/92673181427?pwd=dXeIslab5TbigHQa2ooAGJaOsagBBY.1) - [⬇️.ics](https://raw.githubusercontent.com/historical-time/caa-chrono-sig/main/sig/meetings/2501027-sig_1st_meeting.ics
 ))
 
-* **A Computational Approach toward Minoan Chronology: Thoughts on the modelling aspects**, Invited talk [30–40 min], _Martina Trognitz ([email](martina.trognitz@yahoo.de>)), Diamantis Panagiotopoulos ([email](diamantis.panagiotopoulos@zaw.uni-heidelberg.de)), and Iro Mathioudaki ([email](iro.mathioudaki@gmail.com))_
+* Invited talk: **A Computational Approach toward Minoan Chronology: Thoughts on the modelling aspects** [30–40 min], _Martina Trognitz ([email](martina.trognitz@yahoo.de>)), Diamantis Panagiotopoulos ([email](diamantis.panagiotopoulos@zaw.uni-heidelberg.de)), and Iro Mathioudaki ([email](iro.mathioudaki@gmail.com))_
 
 	- Q&A [5–10 min], _all participants_
 
-* ***Archaeometry* Special issue on Chronological modelling review** ([link](https://onlinelibrary.wiley.com/toc/14754754/2025/67/S1)) [5 min] _Thomas Huet ([email](thomas.huet@cnrs.fr)) and Eythan Levy ([email](eythan.levy@gmail.com>))_
+* Review of the ***Archaeometry* Special issue on Chronological modelling** ([link](https://onlinelibrary.wiley.com/toc/14754754/2025/67/S1)) [5 min] _Thomas Huet ([email](thomas.huet@cnrs.fr)) and Eythan Levy ([email](eythan.levy@gmail.com>))_
 
 * **SIG Chrono business** [15 min], _all participants_
 
 	- SIG presentation
 
-	- vote for the board (chair and secretary positions)
+	- vote for the board (Convener and Secretary positions)
 
 	- next steps / next meeting
 
-* **Presentation of the CAA2026 round table session S35:  "Chronological Modelling III: A Round Table on Time in Computational Archaeology** ([link](https://2026.caaconference.org/round-tables/)) [5 min], _Thomas Huet and Eytahn Levy_
+* Presentation of the **CAA2026 round table session S35:  "Chronological Modelling III: A Round Table on Time in Computational Archaeology** ([link](https://2026.caaconference.org/round-tables/)) [5 min], _Thomas Huet and Eythan Levy_
 
 * **Any other business** [15 min], _all participants_
 
@@ -71,6 +71,15 @@ To unsuscribe from the `caa-chrono-sig` mailing list, same process as above, wit
 ### S1: Chronological modelling II: formal methods and research software
 > Eythan Levy, Thomas Huet
 
+Time and its analysis are at the heart of archaeology: one of the main objectives of the archaeologist is the establishment of a temporal framework for a given layer, site or material culture. But archaeology covers such a wide range of cultures, dispersed both in time and space, that contextual chronological assessments are constructed using very different tools, languages and techniques. It creates as many different temporal and cultural frameworks as there are specialties, with notable differences in approaches depending on whether one is dealing with absolute or relative chronology, laboratory techniques or cultural approaches, deterministic or statistical methods (Buck and Millard 2004).
+
+The principle of a Special Interest Group (SIG) on chronological modelling (SIG-CHRONO) has been approved by the CAA steering committee during the 2024 Annual General Meeting (AGM), and a formal proposal for its creation will be presented at the 2025 CAA conference. The proposed session will be related to this new SIG, in order to explore a wide variety of research tools and techniques related to (semantic) chronological modelling in archaeology and to identify common methodological frameworks and to build bridges between specialties.
+
+We strongly encourage submissions presenting new mathematical models and algorithms for handling  chronological data, whether based on deterministic or probabilistic approaches (e.g., Bayesian methods, stratigraphic modelling, temporal logics; see: <https://github.com/historical-time/caa-chrono-sig/tree/main/doc>). Additionally, we welcome contributions focused on open-source and open-access software. Papers addressing interoperability between different chronological models (or their implementations) are also encouraged. This includes topics such as the use of ontologies (e.g., CRMarchaeo, SKOS), controlled vocabularies and time gazetteers (e.g., PeriodO, ChronOntology), and the application of ISO standards like Date and EDTF, in the framework of Linked Open Data.
+
+**Reference**
+Buck, C.E. and Millard, A. 2004. Tools for Constructing Chronologies: Crossing Disciplinary Boundaries. London.
+
 ## CAA26
 
 ### S35: Chronological Modelling III: a Round Table on Time in Computational Archaeology
@@ -90,12 +99,12 @@ Huet, T., & Levy, E. (2025). Foreword – Archaeometry special issue on chronolo
 > Thomas Huet and Eythan Levy
 
 **Topic 1: Epistemology of archaeological time** [30 minutes]
-> chair: Joan Anton Barcelo
+> _chair_: Joan Anton Barcelo
 
 History and Archaeology, sciences of societies in time, are based on the ordering and clustering of events, but differ mainly on the different nature of the proxies they use. History uses mainly authored time-stamped writings (e.g., diplomatic letters, political writings) while Archaeology uses anonymous time-uncertain material culture (e.g., ceramic and stratigraphic sequences). How can such archaeological series be grouped to create periods? To what extent can two periods be considered as contemporaneous ?  
 
 **Topic 2: Archaeological time in practice: cross dating, anchor dates, cultural periods** [30 minutes]
-> chair: Keith May, James Taylor
+> _chair_: Keith May, James Taylor
 
 Archaeologists often deal with multi-aligned chronological data: a piece of material culture can be related to a stratigraphic unit containing other objects, to site-wide stratigraphy with groupings and phasing, to broader landscape and/or cultural periodisation, to seriation, to artifact types found in other archaeological cultures, and to so-called ‘absolute’ dates from scientific dating methods (e.g., radiocarbon dates). How, in practice, are these data aligned with each other? How is uncertainty propagated over different chronological assessments?
 
@@ -106,13 +115,13 @@ Archaeologists often deal with multi-aligned chronological data: a piece of mate
 ---
 
 **Topic 3: Formats, standards and interoperability** [30 minutes]
-> chair: Florian Thierry
+> _chair_: Florian Thierry
 
 Deterministic dates, whether seemingly exact (e.g., 79 AD), approximate with uncertainties (e.g., 80/81 AD), or relative (e.g., after 68 AD), can be encoded unambiguously using standards such as ISO 8601, EDTF, or OWL-Time. Such date expressions can serve as the basis for space–time gazetteers (e.g., PeriodO and ChronOntology) and be reused in ontologies (e.g., CIDOC CRM). However, these formats, gazetteers and ontologies cannot directly express probabilistic temporal distributions, such as those derived from radiometric dating. Furthermore, the different ad hoc chronological formats and syntaxes used by chronological software (e.g., OxCal, ChronoModel, or ChronoLog) add a further layer of complexity. How can we foster interoperability between all these formats and standards?
 
 
 **Topic 4: Mathematics, Algorithms and Software** [30 minutes]
-> chair: Joe Roe
+> _chair_: Joe Roe
 
 A host of mathematical methods and algorithms exist for both deterministic and probabilistic temporal assessments in archaeology. Software packages (libraries), as well as interactive software applications, are being used to solve a wide variety of chronological problems, such as seriation, Bayesian calibration of radiocarbon dates, or chronological network modelling. Mastering the whole array of available chronological methods, algorithms and tools can be challenging. Is a unified, standardised approach feasible and desirable? And if so, what concrete steps can be taken to achieve it?
 
