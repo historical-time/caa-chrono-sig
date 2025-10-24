@@ -1,9 +1,9 @@
 ---
-title: "Discussion"
-subtitle: "Discussing the need for a new CAA Special Interest Group on chronological modelling"
-author: "Thomas Huet, Eythan Levy, Florian Thiery, Allard W. Mees"
+title: "SIG Chrono"
+# subtitle: ""
+# author: ""
 title-slide-attributes:
-    data-background-image: "https://raw.githubusercontent.com/historical-time/caa-chrono-sig/master/img/logo-s12.png"
+    data-background-image: "https://raw.githubusercontent.com/historical-time/caa-chrono-sig/master/img/caa-chrono-sig-logo.png"
     data-background-size: "30%"
     data-background-opacity: "0.3"
 format:
@@ -21,8 +21,8 @@ format:
     preview-links: auto
     reference-location: document
     footnotes-hover: true
-    logo: https://raw.githubusercontent.com/historical-time/caa-chrono-sig/master/img/logo-caa23.png
-    footer: "<em>S12. Chronological modelling: formal methods and research software</em> <img src='https://raw.githubusercontent.com/historical-time/caa-chrono-sig/master/img/logo-caa23.png' style='height: 40px;vertical-align: middle;'> <https://github.com/archaeochrono/caa23>  CAA23, Amsterdam, 2023"
+    logo: https://raw.githubusercontent.com/historical-time/caa-chrono-sig/master/img/logo-caa.png
+    footer: "CAA SIG Chrono 1<sup>st</sup> meeting <img src='https://raw.githubusercontent.com/historical-time/caa-chrono-sig/master/img/caa-chrono-sig-logo.png' style='height: 25px;vertical-align: middle;'> <https://github.com/archaeochrono/caa23> 27 Oct 2025"
     margin: 0
     width: 1200
 ---
