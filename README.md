@@ -63,8 +63,8 @@ To unsuscribe from the `caa-chrono-sig` mailing list, same process as above, wit
 ### S12: Chronological modelling: formal methods and research software
 > Eythan Levy, Thomas Huet, Florian Thiery, Allard W. Mees
 
-* General Introduction to S12: https://historical-time.github.io/caa-chrono-sig/caa/23/s12/pres
-* Discussing the need for a new CAA Special Interest Group on chronological modelling: https://historical-time.github.io/caa-chrono-sig/sig/pres
+* General Introduction to S12: https://historical-time.github.io/caa-chrono-sig/caa/23/s12/intro/pres
+* Discussing the need for a new CAA Special Interest Group on chronological modelling: https://historical-time.github.io/caa-chrono-sig/sig/discuss/pres
 
 ## CAA25
 > https://2025.caaconference.org/, 2025-05-05/2023-05-09, Athens
