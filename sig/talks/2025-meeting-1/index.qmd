@@ -1,10 +1,10 @@
 ---
-title: "SIG Chrono"
+title: "CAA SIG Chrono"
 # subtitle: ""
 # author: ""
 title-slide-attributes:
     data-background-image: "https://raw.githubusercontent.com/historical-time/caa-chrono-sig/master/img/caa-chrono-sig-logo.png"
-    data-background-size: "30%"
+    data-background-size: "60%"
     data-background-opacity: "0.3"
 format:
   revealjs: 
@@ -22,7 +22,7 @@ format:
     reference-location: document
     footnotes-hover: true
     logo: https://raw.githubusercontent.com/historical-time/caa-chrono-sig/master/img/logo-caa.png
-    footer: "CAA SIG Chrono 1<sup>st</sup> meeting <img src='https://raw.githubusercontent.com/historical-time/caa-chrono-sig/master/img/caa-chrono-sig-logo.png' style='height: 25px;vertical-align: middle;'> <https://github.com/archaeochrono/caa23> 27 Oct 2025"
+    footer: "CAA SIG Chrono 1<sup>st</sup> meeting <img src='https://raw.githubusercontent.com/historical-time/caa-chrono-sig/master/img/caa-chrono-sig-logo.png' style='height: 25px;vertical-align: middle;'> <https://github.com/historical-time/caa-chrono-sig/> - 27 Oct 2025"
     margin: 0
     width: 1200
 ---
