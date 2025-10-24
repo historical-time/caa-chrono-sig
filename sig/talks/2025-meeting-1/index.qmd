@@ -27,105 +27,6 @@ format:
     width: 1200
 ---
 
-## Varia {data-visibility=hidden}
-
-<span style="color:grey;">... Chalcolithic</span> occurs before <span style="color:grey;">Bell Beaker ...</span>
-
-<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/when-strati.jpg">
-
-<img src="https://raw.githubusercontent.com/zoometh/neonet/master/doc/img/SPDneonet.png">
-<img src="https://raw.githubusercontent.com/zoometh/neonet/master/doc/img/events_duration.png">
-
-<img src='https://raw.githubusercontent.com/historical-time/caa-chrono-sig/master/img/diffusion-neo.png'>
-
-
-
-# Introduction {background-color="#88c28d"}
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE}
-library(plotly)
-library(dplyr)
-library(DT)
-# library(ggtern)
-library(kableExtra)
-library(knitr)
-library(FactoMineR)
-```
-
-::: {.notes}
-For Leibnitz, "time" groups events that follow one another, while "space" groups objects that coexist.
-:::
-
-## CAA
-
-Computer Applications and Quantitative Methods in Archaeology (CAA)
-
-* <span class="midtext">annual conferences with > 300 participants every year</span>
-
-```{=html}
-<embed src="https://caa-international.org/" width="1400px" height="400px" />
-```
-
-
-## CAA Special Interest Groups (CAA-SIG) {auto-animate=true}
-
-<span vertical-align: center><img src='https://raw.githubusercontent.com/historical-time/caa-chrono-sig/master/img/logo-caa.png' style='height: 50px;vertical-align: middle;'> SIG <span class="midtext"><https://caa-international.org/special-interest-groups/></span>
-
-<div class="midtext">
-<ul>
-<li>Complex Systems Simulation</li>
-<li>Computer Programs for Archaeologists</li>
-<li>Mobile GIS</li>
-<li>3D spatial analysis</li>
-<li>Scientific Scripting Languages in Archaeology</li>
-<li>Semantics and LOUD in Archaeology</li>
-<li>Archaeological Practices and Knowledge Work</li>
-<li>Computationally Modeling Water-based Movement</li>  
-</ul>
-</div>
-
-## CAA Special Interest Groups (CAA-SIG) {auto-animate=true}
-
-<span vertical-align: center><img src='https://raw.githubusercontent.com/historical-time/caa-chrono-sig/master/img/logo-caa.png' style='height: 50px;vertical-align: middle;'> SIG <span class="midtext"><https://caa-international.org/special-interest-groups/></span>
-
-<div class="midtext">
-<ul>
-<li>Complex Systems Simulation</li>
-<li>Computer Programs for Archaeologists</li>
-<li>Mobile GIS</li>
-<li>3D spatial analysis</li>
-<li><b>Scientific Scripting Languages in Archaeology</b></li>
-<li><b>Semantics and LOUD in Archaeology</b></li>
-<li>Archaeological Practices and Knowledge Work</li>
-<li>Computationally Modeling Water-based Movement</li>  
-</ul>
-</div>
-
-
-## CAA SIG *SSLA* and *Data Dragons*
-
-::: {.panel-tabset}
-
-### SSLA
-
-<span class="midtext">Special Interest Group on Scientific Scripting Languages in Archaeology</span>
-
-```{=html}
-<iframe width="1200" height="500" src="https://sslarch.github.io/" title="SSLA"></iframe>
-```
-
-### Data Dragons
-
-```{=html}
-<iframe width="1200" height="500" src="https://datadragon.link/" title="Dragons"></iframe>
-```
-
-
-:::
-
-# Statement of need {background-color="#88c28d"}
-
-
 ## Chronological *turn*
 
 <div class="row">
@@ -142,100 +43,40 @@ Computer Applications and Quantitative Methods in Archaeology (CAA)
 In the 90's, development of GIS in archaeology led to a "geographic turn" but **no such a thing for the temporal dimension**
 :::
 
-# CAA-SIG proposed framework {background-color="#88c28d"}
+## _Archaeometry_ Special Issue on Chronological Modelling
 
-## CAA-SIG workflow
+:::: {.columns}
 
-::: {.panel-tabset}
+::: {.column width="30%"}
 
-### Asynchronous, Distributed
-
-**Git**, distributed versioning: 
-
-* <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 60px; vertical-align:middle"> GitHub <span class="midtext"><https://github.com></span> ➡️ <img src="https://avatars.githubusercontent.com/u/118306692?s=400&u=a0602f22cd6da77d2b6f5f85a21adeffac42c664&v=4" style="height: 60px; vertical-align:middle"> <a href="https://github.com/historical-time">historical-time</a>
-
-* <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-gitlab.png" style="height: 60px; vertical-align:middle"> GitLab <span class="midtext"><https://gitlab.com></span>  
-
-
-### Project-based
-
-
-```{=html}
-<iframe width="1400" height="700" src="https://zoometh.github.io/neonet/" title=""></iframe>
-```
+<img src='https://raw.githubusercontent.com/historical-time/caa-chrono-sig/master/img/publi-archaeometry-si-chrono.png' style='width: 250px;vertical-align: middle;'>
 
 :::
 
-## Semantisation
 
-::: {.panel-tabset}
+::: {.column width="70%"}
 
+<small>
 
-### EDTF
+1. Foreword – Archaeometry special issue on chronological modeling | Thomas Huet,  Eythan Levy
+2. A Bayesian alternative for aoristic analyses in archaeology | Enrico R. Crema
+3. Bayesian radiocarbon modelling for beginners | Caitlin E. Buck,  Miguel A. Juárez
+4. The stratigraphic biography of an archaeological site. Timing depositional events | Vasiliki Andreaki,  Juan Antonio Barceló
+5. Representing time in documentation using the CIDOC CRM | Stephen D. Stead
+6. A new conservative and robust Bayesian approach for the event date model in chronology building | Komlan Midodzi Noukpoape, Philippe Lanos, Philippe Dufresne
+7. Prerequisites for a computational approach to Minoan chronology | Diamantis Panagiotopoulos,  Martina Trognitz
+8. Genealogies and oral histories as chronological networks: interfacing whakapapa (Māori genealogies) with Gregorian calendar year archaeological radiocarbon dates | Isaac H. McIvor,  Alan Hogg,  Tom Roa,  Waikaremoana Waitoki,  Gretel Boswijk,  Warren Gumbley,  Atholl Anderson,  Rowan McBride
+9. Data complexity and computer assisted chronology: Methods and discoveries | David A. Falk
+10. Temporal relations in archaeology: a survey and a new typology | Eythan Levy
 
-Use of Extended Date/Time Format ([EDTF](https://www.loc.gov/standards/datetime/))[^6] as time primitives
-
-```{=html}
-<iframe width="1200" height="500" src="https://www.loc.gov/standards/datetime/"></iframe>
-```
-
-### CIDOC-CRM
-
-Use of the CIDOC Conceptual Reference Model ([CIDOC-CRM](https://www.cidoc-crm.org/)) to map the chronological assumptions
-
-```{=html}
-<iframe width="1400" height="500" src="https://historical-time.github.io/caa23/www/thera-cidoc-graph.html"></iframe>
-```
-
-
-### SPARQL
-
-Use of Sparse Query Language ([SPARQL](https://www.w3.org/TR/rdf-sparql-query/))[^4] to retrieve the information
-
-```{.sql code-line-numbers="5-9"}
-  prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-  prefix skos:    <http://www.w3.org/2004/02/skos/core#>
-  prefix dcterms: <http://purl.org/dc/terms/>
-
-  select ?id ?name
-  where {
-  ?concept skos:prefLabel ?name ;
-           dcterms:identifier ?id .
-  FILTER (lang(?name) = 'en-us')
-```
+</small>
 
 :::
 
-[^4]: ISO/IEC 9075-15 <img src='https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/www/lod-iso-sparql.png' style='height: 35px;vertical-align: middle;'>
-[^6]: ISO 8601-2
-
-::: {.notes}
-EDTF is an extension of the previously seen ISO-8601 Date format. It allows an accurate record of time events and durations whatever their fuzzyness (seasons, before, etc.)
-:::
-
-# Outputs {background-color="#88c28d"}
-
-## Data papers
-
-Facilitate the publication of human-machine readable papers of temporal data
-
-<div class="row">
-
-<div class="column"><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/when-geology.png" style="height: 350px">
-<div class="captiontext">Very unprecise</div>
-</div>
-
-<div class="column"><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/when-tree.jpg" style="height: 350px">
-<div class="captiontext">Very precise</div>
-</div>
-
-</div>
-
-
-::: {.notes}
-Help in publishing data papers to go FAIR
-:::
+::::
 
 
 
-# Open talk {background-color="#88c28d"}
+
+
+

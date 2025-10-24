@@ -1,65 +1,16 @@
 [
   {
-    "objectID": "index.html#caa",
-    "href": "index.html#caa",
-    "title": "SIG Chrono",
-    "section": "CAA",
-    "text": "CAA\nComputer Applications and Quantitative Methods in Archaeology (CAA)\n\nannual conferences with &gt; 300 participants every year"
-  },
-  {
-    "objectID": "index.html#caa-special-interest-groups-caa-sig",
-    "href": "index.html#caa-special-interest-groups-caa-sig",
-    "title": "SIG Chrono",
-    "section": "CAA Special Interest Groups (CAA-SIG)",
-    "text": "CAA Special Interest Groups (CAA-SIG)\n SIG https://caa-international.org/special-interest-groups/\n\n\n\nComplex Systems Simulation\n\n\nComputer Programs for Archaeologists\n\n\nMobile GIS\n\n\n3D spatial analysis\n\n\nScientific Scripting Languages in Archaeology\n\n\nSemantics and LOUD in Archaeology\n\n\nArchaeological Practices and Knowledge Work\n\n\nComputationally Modeling Water-based Movement"
-  },
-  {
-    "objectID": "index.html#caa-special-interest-groups-caa-sig-1",
-    "href": "index.html#caa-special-interest-groups-caa-sig-1",
-    "title": "SIG Chrono",
-    "section": "CAA Special Interest Groups (CAA-SIG)",
-    "text": "CAA Special Interest Groups (CAA-SIG)\n SIG https://caa-international.org/special-interest-groups/\n\n\n\nComplex Systems Simulation\n\n\nComputer Programs for Archaeologists\n\n\nMobile GIS\n\n\n3D spatial analysis\n\n\nScientific Scripting Languages in Archaeology\n\n\nSemantics and LOUD in Archaeology\n\n\nArchaeological Practices and Knowledge Work\n\n\nComputationally Modeling Water-based Movement"
-  },
-  {
-    "objectID": "index.html#caa-sig-ssla-and-data-dragons",
-    "href": "index.html#caa-sig-ssla-and-data-dragons",
-    "title": "SIG Chrono",
-    "section": "CAA SIG SSLA and Data Dragons",
-    "text": "CAA SIG SSLA and Data Dragons\n\nSSLAData Dragons\n\n\nSpecial Interest Group on Scientific Scripting Languages in Archaeology"
-  },
-  {
     "objectID": "index.html#chronological-turn",
     "href": "index.html#chronological-turn",
-    "title": "SIG Chrono",
+    "title": "CAA SIG Chrono",
     "section": "Chronological turn",
     "text": "Chronological turn\n\n\n\n\n\n\n‘Monument druidique près de Gisors’ 1824\n\n\n\n\n\n\nStack of information layer in a GIS\n\n\n\nIn the 90’s, development of GIS in archaeology led to a “geographic turn” but no such a thing for the temporal dimension"
   },
   {
-    "objectID": "index.html#caa-sig-workflow",
-    "href": "index.html#caa-sig-workflow",
-    "title": "SIG Chrono",
-    "section": "CAA-SIG workflow",
-    "text": "CAA-SIG workflow\n\nAsynchronous, DistributedProject-based\n\n\nGit, distributed versioning:\n\n GitHub https://github.com ➡️  historical-time\n GitLab https://gitlab.com"
-  },
-  {
-    "objectID": "index.html#semantisation",
-    "href": "index.html#semantisation",
-    "title": "SIG Chrono",
-    "section": "Semantisation",
-    "text": "Semantisation\n\nEDTFCIDOC-CRMSPARQL\n\n\nUse of Extended Date/Time Format (EDTF)1 as time primitives\n\n\n\nUse of the CIDOC Conceptual Reference Model (CIDOC-CRM) to map the chronological assumptions\n\n\n\nUse of Sparse Query Language (SPARQL)2 to retrieve the information\n  prefix rdf:     &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;\n  prefix skos:    &lt;http://www.w3.org/2004/02/skos/core#&gt;\n  prefix dcterms: &lt;http://purl.org/dc/terms/&gt;\n\n  select ?id ?name\n  where {\n  ?concept skos:prefLabel ?name ;\n           dcterms:identifier ?id .\n  FILTER (lang(?name) = 'en-us')\n\n\n\n\nEDTF is an extension of the previously seen ISO-8601 Date format. It allows an accurate record of time events and durations whatever their fuzzyness (seasons, before, etc.)"
-  },
-  {
-    "objectID": "index.html#data-papers",
-    "href": "index.html#data-papers",
-    "title": "SIG Chrono",
-    "section": "Data papers",
-    "text": "Data papers\nFacilitate the publication of human-machine readable papers of temporal data\n\n\n\n\nVery unprecise\n\n\n\n\nVery precise\n\n\n\nHelp in publishing data papers to go FAIR"
-  },
-  {
-    "objectID": "index.html#footnotes",
-    "href": "index.html#footnotes",
-    "title": "SIG Chrono",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nISO 8601-2\nISO/IEC 9075-15"
+    "objectID": "index.html#archaeometry-special-issue-on-chronological-modelling",
+    "href": "index.html#archaeometry-special-issue-on-chronological-modelling",
+    "title": "CAA SIG Chrono",
+    "section": "Archaeometry Special Issue on Chronological Modelling",
+    "text": "Archaeometry Special Issue on Chronological Modelling\n\n\n\n\n\nForeword – Archaeometry special issue on chronological modeling | Thomas Huet, Eythan Levy\nA Bayesian alternative for aoristic analyses in archaeology | Enrico R. Crema\nBayesian radiocarbon modelling for beginners | Caitlin E. Buck, Miguel A. Juárez\nThe stratigraphic biography of an archaeological site. Timing depositional events | Vasiliki Andreaki, Juan Antonio Barceló\nRepresenting time in documentation using the CIDOC CRM | Stephen D. Stead\nA new conservative and robust Bayesian approach for the event date model in chronology building | Komlan Midodzi Noukpoape, Philippe Lanos, Philippe Dufresne\nPrerequisites for a computational approach to Minoan chronology | Diamantis Panagiotopoulos, Martina Trognitz\nGenealogies and oral histories as chronological networks: interfacing whakapapa (Māori genealogies) with Gregorian calendar year archaeological radiocarbon dates | Isaac H. McIvor, Alan Hogg, Tom Roa, Waikaremoana Waitoki, Gretel Boswijk, Warren Gumbley, Atholl Anderson, Rowan McBride\nData complexity and computer assisted chronology: Methods and discoveries | David A. Falk\nTemporal relations in archaeology: a survey and a new typology | Eythan Levy"
   }
 ]
