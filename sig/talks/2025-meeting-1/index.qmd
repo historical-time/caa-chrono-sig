@@ -22,7 +22,7 @@ format:
     reference-location: document
     footnotes-hover: true
     logo: https://raw.githubusercontent.com/historical-time/caa-chrono-sig/master/img/logo-caa.png
-    footer: "CAA SIG Chrono 1<sup>st</sup> meeting <img src='https://raw.githubusercontent.com/historical-time/caa-chrono-sig/master/img/caa-chrono-sig-logo.png' style='height: 25px;vertical-align: middle;'> <https://github.com/historical-time/caa-chrono-sig/> - 27 Oct 2025"
+    footer: "<small>CAA SIG Chrono 1<sup>st</sup> meeting - 27 October 2025</small>"
     margin: 0
     width: 1200
 ---
@@ -43,40 +43,59 @@ format:
 In the 90's, development of GIS in archaeology led to a "geographic turn" but **no such a thing for the temporal dimension**
 :::
 
-## _Archaeometry_ Special Issue on Chronological Modelling
+# <small> _Archaeometry_ Special Issue </small>
 
-:::: {.columns}
+<img src='https://raw.githubusercontent.com/historical-time/caa-chrono-sig/master/img/publi-archaeometry-si-chrono.png' style='width: 800px;vertical-align: middle;'>
 
-::: {.column width="30%"}
+## <small> _Archaeometry_ Special Issue on Chronological Modelling
 
-<img src='https://raw.githubusercontent.com/historical-time/caa-chrono-sig/master/img/publi-archaeometry-si-chrono.png' style='width: 250px;vertical-align: middle;'>
-
-:::
-
-
-::: {.column width="70%"}
-
-<small>
-
-1. Foreword – Archaeometry special issue on chronological modeling | Thomas Huet,  Eythan Levy
-2. A Bayesian alternative for aoristic analyses in archaeology | Enrico R. Crema
-3. Bayesian radiocarbon modelling for beginners | Caitlin E. Buck,  Miguel A. Juárez
-4. The stratigraphic biography of an archaeological site. Timing depositional events | Vasiliki Andreaki,  Juan Antonio Barceló
-5. Representing time in documentation using the CIDOC CRM | Stephen D. Stead
-6. A new conservative and robust Bayesian approach for the event date model in chronology building | Komlan Midodzi Noukpoape, Philippe Lanos, Philippe Dufresne
-7. Prerequisites for a computational approach to Minoan chronology | Diamantis Panagiotopoulos,  Martina Trognitz
-8. Genealogies and oral histories as chronological networks: interfacing whakapapa (Māori genealogies) with Gregorian calendar year archaeological radiocarbon dates | Isaac H. McIvor,  Alan Hogg,  Tom Roa,  Waikaremoana Waitoki,  Gretel Boswijk,  Warren Gumbley,  Atholl Anderson,  Rowan McBride
-9. Data complexity and computer assisted chronology: Methods and discoveries | David A. Falk
-10. Temporal relations in archaeology: a survey and a new typology | Eythan Levy
+1. <b>Foreword – Archaeometry special issue on chronological modeling</b> | Thomas Huet,  Eythan Levy
+2. <b>A Bayesian alternative for aoristic analyses in archaeology</b> | Enrico R. Crema
+3. <b>Bayesian radiocarbon modelling for beginners</b> | Caitlin E. Buck,  Miguel A. Juárez
+4. <b>The stratigraphic biography of an archaeological site. Timing depositional events</b> | Vasiliki Andreaki,  Juan Antonio Barceló
+5. <b>Representing time in documentation using the CIDOC CRM</b> | Stephen D. Stead
+6. <b>A new conservative and robust Bayesian approach for the event date model in chronology building</b> | Komlan Midodzi Noukpoape, Philippe Lanos, Philippe Dufresne
+7. <b>Prerequisites for a computational approach to Minoan chronology</b> | Diamantis Panagiotopoulos,  Martina Trognitz
+8. <b>Genealogies and oral histories as chronological networks: interfacing whakapapa (Māori genealogies) with Gregorian calendar year archaeological radiocarbon dates</b> | Isaac H. McIvor,  Alan Hogg,  Tom Roa,  Waikaremoana Waitoki,  Gretel Boswijk,  Warren Gumbley,  Atholl Anderson,  Rowan McBride
+9. <b>Data complexity and computer assisted chronology: Methods and discoveries</b> | David A. Falk
+10. <b>Temporal relations in archaeology: a survey and a new typology</b> | Eythan Levy
 
 </small>
 
+::: {.notes}
+1. _Thomas Huet, Eythan Levy_ | Introduces the Special Issue.  
+2. _Enrico Crema_ | Introduces a Bayesian alternative to traditional aoristic analysis for handling chronological uncertainty in archaeological data. Implemented in the R package `baorista`.  
+3. _Caitlin Buck, Miguel Juárez_ | Introduces Bayesian analysis; first published in Spanish (2020), edited by Juan Antonio Barceló and Berta Morell.  
+4. _Vasiliki Andreaki, Juan Antonio Barceló_ | Proposes a framework to study how archaeological sites form and change over time, using 3D geometry and depositional events to reconstruct their chronological sequence.  
+5. _Stephen Stead_ | Describes the key concepts in the CRM family of standards for documenting temporal data.  
+6. _Komlan Midodzi Noukpoape, Philippe Lanos, Philippe Dufresne_ | Revises the “event date model” of Lanos and Philippe (2017) and proposes improvements to it.  
+7. _Diamantis Panagiotopoulos, Martina Trognitz_ | Reviews the state of the art in Minoan chronology and proposes guidelines, best practices, and formalisms to improve it.  
+8. _Isaac McIvor et al._ | Applies the ChronoLog software—used for Chronological Network Analysis—to the study of Māori genealogies (_whakapapa_), combining oral histories and radiocarbon data.  
+9. _David Falk_ | Presents and applies the Groundhog software—another Chronological Network Analysis tool—for improved reconstruction of Ancient Near Eastern chronologies.  
+10. _Eythan Levy_ | Proposes a new typology of temporal relations tailored for archaeological applications.  
 :::
 
-::::
+# <small> CAA26 </small>
 
+<img src='https://raw.githubusercontent.com/historical-time/caa-chrono-sig/master/img/logo-caa26.png' style='width: 800px;vertical-align: middle;'>
 
+## Round Table on Time in Computational Archaeology
 
+"_S35: Chronological Modelling III: a Round Table on Time in Computational Archaeology_", 2h30 and 
+4 tracks:
 
+1. Epistemology of archaeological time
+2. Archaeological time in practice: cross dating, anchor dates, cultural periods
+3. Formats, standards and interoperability
+4. Mathematics, Algorithms and Software
 
+::: {.notes}
+This round table aims to discuss the current challenges and future perspectives in modeling time in archaeology. Each of the following topics will be discussed for 30 minutes and chaired by a different scholar (Joan Antonio Barceló, Keith May and/or James Taylor, Florian Thierry, Joe Roe).  
 
+1. _Epistemology of archaeological time_ | What is the nature of archaeological time (in comparison to historical time)?  
+2. _Archaeological time in practice: cross dating, anchor dates, cultural periods_ | How do archaeologists effectively align multi-sourced chronological data (stratigraphic layers, artifact seriations, etc.)?  
+3. _Formats, standards and interoperability_ | On reference systems, thesauri, data fusion, etc.  
+4. _Mathematics, Algorithms and Software_ | On existing IT-based methods for computing temporal data and emerging challenges.  
+
+A final 5–10 minute session will be dedicated to discussing the possibility (or not) of developing a Temporal Information System (similar in concept to a GIS for geographical data).
+:::
