@@ -79,7 +79,8 @@ In the 90's, development of GIS in archaeology led to a "geographic turn" but **
 
 <img src='https://raw.githubusercontent.com/historical-time/caa-chrono-sig/master/img/logo-caa26.png' style='width: 800px;vertical-align: middle;'>
 
-## Round Table on Time in Computational Archaeology
+## <small>Round Table on Time in Computational Archaeology</small>
+
 
 "_S35: Chronological Modelling III: a Round Table on Time in Computational Archaeology_", 2h30 and 
 4 tracks:
