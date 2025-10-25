@@ -3,8 +3,8 @@ project:
   output-dir: pres
 
 website:
-  title: "S12"
-  favicon: images/logo-caa23.png
+  title: "SIG Chrono"
+  favicon: caa-chrono-sig-logo.png
   repo-url: https://github.com/quarto-dev/quarto-web
   page-footer:
     right:

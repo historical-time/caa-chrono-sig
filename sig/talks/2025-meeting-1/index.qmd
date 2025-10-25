@@ -45,7 +45,7 @@ In the 90's, development of GIS in archaeology led to a "geographic turn" but **
 
 # <small> _Archaeometry_ Special Issue </small>
 
-<img src='https://raw.githubusercontent.com/historical-time/caa-chrono-sig/master/img/publi-archaeometry-si-chrono.png' style='width: 800px;vertical-align: middle;'>
+<img src='https://raw.githubusercontent.com/historical-time/caa-chrono-sig/master/img/publi-archaeometry-si-chrono.png' style='width: 900px;vertical-align: middle;'>
 
 ## <small> _Archaeometry_ Special Issue on Chronological Modelling
 
@@ -75,15 +75,14 @@ In the 90's, development of GIS in archaeology led to a "geographic turn" but **
 10. _Eythan Levy_ | Proposes a new typology of temporal relations tailored for archaeological applications.  
 :::
 
-# <small> CAA26 </small>
+# <small> CAA 2026 </small>
 
-<img src='https://raw.githubusercontent.com/historical-time/caa-chrono-sig/master/img/logo-caa26.png' style='width: 800px;vertical-align: middle;'>
+<img src='https://raw.githubusercontent.com/historical-time/caa-chrono-sig/master/img/logo-caa26.png' style='width: 900px;vertical-align: middle;'>
 
-## <small>Round Table on Time in Computational Archaeology</small>
+## <small>S35: Chronological Modelling III: a Round Table on Time in Computational Archaeology</small>
 
 
-"_S35: Chronological Modelling III: a Round Table on Time in Computational Archaeology_", 2h30 and 
-4 tracks:
+Round table, 2h30 and 4 tracks:
 
 1. Epistemology of archaeological time
 2. Archaeological time in practice: cross dating, anchor dates, cultural periods
