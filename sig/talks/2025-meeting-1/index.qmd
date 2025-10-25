@@ -27,21 +27,6 @@ format:
     width: 1200
 ---
 
-## Chronological *turn*
-
-<div class="row">
-<div class="column"><center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-archaeo-romantic.png){height=450px}</center>
-<div class="captiontext">'Monument druidique près de Gisors' 1824</div>
-</div>
-
-<div class="column"><center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-spatial-gis.jpg){height=450px}</center>
-<div class="captiontext">Stack of information layer in a GIS</em></div>
-</div>
-</div>
-
-::: {.notes}
-In the 90's, development of GIS in archaeology led to a "geographic turn" but **no such a thing for the temporal dimension**
-:::
 
 # <small> _Archaeometry_ Special Issue </small>
 
