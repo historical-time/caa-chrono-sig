@@ -34,9 +34,9 @@ To unsuscribe from the `caa-chrono-sig` mailing list, same process as above, wit
 
 	- Q&A [5–10 min], _all participants_
 
-* Presentation of the *Archaeometry* **"Special issue on Chronological modelling"** ([link](https://onlinelibrary.wiley.com/toc/14754754/2025/67/S1) | [slide](https://historical-time.github.io/caa-chrono-sig/sig/talks/2025-meeting-1/pres/#/archaeometry-special-issue)) [5 min] _Thomas Huet_ and _Eythan Levy_
+* Presentation: *Archaeometry* **"Special issue on Chronological modelling"** ([link](https://onlinelibrary.wiley.com/toc/14754754/2025/67/S1) | [slide](https://historical-time.github.io/caa-chrono-sig/sig/talks/2025-meeting-1/pres/#/archaeometry-special-issue)) [5 min] _Thomas Huet_ and _Eythan Levy_
 
-* Presentation of the **CAA2026 round table session S35:  "Chronological Modelling III: A Round Table on Time in Computational Archaeology** ([link](https://2026.caaconference.org/round-tables/) | [slide](https://historical-time.github.io/caa-chrono-sig/sig/talks/2025-meeting-1/pres/#/caa-2026)) [5 min], _Thomas Huet_ and _Eythan Levy_ with the collaboration of _Juan Antonio Barcelo, Keith May, James Taylor, Florian Thierry and Joe Roe_
+* Presentation: **CAA2026 round table session S35:  "Chronological Modelling III: A Round Table on Time in Computational Archaeology** ([link](https://2026.caaconference.org/round-tables/) | [slide](https://historical-time.github.io/caa-chrono-sig/sig/talks/2025-meeting-1/pres/#/caa-2026)) [5 min], _Thomas Huet_ and _Eythan Levy_ with the collaboration of _Juan Antonio Barcelo, Keith May, James Taylor, Florian Thierry and Joe Roe_
 
 * **SIG Chrono business** [30 min], _all participants_
 
