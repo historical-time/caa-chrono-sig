@@ -27,6 +27,17 @@ format:
     width: 1200
 ---
 
+## Agenda
+
+* Presentation of [SIG](https://caa-international.org/special-interest-groups/) [Chrono](https://github.com/historical-time/caa-chrono-sig)
+* GitHub [discussions](https://github.com/orgs/historical-time/discussions/7) & [mailing list](https://framagroupes.org/sympa/info/caa-chrono-sig)
+* Vote for the SIG committee:
+    + Convener: candidate: Eythan Levy 
+    + Vice Convener: TBD
+    + Secretary: candidate: Thomas Huet
+* Next meeting: proposal: every two months (next: Monday 15/12, 10AM CET ?)
+* Other
+
 
 # <small> _Archaeometry_ Special Issue </small>
 
@@ -84,12 +95,6 @@ This round table aims to discuss the current challenges and future perspectives 
 
 A final 5–10 minute session will be dedicated to discussing the possibility (or not) of developing a Temporal Information System (similar in concept to a GIS for geographical data).
 :::
-* Presentation of [SIG](https://caa-international.org/special-interest-groups/) [Chrono](https://github.com/historical-time/caa-chrono-sig)
-* GitHub [discussions](https://github.com/orgs/historical-time/discussions/7) & [mailing list](https://framagroupes.org/sympa/info/caa-chrono-sig)
-* Vote for the SIG committee:
-    + Convener: candidate: Eythan Levy 
-    + Vice Convener: TBD
-    + Secretary: candidate: Thomas Huet
-* Next meeting: proposal: every two months (next: Monday 15/12, 10AM CET ?)
-* Other
+
+
 
