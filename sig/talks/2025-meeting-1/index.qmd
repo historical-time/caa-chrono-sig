@@ -65,13 +65,18 @@ format:
 
 ## <small>S35: Chronological Modelling III: a Round Table on Time in Computational Archaeology</small>
 
+<br>
+<center>
 
-Round table, 2h30 and 4 tracks:
+A round table, 4 topics [2h30] 
+
+</center>
+<br>
 
 1. Epistemology of archaeological time
 2. Archaeological time in practice: cross dating, anchor dates, cultural periods
 3. Formats, standards and interoperability
-4. Mathematics, Algorithms and Software
+4. Mathematics, algorithms and software
 
 ::: {.notes}
 This round table aims to discuss the current challenges and future perspectives in modeling time in archaeology. Each of the following topics will be discussed for 30 minutes and chaired by a different scholar (Joan Antonio Barceló, Keith May and/or James Taylor, Florian Thierry, Joe Roe).  
@@ -81,7 +86,7 @@ This round table aims to discuss the current challenges and future perspectives 
 3. _Formats, standards and interoperability_ | On reference systems, thesauri, data fusion, etc.  
 4. _Mathematics, Algorithms and Software_ | On existing IT-based methods for computing temporal data and emerging challenges.  
 
-A final 5–10 minute session will be dedicated to discussing the possibility (or not) of developing a Temporal Information System (similar in concept to a GIS for geographical data).
+A final 5–10 minute session will be dedicated to start a discussion on the possibility (or not) of developing a Temporal Information System (T.I.S, similar in concept to a GIS for geographical data).
 :::
 
 
