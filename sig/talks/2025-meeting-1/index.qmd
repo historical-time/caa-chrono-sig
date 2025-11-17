@@ -50,7 +50,7 @@ format:
 1. _Thomas Huet, Eythan Levy_ | Introduces the Special Issue.  
 2. _Enrico Crema_ | Introduces a Bayesian alternative to traditional aoristic analysis for handling chronological uncertainty in archaeological data. Implemented in the R package `baorista`.  
 3. _Caitlin Buck, Miguel Juárez_ | Introduces Bayesian analysis; first published in Spanish (2020), edited by Juan Antonio Barceló and Berta Morell.  
-4. _Vasiliki Andreaki, Juan Antonio Barceló_ | Proposes a framework to study how archaeological sites form and change over time, using 3D geometry and depositional events to reconstruct their chronological sequence.  
+4. _Vasiliki Andreaki, Juan Antonio Barceló_ | Proposes a framework to study how archaeological sites form and change over time, using multiscale 3D geometry and depositional events to reconstruct their chronological sequence.  
 5. _Stephen Stead_ | Describes the key concepts in the CRM family of standards for documenting temporal data.  
 6. _Komlan Midodzi Noukpoape, Philippe Lanos, Philippe Dufresne_ | Revises the “event date model” of Lanos and Philippe (2017) and proposes improvements to it.  
 7. _Diamantis Panagiotopoulos, Martina Trognitz_ | Reviews the state of the art in Minoan chronology and proposes guidelines, best practices, and formalisms to improve it.  
