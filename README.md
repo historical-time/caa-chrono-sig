@@ -40,7 +40,7 @@ To unsuscribe from the `caa-chrono-sig` mailing list, same process as above, wit
 * **SIG Chrono business** [30 min], _all participants_
 
 ## SIG Chrono - 2nd meeting
-> **15 December 2025 at 10am CET time (Paris)**, total duration: 1h15-1h30, on ZOOM ([link](https://cnrs.zoom.us/j/96625442301?pwd=5y1QJvRHtw31gYr2XhSBxToueZiep1.1) - [⬇️.ics](https://raw.githubusercontent.com/historical-time/caa-chrono-sig/main/sig/meetings/2501027-sig_2nd_meeting.ics))
+> **15 December 2025 at 10am CET time (Paris)**, total duration: 1h15-1h30, on ZOOM ([link](https://cnrs.zoom.us/j/96625442301?pwd=5y1QJvRHtw31gYr2XhSBxToueZiep1.1) - [⬇️.ics](https://raw.githubusercontent.com/historical-time/caa-chrono-sig/refs/heads/main/sig/meetings/2501027-sig_2nd_meeting.ics))
 
 * Intro [5 min] _Eythan Levy_ and _Thomas Huet_
 * Invited talk: **"Quantifying Uncertainty in Expert Archaeological Dating Evidence"** [30 min] _Caitlin Buck_ and _Marta Krzyzanska_ (University of Sheffield, UK): 
