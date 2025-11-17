@@ -27,8 +27,7 @@ To unsuscribe from the `caa-chrono-sig` mailing list, same process as above, wit
 # Meetings
 
 ## SIG Chrono - 1st meeting
-> **27 October 2025 at 10am CET time (Paris)**, total duration: 1h15-1h30, on ZOOM ([link](https://cnrs.zoom.us/j/92673181427?pwd=dXeIslab5TbigHQa2ooAGJaOsagBBY.1) - [⬇️.ics](https://raw.githubusercontent.com/historical-time/caa-chrono-sig/main/sig/meetings/2501027-sig_1st_meeting.ics
-))
+> **27 October 2025 at 10am CET time (Paris)**, total duration: 1h15-1h30, on ZOOM ([link](https://cnrs.zoom.us/j/92673181427?pwd=dXeIslab5TbigHQa2ooAGJaOsagBBY.1) - [⬇️.ics](https://raw.githubusercontent.com/historical-time/caa-chrono-sig/main/sig/meetings/2501027-sig_1st_meeting.ics))
 * Intro: _Eythan Levy ([email](mailto:eythan.levy@gmail.com>))_ and _Thomas Huet ([email](mailto:thomas.huet@cnrs.fr))_
 * Invited talk: **"A Computational Approach toward Minoan Chronology: Thoughts on the modelling aspects"** [30–40 min], _Martina Trognitz ([email](mailto:martina.trognitz@oeaw.ac.at)), Diamantis Panagiotopoulos ([email](mailto:diamantis.panagiotopoulos@zaw.uni-heidelberg.de)), and Iro Mathioudaki ([email](mailto:iro.mathioudaki@gmail.com))_
 
@@ -40,15 +39,18 @@ To unsuscribe from the `caa-chrono-sig` mailing list, same process as above, wit
 
 * **SIG Chrono business** [30 min], _all participants_
 
-	- SIG Chrono presentation
-  
-	- [GitHub Discussions](https://github.com/orgs/historical-time/discussions/7) & Mailing list
+## SIG Chrono - 2nd meeting
+> **15 December 2025 at 10am CET time (Paris)**, total duration: 1h15-1h30, on ZOOM ([link](https://cnrs.zoom.us/j/96625442301?pwd=5y1QJvRHtw31gYr2XhSBxToueZiep1.1) - [⬇️.ics](https://raw.githubusercontent.com/historical-time/caa-chrono-sig/main/sig/meetings/2501027-sig_2nd_meeting.ics))
 
-	- vote for the SIG committee (Convener, Vice Convener, and Secretary positions)
-
-	- next steps / next meeting
-  
-	- Any other business
+* Intro: Eythan Levy and Thomas Huet
+* Invited talk: **"Quantifying Uncertainty in Expert Archaeological Dating Evidence"** [30 min.], Caitlin Buck and Marta Krzyzanska (University of Sheffield, UK): "_In this presentation Caitlin Buck and Marta Krzyzanska (University of Sheffield, UK) will outline their work on the Leverhulme Trust project: Quantifying Uncertainty in Archaeological Expert Dating Evidence (QUEADE). Their work is motivated by the ubiquitous problem faced by post-excavation teams as they seek to integrate finds dates into the overall chronology for the site. In general, such date estimates derive from statements in the reports of finds experts, which take the form of a date range, often with a textual qualifier (e.g. probably 43-410 AD). Typically, such reports offer little or no explanation as to precisely what event has been dated, which dates are most likely in the range or what form any extra uncertainty might take.
+By tailoring well-established, formal knowledge elicitation methods (already in use in sectors such as drug discovery, nuclear safety and climate science), the QUEADE team has developed a suite of protocols and software that can be used to formalise expert knowledge about the dates of cultural finds (such as coins, pottery, tools and items of personal adornment). The approach allows experts to record their knowledge using probability distributions, thus making the associated date estimates rigorous, consistent, readily archivable and viable for inclusion in Bayesian chronological modelling. The goal is to make it much easier for archaeological finds experts to record their knowledge consistently and to be clear with their colleagues precisely what part of the objects life-cycle has been dated._"
+  - Q&A [10 min], all participants
+* Press review: a review of recent noteworthy publications on chronological modelling [10 min]
+* Vice-convener election [5 min]
+* Discussion on the SIG Chrono newsletter [5 min]
+* Discussion on SIG Membership [5 min]
+* AOB [10 min]
 
 # The SIG Chrono @t the CAA
 
