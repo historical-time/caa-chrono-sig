@@ -1,0 +1,48 @@
+name: "Member registration"
+description: "Register as a member of the CAA Chrono SIG"
+title: "Membership registration: <your name>"
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for registering!
+
+        Please fill in the fields below. All fields are required.
+        The information will be added automatically to the SIG membership list.
+
+  - type: input
+    id: given_name
+    attributes:
+      label: Name
+      description: Your given name (first name).
+      placeholder: Ada
+    validations:
+      required: true
+
+  - type: input
+    id: family_name
+    attributes:
+      label: Family name
+      description: Your family name (surname).
+      placeholder: Lovelace
+    validations:
+      required: true
+
+  - type: input
+    id: github_alias
+    attributes:
+      label: GitHub alias
+      description: Your GitHub username (without the @).
+      placeholder: ada-lovelace
+    validations:
+      required: true
+
+  - type: input
+    id: orcid
+    attributes:
+      label: ORCID
+      description: "Your ORCID iD (e.g. 0000-0002-1825-0097)"
+      placeholder: "0000-0002-1825-0097"
+    validations:
+      required: true
