@@ -1,7 +1,5 @@
-name: "Member registration"
-description: "Register as a member of the CAA Chrono SIG"
 title: "Membership registration: <your name>"
-labels: []
+labels: ["member-registration"]
 body:
   - type: markdown
     attributes:
