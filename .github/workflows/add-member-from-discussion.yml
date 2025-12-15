@@ -11,6 +11,8 @@ permissions:
 jobs:
   add_member:
     # Only run for the "Members" category (adjust this if your category name is different)
+    permissions:
+      contents: write
     if: github.event.discussion.category.name == 'Members'
     runs-on: ubuntu-latest
 
