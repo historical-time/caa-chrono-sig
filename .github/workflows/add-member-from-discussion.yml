@@ -1,0 +1,90 @@
+name: Add member from discussion
+
+on:
+  discussion:
+    types: [created]   # run when a new discussion is created
+
+permissions:
+  contents: write      # to update members.tsv
+  discussions: read    # to read discussion body
+
+jobs:
+  add_member:
+    # Only run for the "Members" category (adjust this if your category name is different)
+    permissions:
+      contents: write
+    if: github.event.discussion.category.name == 'Members'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Show raw discussion body (for debugging)
+        run: |
+          echo "${{ github.event.discussion.body }}"
+
+      - name: Extract fields from discussion body
+        id: extract
+        run: |
+          body="${{ github.event.discussion.body }}"
+
+          # The form output is rendered as markdown like:
+          # ### Name
+          # Ada
+          #
+          # ### Family name
+          # Lovelace
+          #
+          # etc.
+
+          get_field () {
+            label="$1"
+            echo "$body" \
+              | awk -v lbl="### $label" '
+                  $0 == lbl {getline; print; exit}
+                ' \
+              | sed 's/^[ \t]*//;s/[ \t]*$//'
+          }
+
+          name="$(get_field 'Name')"
+          family_name="$(get_field 'Family name')"
+          github_alias="$(get_field 'GitHub alias')"
+          orcid="$(get_field 'ORCID')"
+
+          # Remove leading @ if user typed it anyway
+          github_alias="${github_alias#@}"
+
+          echo "name=$name" >> "$GITHUB_OUTPUT"
+          echo "family_name=$family_name" >> "$GITHUB_OUTPUT"
+          echo "github_alias=$github_alias" >> "$GITHUB_OUTPUT"
+          echo "orcid=$orcid" >> "$GITHUB_OUTPUT"
+
+      - name: Append to members.tsv (if not already present)
+        run: |
+          file="members.tsv"
+
+          # Ensure the file exists; if you already have the file with a header,
+          # you can drop this block or adapt the header row.
+          if [ ! -f "$file" ]; then
+            echo -e "Name\tFamilyName\tGitHubAlias\tORCID" > "$file"
+          fi
+
+          line="${{ steps.extract.outputs.name }}\t${{ steps.extract.outputs.family_name }}\t${{ steps.extract.outputs.github_alias }}\t${{ steps.extract.outputs.orcid }}"
+
+          echo "Candidate line: $line"
+
+          # Avoid duplicate GitHub aliases
+          if grep -Fq "	${{ steps.extract.outputs.github_alias }}	" "$file"; then
+            echo "GitHub alias already present in $file, not adding a duplicate."
+            exit 0
+          fi
+
+          echo -e "$line" >> "$file"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add "$file"
+          git commit -m "Add member ${{ steps.extract.outputs.github_alias }} from discussion #${{ github.event.discussion.number }}"
+          git push
