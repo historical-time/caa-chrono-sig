@@ -52,6 +52,17 @@ To unsuscribe from the `caa-chrono-sig` mailing list, same process as above, wit
 * Discussion on the SIG Chrono newsletter [5 min]
 * Discussion on SIG Membership [5 min]
 * AOB [10 min]
+  
+## SIG Chrono -  3rd meeting
+> **16 February 2026 at 10am CET time (Paris)**, total duration: xx-xx, on ZOOM ([link]() - [⬇️.ics]())
+
+* Intro: _Eythan Levy_, _Martina Trognitz_, and _Thomas Huet_
+* Invited talk: **"_to be defined"** [20 min] _Speaker1_  (_affiliation_): 
+  	>"_abstract_" [video]()
+  - Q&A [20 min], _all participants_
+* Press review: a review of recent noteworthy publications on chronological modelling [5 min]
+* SIG Chrono Membership [5 min]
+* AOB [10 min]
 
 # The SIG Chrono @t the CAA
 
