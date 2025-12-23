@@ -1,5 +1,5 @@
-title = "My Docs"
-baseurl = "http://localhost/"
+title = "SIG Chrono"
+baseURL = "https://historical-time.github.io/caa-chrono-sig/"
 disableAliases = true
 disableHugoGeneratorInject = true
 # disableKinds = ["taxonomy", "term"]
@@ -9,6 +9,8 @@ enableRobotsTXT = true
 languageCode = "en-US"
 rssLimit = 10
 summarylength = 20 # 70 (default)
+canonifyURLs = true
+relativeURLs = false
 
 # Multilingual
 defaultContentLanguage = "en"
