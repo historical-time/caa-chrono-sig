@@ -1,5 +1,6 @@
 title = "SIG Chrono"
 baseURL = "https://historical-time.github.io/caa-chrono-sig/"
+
 disableAliases = true
 disableHugoGeneratorInject = true
 # disableKinds = ["taxonomy", "term"]
@@ -18,6 +19,11 @@ disableLanguages = ["de", "nl"]
 defaultContentLanguageInSubdir = false
 
 copyRight = "Copyright (c) 2020-2024 Thulite"
+
+[params]
+  favicon = "favicon.png"
+# logo = "/images/logo.png"
+  logo = "images/logo.png"
 
 [build.buildStats]
   enable = true

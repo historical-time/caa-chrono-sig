@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="container">
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.description }}<p>{{ . }}</p>{{ end }}
+
+  <ul>
+    {{ range .Pages.ByDate.Reverse }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <small> — {{ .Date.Format "2006-01-02" }}</small>
+      </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
