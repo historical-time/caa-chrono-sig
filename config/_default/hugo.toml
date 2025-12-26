@@ -1,5 +1,5 @@
-title = "SIG Chrono"
 baseURL = "https://historical-time.github.io/caa-chrono-sig/"
+title = "SIG Chrono"
 
 disableAliases = true
 disableHugoGeneratorInject = true

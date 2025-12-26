@@ -1,5 +1,5 @@
 ---
-title: "** SIG Chrono **"
+title: "** SIG Chrono --*"
 description: ""
 lead: "CAA Special Interest Group on chronological modelling"
 date: 2023-09-07T16:33:54+02:00
