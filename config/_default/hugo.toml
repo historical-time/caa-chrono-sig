@@ -10,7 +10,7 @@ enableRobotsTXT = true
 languageCode = "en-US"
 rssLimit = 10
 summarylength = 20 # 70 (default)
-canonifyURLs = true
+canonifyURLs = false
 relativeURLs = false
 
 # Multilingual
