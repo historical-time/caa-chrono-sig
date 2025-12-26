@@ -4,7 +4,7 @@ description: "SIG Chrono members"
 type: docs
 layout: docs
 weight: 1
-url: "/members/"
+url: "members/"
 ---
 
 - Convener: Eythan Levy
