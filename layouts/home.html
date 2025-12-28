@@ -6,6 +6,7 @@
     </div>
     <div class="col-lg-9 col-xl-8 text-center">
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
+      {{/*  <img src="{{ "images/logo.png" | relURL }}" alt="SIG logo" height= "30px">  */}}
       <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3" href="https://caa-international.org/" role="button">See the CAA international</a>
       {{ .Content }}
     </div>
@@ -33,7 +34,7 @@
         </div>
         <div class="col-lg-5">
           <h2 class="h4">Mailing list</h2>
-          <p>Suscribe to the mailing list <a href="{{ "contacts" | relLangURL }}" class="btn btn-link">Procedure...</a></p>
+          <p>Suscribe to the mailing list <a href="{{ "contact" | relLangURL }}" class="btn btn-link">Procedure...</a></p>
         </div>
       </div>
     </div>

@@ -10,6 +10,11 @@
   weight = 20
 
 [[main]]
+  name = "Talks"
+  pageRef = "/talks"
+  weight = 25
+
+[[main]]
   name = "Contact"
   pageRef = "/contact"
   weight = 30
