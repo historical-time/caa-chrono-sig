@@ -1,4 +1,6 @@
 doc/notes/
 /public/
+/resources/
+/node_modules/
 .Rproj.user
 
