@@ -1,1 +1,0 @@
-import{create_object}from"./common.js";const data=create_object();export default function tick(){}
