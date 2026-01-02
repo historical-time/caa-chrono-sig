@@ -1,4 +1,4 @@
-# run it as: .\deploy-gh-pages.ps1 "Deploy Doks site with updated layout"
+# run it as: .\deploy-gh-pages.ps1 "Deploy Doks site"
 
 param (
     [Parameter(Mandatory = $true)]
