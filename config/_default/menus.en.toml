@@ -15,6 +15,11 @@
   weight = 25
 
 [[main]]
+  name = "Newsletters"
+  url = "/newsletters"
+  weight = 27
+
+[[main]]
   name = "Contact"
   pageRef = "/contact"
   weight = 30
