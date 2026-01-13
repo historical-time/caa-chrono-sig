@@ -2,11 +2,18 @@
 <section class="section container-fluid mt-n3 pb-3">
   <div class="row justify-content-center">
     <div class="col-lg-12 text-center">
-      <h1>{{ .Title }}</h1>
+      {{/*  <h1><img src="{{ "images/logo.png" | relURL }}" alt="SIG logo" height= "10px"> {{ .Title }}</h1>  */}}
+      <h1 class="d-flex align-items-center justify-content-center gap-3">
+        <img
+          src="{{ "images/logo.png" | relURL }}"
+          alt="SIG logo"
+          class="site-logo"
+        >
+        {{ .Title }}
+      </h1>
     </div>
     <div class="col-lg-9 col-xl-8 text-center">
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
-      {{/*  <img src="{{ "images/logo.png" | relURL }}" alt="SIG logo" height= "30px">  */}}
       <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3" href="https://caa-international.org/" role="button">See the CAA international</a>
       {{ .Content }}
     </div>
