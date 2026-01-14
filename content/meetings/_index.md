@@ -1,8 +1,6 @@
 ---
 title: "Meetings"
-description: "Notes and materials from project meetings"
+description: "The SIG Chrono meetings are scheduled to take place each two months and are open to all persons interested in chronological modelling in archaeology. The schedule of the next meetings is mentioned in the Newsletters"
 draft: false
 ---
-
-Welcome to the meetings section.
 

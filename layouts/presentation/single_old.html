@@ -1,0 +1,5 @@
+{{ with .Params.eventDate }}
+  <time datetime="{{ . }}">
+    {{ time.Format "02 January 2006" . }}
+  </time>
+{{ end }}
