@@ -1,0 +1,45 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Archéo-Temps Wiki"
+  description: "Notes sur la modélisation du temps en archéologie"
+  repo-url: https://github.com/VOTRE_PROFIL/VOTRE_REPO
+  repo-actions: [edit, issue]
+  
+  sidebar:
+    style: "floating"
+    search: true
+    contents:
+      - section: "Accueil"
+        contents:
+          - index.md
+      - section: "Méthodes & Logique"
+        contents:
+          - logics.md
+          - bayesian.md
+          - networks.md
+      - section: "Chronologie & Terrain"
+        contents:
+          - stratigraphy.md
+          - seriation.md
+      - section: "Données & Ontologies"
+        contents:
+          - cidoc.md
+          - lotd.md
+      - section: "Annexes"
+        contents:
+          - varia.md
+
+bibliography: _references.bib
+# csl: apa.csl # Optionnel : style de citation (APA, Chicago, etc.)
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    toc: true # Table des matières à droite
+    number-sections: true
+    code-copy: true

@@ -1,0 +1,123 @@
+[
+  {
+    "objectID": "varia.html",
+    "href": "varia.html",
+    "title": "Archéo-Temps Wiki",
+    "section": "",
+    "text": "Other approaches. A host of other formal approaches to chronological modelling and computation have been explored in the recent years, such as fuzzy logics (Niccolucci and Hermon 2015), aoristic analysis (Crema 2012), and evidence density estimation (Demján and Dreslerová 2016).",
+    "crumbs": [
+      "Annexes",
+      "varia.html"
+    ]
+  },
+  {
+    "objectID": "seriation.html",
+    "href": "seriation.html",
+    "title": "Archéo-Temps Wiki",
+    "section": "",
+    "text": "Seriation techniques. A classical way to provide relative chronology between artifacts, even in the absence of stratigraphic information, is seriation (O’Brien and Lyman 1999). In its variant called frequency seriation, the relative frequencies of each type of artifacts found within the same layer are computed and presented in chart form. The relative order between these layers (possibly coming from different sites, thus not featuring a relative stratigraphic order with each other) can then be established using the hypothesis of unimodality of artifact production. Seriation is an old but powerful method, which seems to have fallen out of fashion in many fields of Old World archaeology, but that still saw significant advances in the last decades (see for example Lipo, Madsen and Dunnell 2015).",
+    "crumbs": [
+      "Chronologie & Terrain",
+      "seriation.html"
+    ]
+  },
+  {
+    "objectID": "lotd.html",
+    "href": "lotd.html",
+    "title": "Archéo-Temps Wiki",
+    "section": "",
+    "text": "Linked Open Time Data (LOTD). Chronological Linked Open Data provides chronological space-time-gazetteers, e.g. PeriodO, GODOT and ChronOntology, and standard formats and ontologies, e.g. RDF, OWL TIME, EDTF, and CIDOC CRM, Alligator Ontology, AMT Time Ontology. LOTD and open source research tools allow for reproducible research, the unveiling of “hidden assumptions’ ’ in archaeological data and the semantic modelling of fuzziness and wobbliness. An example could be statistical approaches such as the horseshoe paradigm using correspondence analysis and the application of temporal logics to do temporal reasoning (Madsen 1998; Thiery and Mees 2018).",
+    "crumbs": [
+      "Données & Ontologies",
+      "lotd.html"
+    ]
+  },
+  {
+    "objectID": "bayesian.html",
+    "href": "bayesian.html",
+    "title": "Archéo-Temps Wiki",
+    "section": "",
+    "text": "Bayesian modelling. Bayesian modelling has revolutionized the way radiocarbon dating is practised nowadays (Buck et al. 1991; Bronk Ramsey 2009). The introduction of known priors (e.g., stratigraphic sequences, termini post/ante quem) into the radiocarbon calibration process enables researchers to obtain much more precise dating intervals than previously, when radiocarbon samples were individually calibrated rather than incorporated into a model. Many software tools are currently available for Bayesian modelling in archaeology, such as OxCal, BCal, ChronoModel, as well as R and Python packages.",
+    "crumbs": [
+      "Méthodes & Logique",
+      "bayesian.html"
+    ]
+  },
+  {
+    "objectID": "cidoc.html",
+    "href": "cidoc.html",
+    "title": "Archéo-Temps Wiki",
+    "section": "",
+    "text": ".. using ChatGPT\n\ngraph TD;\n    CeramicB[E55 Type: Type of Ceramic B]\n    IronAge[E4 Period: Iron Age]\n    CeramicBTimeSpan[E52 Time-Span: Ceramic B Production Start]\n    IronAgeTimeSpan[E52 Time-Span: Iron Age Duration]\n\n    CeramicB --&gt;|P4 has time-span| CeramicBTimeSpan\n    IronAge --&gt;|P4 has time-span| IronAgeTimeSpan\n    CeramicBTimeSpan --&gt;|P117 occurs during| IronAgeTimeSpan\n\n    classDef typeClass fill:#cfc,stroke:#333,stroke-width:2px;\n    classDef timeSpanClass fill:#fcf,stroke:#333,stroke-width:2px;\n    class CeramicB,IronAge typeClass;\n    class CeramicBTimeSpan,IronAgeTimeSpan timeSpanClass;",
+    "crumbs": [
+      "Données & Ontologies",
+      "Starts during"
+    ]
+  },
+  {
+    "objectID": "cidoc.html#starts-during",
+    "href": "cidoc.html#starts-during",
+    "title": "Archéo-Temps Wiki",
+    "section": "",
+    "text": ".. using ChatGPT\n\ngraph TD;\n    CeramicB[E55 Type: Type of Ceramic B]\n    IronAge[E4 Period: Iron Age]\n    CeramicBTimeSpan[E52 Time-Span: Ceramic B Production Start]\n    IronAgeTimeSpan[E52 Time-Span: Iron Age Duration]\n\n    CeramicB --&gt;|P4 has time-span| CeramicBTimeSpan\n    IronAge --&gt;|P4 has time-span| IronAgeTimeSpan\n    CeramicBTimeSpan --&gt;|P117 occurs during| IronAgeTimeSpan\n\n    classDef typeClass fill:#cfc,stroke:#333,stroke-width:2px;\n    classDef timeSpanClass fill:#fcf,stroke:#333,stroke-width:2px;\n    class CeramicB,IronAge typeClass;\n    class CeramicBTimeSpan,IronAgeTimeSpan timeSpanClass;",
+    "crumbs": [
+      "Données & Ontologies",
+      "Starts during"
+    ]
+  },
+  {
+    "objectID": "cidoc.html#ends-during",
+    "href": "cidoc.html#ends-during",
+    "title": "Archéo-Temps Wiki",
+    "section": "2 Ends during",
+    "text": "2 Ends during\n\n.. using ChatGPT\n\ngraph TD;\n    CeramicA[E5 Event: Type of Ceramic A Usage]\n    IronAge[E4 Period: Iron Age]\n    TimeSpanCeramicA[E52 Time-Span: Usage Time-Span of Ceramic A]\n    TimeSpanIronAge[E52 Time-Span: Iron Age Period]\n\n    CeramicA --&gt;|P4 has time-span| TimeSpanCeramicA\n    IronAge --&gt;|P4 has time-span| TimeSpanIronAge\n    TimeSpanCeramicA --&gt;|P117 occurs during| TimeSpanIronAge\n    TimeSpanCeramicA --&gt;|P82b end of the span is qualified by| TimeSpanIronAge\n\n    classDef eventName fill:#f9f,stroke:#333,stroke-width:2px;\n    classDef periodName fill:#cff,stroke:#333,stroke-width:2px;\n    classDef timeSpanName fill:#ccf,stroke:#333,stroke-width:2px;\n    class CeramicA,IronAge eventName;\n    class TimeSpanCeramicA,TimeSpanIronAge timeSpanName;",
+    "crumbs": [
+      "Données & Ontologies",
+      "Starts during"
+    ]
+  },
+  {
+    "objectID": "logics.html",
+    "href": "logics.html",
+    "title": "Archéo-Temps Wiki",
+    "section": "",
+    "text": "Temporal logics. Temporal logics is an important field of mathematical and computer science research (Demri et al. 2016), which has up to now found too little applications in archaeological research, probably due to a lack of communication between the relevant research communities. The main results of temporal logics widely applied and cited by archaeologists (see for example Holst 2004; May 2020) are the fundamental, but old, Allen relations (Allen 1984, 1991). The archaeological research community has otherwise only brought too little attention to recent research results in temporal logics.",
+    "crumbs": [
+      "Méthodes & Logique",
+      "logics.html"
+    ]
+  },
+  {
+    "objectID": "networks.html",
+    "href": "networks.html",
+    "title": "Archéo-Temps Wiki",
+    "section": "",
+    "text": "Chronological networks. Until recently, little attention had been brought to the application of deterministic (i.e. non-statistical) techniques to building wide regional chronologies, based on historical data and cultural synchronisms. The goal of such techniques is to automate the archaeological cross-dating process by encoding a network of chronological relationships between temporal entities, and using algorithms to build the global chronology by propagating along the network a set of absolute dates located at specific nodes of the network. This approach has recently been implemented by two software tools: Groundhog (Falk 2016, 2017, 2020) and ChronoLog (Levy et al. 2021a, 2021b), relying on different algorithmic techniques (optimized enumeration and graph-theoretic techniques, respectively).",
+    "crumbs": [
+      "Méthodes & Logique",
+      "networks.html"
+    ]
+  },
+  {
+    "objectID": "stratigraphy.html",
+    "href": "stratigraphy.html",
+    "title": "Archéo-Temps Wiki",
+    "section": "",
+    "text": "Stratigraphic modelling. The most famous tool for stratigraphic modelling is the Harris matrix (Harris 1989), which has been the focus of much software development (Harris Matrix Composer, Stratify, Stratifiant, …). Originally designed as a tool restricted to relative chronology, the Harris matrix has also seen developments aimed at extending this formalism to include absolute dating elements (see for example Desachy 2016). Similar efforts have extended the model’s power to be able to automatically detect temporal relations between stratigraphic units (see for example the Phaser tool).",
+    "crumbs": [
+      "Chronologie & Terrain",
+      "stratigraphy.html"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Modélisation du temps en archéologie",
+    "section": "",
+    "text": "Bienvenue sur ce wiki dédié à…\n\n0.1 Objectifs\n\nCentraliser les notes sur la statistique bayésienne.\nDocumenter l’usage du CIDOC-CRM pour le temps.\nExplorer les réseaux de contraintes temporelles.",
+    "crumbs": [
+      "Accueil",
+      "Modélisation du temps en archéologie"
+    ]
+  }
+]
