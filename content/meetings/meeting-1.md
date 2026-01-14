@@ -2,8 +2,8 @@
 title: "Meeting 1"
 description: ""
 summary: ""
-date: 2025-12-23T18:50:27+01:00
-lastmod: 2025-12-23T18:50:27+01:00
+date: 2025-10-27T10:00:00+01:00
+lastmod: 2025-10-27T10:00:00+01:00
 draft: false
 seo:
   title: "" # custom title (optional)

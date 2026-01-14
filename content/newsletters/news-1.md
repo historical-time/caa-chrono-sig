@@ -55,6 +55,6 @@ As 2025 draws to a close, we would like to share some articles on chronological 
 
 Feel free to share this newsletter with any interested colleagues.
 
-Best wishes to all of you for the holidays season,
+Best wishes to you all for 2026,
 
-Eythan Levy, Martina Trognitz and Thomas Huet
+_Eythan Levy, Martina Trognitz and Thomas Huet_
