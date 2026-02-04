@@ -13,6 +13,8 @@ summarylength = 20 # 70 (default)
 canonifyURLs = false
 relativeURLs = false
 
+buildFuture = true
+
 # Multilingual
 defaultContentLanguage = "en"
 disableLanguages = ["de", "nl"]

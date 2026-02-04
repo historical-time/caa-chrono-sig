@@ -1,0 +1,29 @@
+{
+  "index.md": {
+    "index.html": "176ea0ad"
+  },
+  "bayesian.md": {
+    "bayesian.html": "84612800"
+  },
+  "cidoc.md": {
+    "cidoc.html": "8a52590e"
+  },
+  "logics.md": {
+    "logics.html": "0ce7d503"
+  },
+  "lotd.md": {
+    "lotd.html": "1eb011d7"
+  },
+  "networks.md": {
+    "networks.html": "21f29550"
+  },
+  "seriation.md": {
+    "seriation.html": "0d482242"
+  },
+  "stratigraphy.md": {
+    "stratigraphy.html": "c743be21"
+  },
+  "varia.md": {
+    "varia.html": "751a34af"
+  }
+}
