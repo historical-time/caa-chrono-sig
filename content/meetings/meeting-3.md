@@ -13,7 +13,7 @@ seo:
 ---
 
 ## SIG Chrono - 3rd meeting
-> **16 February 2026 at 10am CET time (Paris)**, total duration: 1h15-1h30, on ZOOM [link](https://oeaw-ac-at.zoom.us/j/65934250824?pwd=TGE30ICkrNSTb2PFpLlMhfgDtUaiob.1)
+> **16 February 2026 at 10am CET time (Paris)**, total duration: 1h15-1h30, on ZOOM ([link](https://oeaw-ac-at.zoom.us/j/65934250824?pwd=TGE30ICkrNSTb2PFpLlMhfgDtUaiob.1))
 
 * Intro [5 min] _Eythan Levy_, _Martina Trognitz_ and _Thomas Huet_
 * Invited talk: **"Beyond the Grant: Our Roadmap for the XRONOS Radiocarbon Database"** [30 min] _Martin Hinz_ (Institut für Archäologische Wissenschaften, Universität Bern, Switzerland):
