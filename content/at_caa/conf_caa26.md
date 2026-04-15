@@ -2,9 +2,9 @@
 title: "Conference CAA 2026"
 description: ""
 summary: ""
-displayDate: 2026-03-31
-date: 2025-03-31T14:50:38+01:00
 draft: false
+displayDate: 2026-03-31
+date: 2026-03-31
 weight: 30
 seo:
   title: "" # custom title (optional)
@@ -18,7 +18,16 @@ seo:
 ### S35: Chronological Modelling III: a Round Table on Time in Computational Archaeology
 > Thomas Huet, Eythan Levy
 
-This round table aims at discussing the current challenges and future perspectives on the modelling of time in archaeology. Duration: 2h30.
+<br>
+This round table aims at discussing the current challenges and future perspectives on the modelling of time in archaeology.
+
+<center>
+
+| When  |  Where |
+|---|---|
+| Thursday, April 2, 14:00-16:30  | room Hörsaal 05  |
+
+</center>
 
 Some 30 years ago, the introduction of GIS into the archaeological toolbox sparked a ‘spatial turn’ in the discipline, greatly improving the interoperability of spatial data. However, no such integrated tool exists for managing temporal data. Chronological methods are highly diverse (e.g., seriation, stratigraphy, cross-dating, absolute dating), each typically handled by different software applications and libraries. The lack of interoperability between software outputs, formats and standards hinders the ability to understand cultural developments across different societies. In our view, the time has come to make chronological data more interoperable through the use of standardised formats (e.g., EDTF), relative temporal relationships (e.g., before/after), and specialised software (e.g., OxCal). Such an approach could pave the way for a Temporal Information System (TIS), enabling the calculation of a temporal metric for the rate of human cultural evolution (see our position paper: Huet & Levy, 2025). We invite all interested colleagues to participate in the open-forum discussion at the round table.
 

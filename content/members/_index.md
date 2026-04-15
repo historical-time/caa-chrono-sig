@@ -6,45 +6,51 @@ layout: docs
 weight: 1
 ---
 
+> Bureau
+
 - Convener: Eythan Levy
 - Vice-Convener: Martina Trognitz
 - Secretary: Thomas Huet
-- Members:
-  - Allard Mees
-  - Andrew Millard
-  - Antoine Zink
-  - Bettina Bernegger
-  - Bryony Moody
-  - Caitlin Buck
-  - Ceri Binding
-  - Clemens Schmid
-  - Devi Taelman
-  - Dirk Seidensticker
-  - Dries Daems
-  - Edmund Lee
-  - Eymard Fäder
-  - Florian Thiery
-  - Giacomo Bilotti
-  - Gwenael Hervé
-  - Iro Mathioudaki
-  - Isak Roalkvam
-  - James Taylor
-  - Jaume Noguera
-  - Jeroen Poblome
-  - Joe Roe
-  - Juan Barcelo
-  - Julie Gravier
-  - Leif Isaksen
-  - Léonard Dumont
-  - Maarten Blaauw
-  - Martin Hinz
-  - Roberto Ragno
-  - Ronald Visser
-  - Ryan Shaw
-  - Sébastien Plutniak
-  - Simon Wyatt-Spratt
-  - Stephen Collins-Elliott
-  - Stephen Stead
+
+---
+
+> Members
+
+- Allard Mees
+- Andrew Millard
+- Antoine Zink
+- Bettina Bernegger
+- Bryony Moody
+- Caitlin Buck
+- Ceri Binding
+- Clemens Schmid
+- Devi Taelman
+- Dirk Seidensticker
+- Dries Daems
+- Edmund Lee
+- Eymard Fäder
+- Florian Thiery
+- Giacomo Bilotti
+- Gwenael Hervé
+- Iro Mathioudaki
+- Isak Roalkvam
+- James Taylor
+- Jaume Noguera
+- Jeroen Poblome
+- Joe Roe
+- Juan Barcelo
+- Julie Gravier
+- Leif Isaksen
+- Léonard Dumont
+- Maarten Blaauw
+- Martin Hinz
+- Roberto Ragno
+- Ronald Visser
+- Ryan Shaw
+- Sébastien Plutniak
+- Simon Wyatt-Spratt
+- Stephen Collins-Elliott
+- Stephen Stead
 
 ---
 

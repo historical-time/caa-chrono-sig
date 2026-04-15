@@ -5,6 +5,11 @@
   weight = 10
 
 [[main]]
+  name = "@CAA Conference"
+  pageRef = "/at_caa"
+  weight = 15
+
+[[main]]
   name = "Meetings"
   pageRef = "/meetings"
   weight = 20

@@ -2,9 +2,10 @@
 title: "Conference CAA 2025"
 description: ""
 summary: ""
-date: 2025-05-05T14:50:38+01:00
 draft: false
 weight: 20
+displayDate: 2025-05-05
+date: 2025-05-05
 seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)

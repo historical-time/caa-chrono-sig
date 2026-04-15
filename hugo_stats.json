@@ -49,9 +49,15 @@
       "summary",
       "sup",
       "svg",
+      "table",
+      "tbody",
+      "td",
       "template",
+      "th",
+      "thead",
       "time",
       "title",
+      "tr",
       "ul"
     ],
     "classes": [
@@ -59,6 +65,7 @@
       "active",
       "align-items-center",
       "anchor",
+      "at_caa",
       "bg-dots",
       "blog",
       "blog-header",

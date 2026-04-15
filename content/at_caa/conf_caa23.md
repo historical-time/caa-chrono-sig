@@ -2,9 +2,10 @@
 title: "Conference CAA 2023"
 description: ""
 summary: ""
-date: 2023-04-03T14:50:38+01:00
 draft: false
 weight: 10
+displayDate: 2023-04-03
+date: 2023-04-03
 seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)
