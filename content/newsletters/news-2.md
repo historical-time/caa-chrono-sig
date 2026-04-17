@@ -16,7 +16,7 @@ seo:
 
 Dear member of the CAA SIG Chrono,
 
-We hope this message finds you well. We are glad to share the newsletter of our [Special Interest Group](https://historical-time.github.io/caa-chrono-sig/) (SIG) on chronological modelling -- SIG Chrono.
+We hope this message finds you well. We are glad to share the newsletter of our [Special Interest Group](https://historical-time.github.io/caa-chrono-sig/) (SIG) on chronological modelling -- SIG Chrono. More information will follow.
 
 ## Meetings & Events
 
@@ -44,12 +44,12 @@ The “interactive” poster was also a valuable source of information on curren
   </span>
 </p>
 
-A contribution we particularly appreciated addressed the question “A ‘grand unified’ approach to chronology is...” (poster bottom-right). A post-it was placed at the intersection between “Desirable” and “Not feasible”, with the comment: “A ‘grand unified’ approach to chronology is a wet dream of nerdy archaeologists.”
+A poster contribution we particularly appreciated addressed the question “_A ‘grand unified’ approach to chronology is..._” (poster bottom-right). A post-it was placed at the intersection between “_Desirable_” and “_Not feasible_”, with the comment: “_[A ‘grand unified’ approach to chronology is] A wet dream of nerdy archaeologists._”. There is still a lot of work to be done before we have a functional TIS (Temporal Information System).
 
 <p align="center">
   <img src="/caa-chrono-sig/images/caa26_s35_presenters.jpg" alt="RT35 presenters">
   <span class="captiontext">
-    RT35 organisers and session chairs, from left to right: Juan Anton Barceló (UAB Barcelona), Florian Thierry (LEIZA), Joe Roe (University of Copenhagen), Eythan Levy (University of Zurich), Thomas Huet (CNRS), Keith May (Historic England).
+    RT35 organisers and session chairs, from left to right: Juan Anton Barceló (UAB Barcelona), Florian Thierry (LEIZA), Joe Roe (University of Copenhagen), Eythan Levy (University of Zurich), Thomas Huet (CNRS), and Keith May (Historic England).
   </span>
 </p>
 
@@ -59,4 +59,4 @@ A contribution we particularly appreciated addressed the question “A ‘grand 
 
 Feel free to share this newsletter with any interested colleagues.
 
-_Eythan Levy, Martina Trognitz and Thomas Huet_
+_Thomas Huet, Eythan Levy and Martina Trognitz_

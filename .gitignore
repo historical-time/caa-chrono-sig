@@ -1,6 +1,7 @@
-.env
-.netlify
-.hugo_build.lock
-node_modules
-public
-resources
+doc/notes/
+doc/img/
+/public/
+/resources/
+/node_modules/
+.Rproj.user
+
