@@ -13,7 +13,7 @@
 &lt;blockquote>
 &lt;p>&lt;strong>13 May 2026 at 6pm CET time (Paris)&lt;/strong>, total duration: 1h15-1h30, on ZOOM (&lt;a href="https://rendez-vous.renater.fr/SIG_Chrono_talks_4baf6e-8131bd-7b7879">link&lt;/a>)&lt;/p>&lt;/blockquote>
 &lt;ul>
-&lt;li>Intro [5 min] &lt;em>Eytahn Levy&lt;/em> and &lt;em>Martina Trognitz&lt;/em>&lt;/li>
+&lt;li>Intro [5 min] &lt;em>Eythan Levy&lt;/em>, &lt;em>Martina Trognitz&lt;/em>, &lt;em>Thomas Huet&lt;/em>&lt;/li>
 &lt;li>Invited talk: &lt;strong>&amp;ldquo;Standardizing infrastructure for temporal reasoning&amp;rdquo;&lt;/strong> [30 min] &lt;em>Ryan Shaw&lt;/em> (University of North Carolina at Chapel Hill):
 &lt;blockquote>
 &lt;p>&amp;ldquo;&lt;em>Tools like ChronoLog and Phaser help make chronological reasoning transparent, auditable, and reusable rather than tacit and ephemeral. Ideally, the rules encoded in such tools for making inferences about temporal relationships could be easily shared across tools, just like the datasets they pertain to. Expressing rules for temporal reasoning in standardized knowledge representation languages designed for the Web is one way of realizing that ideal. I will demonstrate some examples of using OWL to reason about Extended Dates and Times (vague, uncertain, and/or approximate dates) and using Notation3 to reason about qualitative temporal relations.&lt;/em>&amp;rdquo;&lt;/p></description></item></channel></rss>
