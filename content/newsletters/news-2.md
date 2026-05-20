@@ -12,7 +12,7 @@ seo:
   noindex: false # false (default) or true
 ---
 
-> Newsletter 2 – April 2026
+> Newsletter 2 – May 2026
 
 Dear member of the CAA SIG Chrono,
 
@@ -20,7 +20,7 @@ We hope this message finds you well. We are glad to share the newsletter of our 
 
 ## Meetings & Events
 
-**Next meeting**: The next meeting of the SIG is scheduled for Tuesday 13 May, 18:00–19:00 CET, with a presentation by Ryan Shaw about PeriodO.
+**Next meeting**: The next meeting of the SIG (4<sup>th</sup> meeting) is scheduled for Tuesday 12 May, 18:00–19:00 CET, with a presentation by Ryan Shaw: "Standardizing infrastructure for temporal reasoning" (see the [abstract](/caa-chrono-sig/meetings/meeting-4)) between 18:05–18:45 CET.
 
 **3rd meeting of the SIG:**
 
@@ -49,7 +49,7 @@ A poster contribution we particularly appreciated addressed the question “_A �
 <p align="center">
   <img src="/caa-chrono-sig/images/caa26_s35_presenters.jpg" alt="RT35 presenters">
   <span class="captiontext">
-    RT35 organisers and session chairs, from left to right: Juan Anton Barceló (UAB Barcelona), Florian Thierry (LEIZA), Joe Roe (University of Copenhagen), Eythan Levy (University of Zurich), Thomas Huet (CNRS), and Keith May (Historic England).
+    RT35 organisers and session chairs, from left to right: Juan Anton Barceló (Universitat Autònoma de Barcelona), Florian Thierry (LEIZA), Joe Roe (University of Copenhagen), Eythan Levy (University of Zurich), Thomas Huet (CNRS), and Keith May (Historic England).
   </span>
 </p>
 

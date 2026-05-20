@@ -12,8 +12,6 @@ weight: 1
 - Vice-Convener: Martina Trognitz
 - Secretary: Thomas Huet
 
----
-
 > Members
 
 - Allard Mees

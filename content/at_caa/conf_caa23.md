@@ -18,5 +18,5 @@ seo:
 ### S12: Chronological modelling: formal methods and research software
 > Eythan Levy, Thomas Huet, Florian Thiery, Allard W. Mees
 
-* General Introduction to S12: https://historical-time.github.io/caa-chrono-sig/caa/23/s12/intro/pres
-* Discussing the need for a new CAA Special Interest Group on chronological modelling: https://historical-time.github.io/caa-chrono-sig/caa/23/s12/discuss/pres
+* General Introduction to S12: <https://historical-time.github.io/caa-chrono-sig/caa/23/s12/intro/pres>
+* Discussing the need for a new CAA Special Interest Group on chronological modelling: <https://historical-time.github.io/caa-chrono-sig/caa/23/s12/discuss/pres>
